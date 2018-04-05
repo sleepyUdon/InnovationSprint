@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="StagApp-Bold.ttf">
+            <string>StagApp-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="CBC_AR360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKd-e1-rn0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGF-5J-bYV" customClass="SceneLocationView" customModule="CBC_AR360" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="583"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-Pd-RE1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="583"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="Seq-KZ-Ed1"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IN-M3-qvP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-Vw-3wN">
+                                        <rect key="frame" x="310" y="25" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dk0-JR-CaB"/>
+                                            <constraint firstAttribute="width" constant="40" id="ukL-YZ-lFX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                                        <state key="normal" title="2D">
+                                            <color key="titleColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                <size key="value" width="2" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleMapButon:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ttF-1C-8N4"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mos-xQ-f7g">
+                                        <rect key="frame" x="42" y="187" width="309" height="378"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yonge-and-elm-streets-shooting-bar" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-2S-lqo">
+                                                <rect key="frame" x="19" y="16" width="120" height="100"/>
+                                                <color key="backgroundColor" white="0.64064911270000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="A2z-Dd-qHR"/>
+                                                    <constraint firstAttribute="height" constant="80" id="eUT-jB-lmY"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 injured after overnight shooting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-Xl-Usm">
+                                                <rect key="frame" x="147" y="16" width="254" height="21"/>
+                                                <fontDescription key="fontDescription" name="StagApp-Bold" family="Stag App" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The victims, a man and a woman in their 20s, are expected to survive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
+                                                <rect key="frame" x="147" y="43" width="130" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" red="0.49019607840000001" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5x2-Wf-ElZ">
+                                                <rect key="frame" x="19" y="132" width="258" height="160"/>
+                                                <mutableString key="text">​Two people were injured in a shooting inside a downtown bar on Tuesday, according to Toronto police. 
+
+Officers responded to reports of gunfire in the area of Yonge and Elm streets at around 1:30 a.m. They arrived to find a man and a woman, both in their 20s, with gunshot wounds. 
+
+Both were taken to a nearby trauma centre with serious but non-life threatening injuries, Toronto paramedics said. The victims are expected to survive. 
+
+Earlier, Toronto Police tweeted overnight that a third person hurt in the shooting walked into a hospital, but a sergeant at 52 division later clarified the person's injuries were in fact unrelated.
+
+Forensic investigators were still on scene early Tuesday morning.
+
+Investigators are appealing for any witnesses.
+
+</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="5x2-Wf-ElZ" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="0s8-CT-uRe"/>
+                                            <constraint firstItem="XSR-2S-lqo" firstAttribute="top" secondItem="mos-xQ-f7g" secondAttribute="top" constant="16" id="7PF-Oa-q5l"/>
+                                            <constraint firstItem="C0H-Xl-Usm" firstAttribute="leading" secondItem="XSR-2S-lqo" secondAttribute="trailing" constant="16" id="CVr-jQ-m6c"/>
+                                            <constraint firstAttribute="trailing" secondItem="C0H-Xl-Usm" secondAttribute="trailing" constant="8" id="K4Z-NU-AeS"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5x2-Wf-ElZ" secondAttribute="bottom" constant="16" id="Moi-kC-3KI"/>
+                                            <constraint firstAttribute="trailing" secondItem="cEH-ms-VxT" secondAttribute="trailing" constant="8" id="QQd-wM-Bue"/>
+                                            <constraint firstAttribute="trailing" secondItem="5x2-Wf-ElZ" secondAttribute="trailing" constant="16" id="SbU-XG-GuE"/>
+                                            <constraint firstItem="C0H-Xl-Usm" firstAttribute="top" secondItem="mos-xQ-f7g" secondAttribute="top" constant="16" id="qvZ-y3-xAq"/>
+                                            <constraint firstItem="cEH-ms-VxT" firstAttribute="top" secondItem="C0H-Xl-Usm" secondAttribute="bottom" constant="6" id="tvm-vG-N6E"/>
+                                            <constraint firstItem="XSR-2S-lqo" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="vJw-f6-RBm"/>
+                                            <constraint firstItem="5x2-Wf-ElZ" firstAttribute="top" secondItem="XSR-2S-lqo" secondAttribute="bottom" constant="16" id="vYj-82-aSP"/>
+                                            <constraint firstItem="cEH-ms-VxT" firstAttribute="leading" secondItem="XSR-2S-lqo" secondAttribute="trailing" constant="16" id="ygE-sS-mYu"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-gc-owr">
+                                        <rect key="frame" x="310" y="84" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="CsX-sG-saq"/>
+                                            <constraint firstAttribute="height" constant="40" id="kiC-rB-UX1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                                        <state key="normal" title="3D">
+                                            <color key="titleColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                <size key="value" width="2" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="handleARButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Jfx-qE-585"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fMb-gc-owr" firstAttribute="centerX" secondItem="XgJ-Vw-3wN" secondAttribute="centerX" id="8xj-dw-Jd3"/>
+                                    <constraint firstAttribute="trailing" secondItem="XgJ-Vw-3wN" secondAttribute="trailing" constant="25" id="PXl-iW-E7x"/>
+                                    <constraint firstItem="XgJ-Vw-3wN" firstAttribute="top" secondItem="3IN-M3-qvP" secondAttribute="top" constant="25" id="iQe-i8-a8g"/>
+                                    <constraint firstItem="fMb-gc-owr" firstAttribute="top" secondItem="XgJ-Vw-3wN" secondAttribute="bottom" constant="16" id="jRG-uv-d0M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3IN-M3-qvP" firstAttribute="leading" secondItem="Ph8-nU-DZW" secondAttribute="leading" id="0pm-rd-QW9"/>
+                            <constraint firstItem="YGF-5J-bYV" firstAttribute="top" secondItem="Ph8-nU-DZW" secondAttribute="top" id="28i-A1-180"/>
+                            <constraint firstItem="Ph8-nU-DZW" firstAttribute="bottom" secondItem="9AZ-Pd-RE1" secondAttribute="bottom" constant="64" id="AgW-58-y7r"/>
+                            <constraint firstItem="Ph8-nU-DZW" firstAttribute="trailing" secondItem="9AZ-Pd-RE1" secondAttribute="trailing" id="DHy-Th-VnM"/>
+                            <constraint firstItem="3IN-M3-qvP" firstAttribute="top" secondItem="Ph8-nU-DZW" secondAttribute="top" id="Oe9-cv-V8x"/>
+                            <constraint firstItem="YGF-5J-bYV" firstAttribute="leading" secondItem="Ph8-nU-DZW" secondAttribute="leading" id="PYu-fi-HWP"/>
+                            <constraint firstItem="9AZ-Pd-RE1" firstAttribute="top" secondItem="Ph8-nU-DZW" secondAttribute="top" id="Pkc-Th-enj"/>
+                            <constraint firstItem="Ph8-nU-DZW" firstAttribute="trailing" secondItem="3IN-M3-qvP" secondAttribute="trailing" id="QcC-65-BYq"/>
+                            <constraint firstItem="9AZ-Pd-RE1" firstAttribute="leading" secondItem="Ph8-nU-DZW" secondAttribute="leading" id="Qzu-Ek-wlZ"/>
+                            <constraint firstItem="Ph8-nU-DZW" firstAttribute="bottom" secondItem="YGF-5J-bYV" secondAttribute="bottom" constant="64" id="Zdv-c2-wbr"/>
+                            <constraint firstItem="Ph8-nU-DZW" firstAttribute="trailing" secondItem="YGF-5J-bYV" secondAttribute="trailing" id="ifD-4U-sCg"/>
+                            <constraint firstItem="Ph8-nU-DZW" firstAttribute="bottom" secondItem="3IN-M3-qvP" secondAttribute="bottom" id="lFZ-Ke-00z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ph8-nU-DZW"/>
+                    </view>
+                    <connections>
+                        <outlet property="ARButton" destination="fMb-gc-owr" id="uNK-Qu-0Nk"/>
+                        <outlet property="bottomView" destination="mos-xQ-f7g" id="Fkl-pg-JvI"/>
+                        <outlet property="mapButton" destination="XgJ-Vw-3wN" id="SB4-Yj-Ov1"/>
+                        <outlet property="mapView" destination="9AZ-Pd-RE1" id="WtT-JT-twI"/>
+                        <outlet property="sceneLocationView" destination="YGF-5J-bYV" id="LfM-fa-J13"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yonge-and-elm-streets-shooting-bar" width="590" height="332"/>
+    </resources>
+</document>

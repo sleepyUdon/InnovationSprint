@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		688A9DCD5999470D02AFD295 /* Pods_CBC_AR360Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2354A9C39920E102B5FDAD89 /* Pods_CBC_AR360Tests.framework */; };
+		7C0619242075B61300011AAD /* StagApp-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0619222075B41E00011AAD /* StagApp-Bold.ttf */; };
+		7C0619252075B61300011AAD /* StagApp-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0619212075B41D00011AAD /* StagApp-Medium.ttf */; };
+		7C48011C2075447B00749701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48011B2075447B00749701 /* AppDelegate.swift */; };
+		7C4801222075447B00749701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801212075447B00749701 /* ViewController.swift */; };
+		7C4801252075447B00749701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4801232075447B00749701 /* Main.storyboard */; };
+		7C4801272075447B00749701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4801262075447B00749701 /* Assets.xcassets */; };
+		7C48012A2075447B00749701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4801282075447B00749701 /* LaunchScreen.storyboard */; };
+		7C4801542075503D00749701 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801532075503D00749701 /* MapViewController.swift */; };
+		7C4801562075504B00749701 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801552075504B00749701 /* ARViewController.swift */; };
+		7C48015A2075A3DB00749701 /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801592075A3DB00749701 /* SceneLocationView.swift */; };
+		7C48015C2075A5A900749701 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48015B2075A5A900749701 /* LocationNode.swift */; };
+		7C48015F2075A5FC00749701 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48015E2075A5FC00749701 /* SceneLocationEstimate.swift */; };
+		7C4801612075A61800749701 /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801602075A61800749701 /* SceneLocationEstimate+Extensions.swift */; };
+		7C4801632075A62D00749701 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801622075A62D00749701 /* LocationManager.swift */; };
+		7C4801652075A64400749701 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801642075A64400749701 /* CLLocation+Extensions.swift */; };
+		7C4801672075A65700749701 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801662075A65700749701 /* SCNVector3+Extensions.swift */; };
+		7C4801692075A66E00749701 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801682075A66E00749701 /* FloatingPoint+Radians.swift */; };
+		7C48016B2075A68200749701 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48016A2075A68200749701 /* CGPoint+Extensions.swift */; };
+		7C48016D2075A6A300749701 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48016C2075A6A300749701 /* SCNNode+Extensions.swift */; };
+		82A4ECDE3158796FF33C7F10 /* Pods_CBC_AR360UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706925A90A473C56FB6267F7 /* Pods_CBC_AR360UITests.framework */; };
+		96994E45FA8B946739B1B497 /* Pods_CBC_AR360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B1680FF69855B2EEDEBF72 /* Pods_CBC_AR360.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C4801312075447B00749701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C4801102075447B00749701 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C4801172075447B00749701;
+			remoteInfo = "CBC AR360";
+		};
+		7C48013C2075447B00749701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C4801102075447B00749701 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C4801172075447B00749701;
+			remoteInfo = "CBC AR360";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2354A9C39920E102B5FDAD89 /* Pods_CBC_AR360Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBC_AR360Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B1680FF69855B2EEDEBF72 /* Pods_CBC_AR360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBC_AR360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		512D365D6DB887BF6ACCF1AE /* Pods-CBC AR360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBC AR360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CBC AR360/Pods-CBC AR360.debug.xcconfig"; sourceTree = "<group>"; };
+		6FF894715D8D7327CD994E67 /* Pods-CBC AR360UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBC AR360UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CBC AR360UITests/Pods-CBC AR360UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		706925A90A473C56FB6267F7 /* Pods_CBC_AR360UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBC_AR360UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750E418DF98F1211A471106F /* Pods-CBC AR360Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBC AR360Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CBC AR360Tests/Pods-CBC AR360Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7C0619212075B41D00011AAD /* StagApp-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "StagApp-Medium.ttf"; sourceTree = "<group>"; };
+		7C0619222075B41E00011AAD /* StagApp-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "StagApp-Bold.ttf"; sourceTree = "<group>"; };
+		7C4801182075447B00749701 /* CBC AR360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CBC AR360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C48011B2075447B00749701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C4801212075447B00749701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C4801242075447B00749701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C4801262075447B00749701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C4801292075447B00749701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C48012B2075447B00749701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C4801302075447B00749701 /* CBC AR360Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBC AR360Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4801362075447B00749701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C48013B2075447B00749701 /* CBC AR360UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBC AR360UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4801412075447B00749701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C4801532075503D00749701 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7C4801552075504B00749701 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		7C4801592075A3DB00749701 /* SceneLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
+		7C48015B2075A5A900749701 /* LocationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		7C48015E2075A5FC00749701 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
+		7C4801602075A61800749701 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		7C4801622075A62D00749701 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7C4801642075A64400749701 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		7C4801662075A65700749701 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		7C4801682075A66E00749701 /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		7C48016A2075A68200749701 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		7C48016C2075A6A300749701 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		D719F24EED85B68B3EF8CEED /* Pods-CBC AR360UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBC AR360UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CBC AR360UITests/Pods-CBC AR360UITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF41CC381C98E92AA738FCE3 /* Pods-CBC AR360Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBC AR360Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CBC AR360Tests/Pods-CBC AR360Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E3C1B4F905EE2CB95DEF86 /* Pods-CBC AR360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBC AR360.release.xcconfig"; path = "Pods/Target Support Files/Pods-CBC AR360/Pods-CBC AR360.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C4801152075447B00749701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96994E45FA8B946739B1B497 /* Pods_CBC_AR360.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C48012D2075447B00749701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688A9DCD5999470D02AFD295 /* Pods_CBC_AR360Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4801382075447B00749701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A4ECDE3158796FF33C7F10 /* Pods_CBC_AR360UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		570D0BCA07F35C1601655934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38B1680FF69855B2EEDEBF72 /* Pods_CBC_AR360.framework */,
+				2354A9C39920E102B5FDAD89 /* Pods_CBC_AR360Tests.framework */,
+				706925A90A473C56FB6267F7 /* Pods_CBC_AR360UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C0619232075B42200011AAD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7C0619222075B41E00011AAD /* StagApp-Bold.ttf */,
+				7C0619212075B41D00011AAD /* StagApp-Medium.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		7C48010F2075447B00749701 = {
+			isa = PBXGroup;
+			children = (
+				7C48011A2075447B00749701 /* CBC AR360 */,
+				7C4801332075447B00749701 /* CBC AR360Tests */,
+				7C48013E2075447B00749701 /* CBC AR360UITests */,
+				7C4801192075447B00749701 /* Products */,
+				803C084D111D87AEAEC045A3 /* Pods */,
+				570D0BCA07F35C1601655934 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C4801192075447B00749701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C4801182075447B00749701 /* CBC AR360.app */,
+				7C4801302075447B00749701 /* CBC AR360Tests.xctest */,
+				7C48013B2075447B00749701 /* CBC AR360UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C48011A2075447B00749701 /* CBC AR360 */ = {
+			isa = PBXGroup;
+			children = (
+				7C48011B2075447B00749701 /* AppDelegate.swift */,
+				7C0619232075B42200011AAD /* Fonts */,
+				7C48015D2075A5EC00749701 /* ArKit */,
+				7C4801522075501F00749701 /* ViewControllers */,
+				7C4801512075500C00749701 /* Storyboards */,
+				7C4801262075447B00749701 /* Assets.xcassets */,
+				7C48012B2075447B00749701 /* Info.plist */,
+			);
+			path = "CBC AR360";
+			sourceTree = "<group>";
+		};
+		7C4801332075447B00749701 /* CBC AR360Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7C4801362075447B00749701 /* Info.plist */,
+			);
+			path = "CBC AR360Tests";
+			sourceTree = "<group>";
+		};
+		7C48013E2075447B00749701 /* CBC AR360UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C4801412075447B00749701 /* Info.plist */,
+			);
+			path = "CBC AR360UITests";
+			sourceTree = "<group>";
+		};
+		7C4801512075500C00749701 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7C4801282075447B00749701 /* LaunchScreen.storyboard */,
+				7C4801232075447B00749701 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		7C4801522075501F00749701 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C4801212075447B00749701 /* ViewController.swift */,
+				7C4801532075503D00749701 /* MapViewController.swift */,
+				7C4801552075504B00749701 /* ARViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7C48015D2075A5EC00749701 /* ArKit */ = {
+			isa = PBXGroup;
+			children = (
+				7C4801592075A3DB00749701 /* SceneLocationView.swift */,
+				7C48015B2075A5A900749701 /* LocationNode.swift */,
+				7C48015E2075A5FC00749701 /* SceneLocationEstimate.swift */,
+				7C4801602075A61800749701 /* SceneLocationEstimate+Extensions.swift */,
+				7C4801622075A62D00749701 /* LocationManager.swift */,
+				7C4801642075A64400749701 /* CLLocation+Extensions.swift */,
+				7C4801662075A65700749701 /* SCNVector3+Extensions.swift */,
+				7C4801682075A66E00749701 /* FloatingPoint+Radians.swift */,
+				7C48016A2075A68200749701 /* CGPoint+Extensions.swift */,
+				7C48016C2075A6A300749701 /* SCNNode+Extensions.swift */,
+			);
+			name = ArKit;
+			sourceTree = "<group>";
+		};
+		803C084D111D87AEAEC045A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				512D365D6DB887BF6ACCF1AE /* Pods-CBC AR360.debug.xcconfig */,
+				E7E3C1B4F905EE2CB95DEF86 /* Pods-CBC AR360.release.xcconfig */,
+				DF41CC381C98E92AA738FCE3 /* Pods-CBC AR360Tests.debug.xcconfig */,
+				750E418DF98F1211A471106F /* Pods-CBC AR360Tests.release.xcconfig */,
+				6FF894715D8D7327CD994E67 /* Pods-CBC AR360UITests.debug.xcconfig */,
+				D719F24EED85B68B3EF8CEED /* Pods-CBC AR360UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C4801172075447B00749701 /* CBC AR360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C4801442075447B00749701 /* Build configuration list for PBXNativeTarget "CBC AR360" */;
+			buildPhases = (
+				5E8C2AE9059884F14BF309F4 /* [CP] Check Pods Manifest.lock */,
+				7C4801142075447B00749701 /* Sources */,
+				7C4801152075447B00749701 /* Frameworks */,
+				7C4801162075447B00749701 /* Resources */,
+				F7ED73615364578A9499B25F /* [CP] Embed Pods Frameworks */,
+				32E6FE3299D2094D059CF18E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CBC AR360";
+			productName = "CBC AR360";
+			productReference = 7C4801182075447B00749701 /* CBC AR360.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C48012F2075447B00749701 /* CBC AR360Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C4801472075447B00749701 /* Build configuration list for PBXNativeTarget "CBC AR360Tests" */;
+			buildPhases = (
+				A584863494F1B0CF82218DA2 /* [CP] Check Pods Manifest.lock */,
+				7C48012C2075447B00749701 /* Sources */,
+				7C48012D2075447B00749701 /* Frameworks */,
+				7C48012E2075447B00749701 /* Resources */,
+				1170DD5AB76BF8B6DDB9C99C /* [CP] Embed Pods Frameworks */,
+				A40DD1E2766779C4B2AFAEE6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C4801322075447B00749701 /* PBXTargetDependency */,
+			);
+			name = "CBC AR360Tests";
+			productName = "CBC AR360Tests";
+			productReference = 7C4801302075447B00749701 /* CBC AR360Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C48013A2075447B00749701 /* CBC AR360UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C48014A2075447B00749701 /* Build configuration list for PBXNativeTarget "CBC AR360UITests" */;
+			buildPhases = (
+				26789BDDE236C4A65817C249 /* [CP] Check Pods Manifest.lock */,
+				7C4801372075447B00749701 /* Sources */,
+				7C4801382075447B00749701 /* Frameworks */,
+				7C4801392075447B00749701 /* Resources */,
+				FF6597FD2DB0E916438C7E8B /* [CP] Embed Pods Frameworks */,
+				C9F43603FCE8AAC2F7FA3C3C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C48013D2075447B00749701 /* PBXTargetDependency */,
+			);
+			name = "CBC AR360UITests";
+			productName = "CBC AR360UITests";
+			productReference = 7C48013B2075447B00749701 /* CBC AR360UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C4801102075447B00749701 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = CBC;
+				TargetAttributes = {
+					7C4801172075447B00749701 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7C48012F2075447B00749701 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7C4801172075447B00749701;
+					};
+					7C48013A2075447B00749701 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7C4801172075447B00749701;
+					};
+				};
+			};
+			buildConfigurationList = 7C4801132075447B00749701 /* Build configuration list for PBXProject "CBC AR360" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C48010F2075447B00749701;
+			productRefGroup = 7C4801192075447B00749701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C4801172075447B00749701 /* CBC AR360 */,
+				7C48012F2075447B00749701 /* CBC AR360Tests */,
+				7C48013A2075447B00749701 /* CBC AR360UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C4801162075447B00749701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C0619242075B61300011AAD /* StagApp-Bold.ttf in Resources */,
+				7C0619252075B61300011AAD /* StagApp-Medium.ttf in Resources */,
+				7C48012A2075447B00749701 /* LaunchScreen.storyboard in Resources */,
+				7C4801272075447B00749701 /* Assets.xcassets in Resources */,
+				7C4801252075447B00749701 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C48012E2075447B00749701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4801392075447B00749701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1170DD5AB76BF8B6DDB9C99C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBC AR360Tests/Pods-CBC AR360Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26789BDDE236C4A65817C249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CBC AR360UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32E6FE3299D2094D059CF18E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBC AR360/Pods-CBC AR360-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8C2AE9059884F14BF309F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CBC AR360-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A40DD1E2766779C4B2AFAEE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBC AR360Tests/Pods-CBC AR360Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A584863494F1B0CF82218DA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CBC AR360Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F43603FCE8AAC2F7FA3C3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBC AR360UITests/Pods-CBC AR360UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7ED73615364578A9499B25F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CBC AR360/Pods-CBC AR360-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTSlidingUpPanel/CTSlidingUpPanel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTSlidingUpPanel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBC AR360/Pods-CBC AR360-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6597FD2DB0E916438C7E8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBC AR360UITests/Pods-CBC AR360UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C4801142075447B00749701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C48015C2075A5A900749701 /* LocationNode.swift in Sources */,
+				7C4801652075A64400749701 /* CLLocation+Extensions.swift in Sources */,
+				7C48015A2075A3DB00749701 /* SceneLocationView.swift in Sources */,
+				7C4801222075447B00749701 /* ViewController.swift in Sources */,
+				7C48016B2075A68200749701 /* CGPoint+Extensions.swift in Sources */,
+				7C4801542075503D00749701 /* MapViewController.swift in Sources */,
+				7C4801692075A66E00749701 /* FloatingPoint+Radians.swift in Sources */,
+				7C48015F2075A5FC00749701 /* SceneLocationEstimate.swift in Sources */,
+				7C48011C2075447B00749701 /* AppDelegate.swift in Sources */,
+				7C4801562075504B00749701 /* ARViewController.swift in Sources */,
+				7C4801612075A61800749701 /* SceneLocationEstimate+Extensions.swift in Sources */,
+				7C4801632075A62D00749701 /* LocationManager.swift in Sources */,
+				7C48016D2075A6A300749701 /* SCNNode+Extensions.swift in Sources */,
+				7C4801672075A65700749701 /* SCNVector3+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C48012C2075447B00749701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4801372075447B00749701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C4801322075447B00749701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C4801172075447B00749701 /* CBC AR360 */;
+			targetProxy = 7C4801312075447B00749701 /* PBXContainerItemProxy */;
+		};
+		7C48013D2075447B00749701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C4801172075447B00749701 /* CBC AR360 */;
+			targetProxy = 7C48013C2075447B00749701 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C4801232075447B00749701 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C4801242075447B00749701 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C4801282075447B00749701 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C4801292075447B00749701 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C4801422075447B00749701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C4801432075447B00749701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C4801452075447B00749701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512D365D6DB887BF6ACCF1AE /* Pods-CBC AR360.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTT3846RD;
+				INFOPLIST_FILE = "CBC AR360/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBC.CBC-AR360";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C4801462075447B00749701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E3C1B4F905EE2CB95DEF86 /* Pods-CBC AR360.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTT3846RD;
+				INFOPLIST_FILE = "CBC AR360/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBC.CBC-AR360";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7C4801482075447B00749701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF41CC381C98E92AA738FCE3 /* Pods-CBC AR360Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTT3846RD;
+				INFOPLIST_FILE = "CBC AR360Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBC.CBC-AR360Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CBC AR360.app/CBC AR360";
+			};
+			name = Debug;
+		};
+		7C4801492075447B00749701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750E418DF98F1211A471106F /* Pods-CBC AR360Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTT3846RD;
+				INFOPLIST_FILE = "CBC AR360Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBC.CBC-AR360Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CBC AR360.app/CBC AR360";
+			};
+			name = Release;
+		};
+		7C48014B2075447B00749701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF894715D8D7327CD994E67 /* Pods-CBC AR360UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTT3846RD;
+				INFOPLIST_FILE = "CBC AR360UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBC.CBC-AR360UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CBC AR360";
+			};
+			name = Debug;
+		};
+		7C48014C2075447B00749701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D719F24EED85B68B3EF8CEED /* Pods-CBC AR360UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3BTT3846RD;
+				INFOPLIST_FILE = "CBC AR360UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CBC.CBC-AR360UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CBC AR360";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C4801132075447B00749701 /* Build configuration list for PBXProject "CBC AR360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4801422075447B00749701 /* Debug */,
+				7C4801432075447B00749701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C4801442075447B00749701 /* Build configuration list for PBXNativeTarget "CBC AR360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4801452075447B00749701 /* Debug */,
+				7C4801462075447B00749701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C4801472075447B00749701 /* Build configuration list for PBXNativeTarget "CBC AR360Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4801482075447B00749701 /* Debug */,
+				7C4801492075447B00749701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C48014A2075447B00749701 /* Build configuration list for PBXNativeTarget "CBC AR360UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C48014B2075447B00749701 /* Debug */,
+				7C48014C2075447B00749701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C4801102075447B00749701 /* Project object */;
+}

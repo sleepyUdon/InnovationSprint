@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13940EACE80B825F1468661CDA568DB4 /* Pods-CBC AR360-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FA3F51501956E606E4E0C7AB1B8C33 /* Pods-CBC AR360-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14D1124C697E1A6AC0F4D0E0340EF83A /* CTBottomSlideTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC16CE4E4E8619D18BFB306EA8D95DC /* CTBottomSlideTableDelegate.swift */; };
+		254BC84CEC7060BFD46B5B499D5C7124 /* CTSlidingUpPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E60BC71D32B7AF86BBE0A587B8CCBB /* CTSlidingUpPanel-dummy.m */; };
+		3D3E5EAEC68157648A91295390291C46 /* CTSlidingUpPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1C4955660F8F3616E142CE2A8B6EAA /* CTSlidingUpPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43946BE496709911FB9D2CB09B883B42 /* Pods-CBC AR360UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 389EC824551CC9BC87F4DF5E2326153A /* Pods-CBC AR360UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A92112E4DEB422C70C098EF98B35F89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		5F35E4EE89535509DA024E160950A355 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		72D3995EF8D78487B1DEAB537BB51229 /* Pods-CBC AR360-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C1A9ADC642E37DBD90B37A922582F1 /* Pods-CBC AR360-dummy.m */; };
+		840C92127C4B080C839930780365E61B /* Pods-CBC AR360Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7B166E2C5A1498D54914E4D1FDE918 /* Pods-CBC AR360Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85FB9AED52BF7BA058647FC4C4728909 /* Pods-CBC AR360UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B55D3935D8D8833F92CC99032D1CEEC3 /* Pods-CBC AR360UITests-dummy.m */; };
+		9CF71877A6DBC2DDFD875D6D7ACA3020 /* CTBottomSlideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B98D4930C1E33C3BA2ECD0D6F42F6E /* CTBottomSlideController.swift */; };
+		A114F8572142B406676C55473E35FD98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		A2B169F8EA3958E46DDAF40D8079D01B /* Pods-CBC AR360Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8998446D53EC0F0822615480CD4EB3F6 /* Pods-CBC AR360Tests-dummy.m */; };
+		C181D8744859D23FC9A2C0124DC52BFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E2A090C2248D1C1F61E48BFAFE9DE6BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		EB2C8803340C70B574349561BCA85325 /* CTPanGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E94CCCC05DE308B475AD74AB98FB4D /* CTPanGestureRecognizerExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		564E1B6A1AC15EB1F6F77DD33AD6DBA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171015227367C6D309F5210DFB2ACA50;
+			remoteInfo = CTSlidingUpPanel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B98D4930C1E33C3BA2ECD0D6F42F6E /* CTBottomSlideController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTBottomSlideController.swift; path = CTSlidingUpPanel/Classes/CTBottomSlideController.swift; sourceTree = "<group>"; };
+		1033978D9A104CD4132D3CF11781950F /* CTSlidingUpPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTSlidingUpPanel-prefix.pch"; sourceTree = "<group>"; };
+		168C38E7AA6673595C20F0110D1CC2F3 /* Pods_CBC_AR360UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBC_AR360UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F3C49A8298361B221ACBBED6BB4AE11 /* Pods-CBC AR360UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CBC AR360UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2748446C74D4A5623F6B0A28D5049440 /* Pods_CBC_AR360Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBC_AR360Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3243E62656D43D63FEB4D3917419337F /* Pods-CBC AR360UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CBC AR360UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		389EC824551CC9BC87F4DF5E2326153A /* Pods-CBC AR360UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CBC AR360UITests-umbrella.h"; sourceTree = "<group>"; };
+		38F10CB1ADFBB1D3CD94B6FD1BA103AE /* Pods-CBC AR360UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBC AR360UITests-frameworks.sh"; sourceTree = "<group>"; };
+		3C1C4955660F8F3616E142CE2A8B6EAA /* CTSlidingUpPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTSlidingUpPanel-umbrella.h"; sourceTree = "<group>"; };
+		449F2290165754200E4F34C1E013DD91 /* Pods-CBC AR360Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBC AR360Tests-resources.sh"; sourceTree = "<group>"; };
+		4B8EE657359AD4786D6DEE2484A97B8C /* Pods-CBC AR360-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CBC AR360-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D4EC9148D828858918A7DDB9B3B0678 /* Pods_CBC_AR360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBC_AR360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6314CD6A47700D4DE17C4928B65AD91D /* Pods-CBC AR360Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBC AR360Tests-frameworks.sh"; sourceTree = "<group>"; };
+		63E94CCCC05DE308B475AD74AB98FB4D /* CTPanGestureRecognizerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTPanGestureRecognizerExtension.swift; path = CTSlidingUpPanel/Classes/CTPanGestureRecognizerExtension.swift; sourceTree = "<group>"; };
+		652B964D12BEC90B4A41B4D4EB45900D /* CTSlidingUpPanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTSlidingUpPanel.xcconfig; sourceTree = "<group>"; };
+		71B5906A00F9D051A3D844836DADD541 /* Pods-CBC AR360-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBC AR360-resources.sh"; sourceTree = "<group>"; };
+		7341BA3426BB8486EE6B5456E5F441D6 /* Pods-CBC AR360UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CBC AR360UITests.modulemap"; sourceTree = "<group>"; };
+		760142AB4A284ABB59AFE3DA0118F2E8 /* Pods-CBC AR360Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CBC AR360Tests.modulemap"; sourceTree = "<group>"; };
+		81E60BC71D32B7AF86BBE0A587B8CCBB /* CTSlidingUpPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTSlidingUpPanel-dummy.m"; sourceTree = "<group>"; };
+		85051958D6B613BE96C3DF21DF380CE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8998446D53EC0F0822615480CD4EB3F6 /* Pods-CBC AR360Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CBC AR360Tests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9947D4FEF4C4393C47A5D0C155A05101 /* Pods-CBC AR360UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBC AR360UITests-resources.sh"; sourceTree = "<group>"; };
+		9E902D51A87CE7965FD119008CE42104 /* Pods-CBC AR360UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBC AR360UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F4FA81687CF847323A9BC39C5B79DC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC16CE4E4E8619D18BFB306EA8D95DC /* CTBottomSlideTableDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTBottomSlideTableDelegate.swift; path = CTSlidingUpPanel/Classes/CTBottomSlideTableDelegate.swift; sourceTree = "<group>"; };
+		B55D3935D8D8833F92CC99032D1CEEC3 /* Pods-CBC AR360UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CBC AR360UITests-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B7C1A9ADC642E37DBD90B37A922582F1 /* Pods-CBC AR360-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CBC AR360-dummy.m"; sourceTree = "<group>"; };
+		BA454DC3C1EB9999E1EDCEBBCBBCA66D /* CTSlidingUpPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CTSlidingUpPanel.modulemap; sourceTree = "<group>"; };
+		BD50C17571AE516C2D4954BB942B4006 /* Pods-CBC AR360-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBC AR360-frameworks.sh"; sourceTree = "<group>"; };
+		BF00B5E5532AE1D72ED2E9DCAA3F8221 /* Pods-CBC AR360Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CBC AR360Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6445C0E9F700FA36FF56759006D540E /* Pods-CBC AR360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBC AR360.debug.xcconfig"; sourceTree = "<group>"; };
+		C7FA3F51501956E606E4E0C7AB1B8C33 /* Pods-CBC AR360-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CBC AR360-umbrella.h"; sourceTree = "<group>"; };
+		C8BCDBF936B3402AEC1028C75D5A6D89 /* Pods-CBC AR360Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBC AR360Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CB1048DFADFAA0063A92FBE9E728FBB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE4B168D4708B54C0E0902D24D51A31 /* Pods-CBC AR360Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CBC AR360Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBF8DB5FBBD7D874C5ECCF48329819B4 /* Pods-CBC AR360-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CBC AR360-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFC8B3D7FB5287051A2C685FAE18E7C8 /* Pods-CBC AR360Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBC AR360Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D230C221150DAA00CCD17DF435B7E624 /* Pods-CBC AR360UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBC AR360UITests.release.xcconfig"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E212BD77FDF933B37A4B6D389ABBEF8E /* Pods-CBC AR360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBC AR360.release.xcconfig"; sourceTree = "<group>"; };
+		E2F60563A383CBCBA508165949E394DC /* CTSlidingUpPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTSlidingUpPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD83D08C4DA43DD1352DFB8653A91CE7 /* Pods-CBC AR360.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CBC AR360.modulemap"; sourceTree = "<group>"; };
+		FF01D05BF004E0D3921D12B59B1301B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7B166E2C5A1498D54914E4D1FDE918 /* Pods-CBC AR360Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CBC AR360Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D20A91ED28CE543F23F503860BEDAAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C181D8744859D23FC9A2C0124DC52BFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1FDEF4603E8D69CEEB40EA96EEA223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A92112E4DEB422C70C098EF98B35F89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE3DD5AFB88D87FB90C22A0936D35AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A090C2248D1C1F61E48BFAFE9DE6BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64E671631F664FEFFFA38632BB81202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F35E4EE89535509DA024E160950A355 /* Foundation.framework in Frameworks */,
+				A114F8572142B406676C55473E35FD98 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21FF1915F3FE60075182645006682B37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99BD63C4ED79557639D8AD456AEFEEBE /* CTSlidingUpPanel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		44B43623F332052CEB5D9D3CED5AAC0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2F60563A383CBCBA508165949E394DC /* CTSlidingUpPanel.framework */,
+				4D4EC9148D828858918A7DDB9B3B0678 /* Pods_CBC_AR360.framework */,
+				2748446C74D4A5623F6B0A28D5049440 /* Pods_CBC_AR360Tests.framework */,
+				168C38E7AA6673595C20F0110D1CC2F3 /* Pods_CBC_AR360UITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49497464F227F5DB6D9564B77FC0C9BB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				884C2531A0AB557A99EBD05A7C4B6067 /* Pods-CBC AR360 */,
+				81E17BB4FFE702F30D54FC7790087F1D /* Pods-CBC AR360Tests */,
+				BA5DCADFBEE007B36BDD725CBAB2D0AC /* Pods-CBC AR360UITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				21FF1915F3FE60075182645006682B37 /* Pods */,
+				44B43623F332052CEB5D9D3CED5AAC0C /* Products */,
+				49497464F227F5DB6D9564B77FC0C9BB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81E17BB4FFE702F30D54FC7790087F1D /* Pods-CBC AR360Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CB1048DFADFAA0063A92FBE9E728FBB1 /* Info.plist */,
+				760142AB4A284ABB59AFE3DA0118F2E8 /* Pods-CBC AR360Tests.modulemap */,
+				CBE4B168D4708B54C0E0902D24D51A31 /* Pods-CBC AR360Tests-acknowledgements.markdown */,
+				BF00B5E5532AE1D72ED2E9DCAA3F8221 /* Pods-CBC AR360Tests-acknowledgements.plist */,
+				8998446D53EC0F0822615480CD4EB3F6 /* Pods-CBC AR360Tests-dummy.m */,
+				6314CD6A47700D4DE17C4928B65AD91D /* Pods-CBC AR360Tests-frameworks.sh */,
+				449F2290165754200E4F34C1E013DD91 /* Pods-CBC AR360Tests-resources.sh */,
+				FF7B166E2C5A1498D54914E4D1FDE918 /* Pods-CBC AR360Tests-umbrella.h */,
+				CFC8B3D7FB5287051A2C685FAE18E7C8 /* Pods-CBC AR360Tests.debug.xcconfig */,
+				C8BCDBF936B3402AEC1028C75D5A6D89 /* Pods-CBC AR360Tests.release.xcconfig */,
+			);
+			name = "Pods-CBC AR360Tests";
+			path = "Target Support Files/Pods-CBC AR360Tests";
+			sourceTree = "<group>";
+		};
+		884C2531A0AB557A99EBD05A7C4B6067 /* Pods-CBC AR360 */ = {
+			isa = PBXGroup;
+			children = (
+				85051958D6B613BE96C3DF21DF380CE7 /* Info.plist */,
+				FD83D08C4DA43DD1352DFB8653A91CE7 /* Pods-CBC AR360.modulemap */,
+				CBF8DB5FBBD7D874C5ECCF48329819B4 /* Pods-CBC AR360-acknowledgements.markdown */,
+				4B8EE657359AD4786D6DEE2484A97B8C /* Pods-CBC AR360-acknowledgements.plist */,
+				B7C1A9ADC642E37DBD90B37A922582F1 /* Pods-CBC AR360-dummy.m */,
+				BD50C17571AE516C2D4954BB942B4006 /* Pods-CBC AR360-frameworks.sh */,
+				71B5906A00F9D051A3D844836DADD541 /* Pods-CBC AR360-resources.sh */,
+				C7FA3F51501956E606E4E0C7AB1B8C33 /* Pods-CBC AR360-umbrella.h */,
+				C6445C0E9F700FA36FF56759006D540E /* Pods-CBC AR360.debug.xcconfig */,
+				E212BD77FDF933B37A4B6D389ABBEF8E /* Pods-CBC AR360.release.xcconfig */,
+			);
+			name = "Pods-CBC AR360";
+			path = "Target Support Files/Pods-CBC AR360";
+			sourceTree = "<group>";
+		};
+		99BD63C4ED79557639D8AD456AEFEEBE /* CTSlidingUpPanel */ = {
+			isa = PBXGroup;
+			children = (
+				03B98D4930C1E33C3BA2ECD0D6F42F6E /* CTBottomSlideController.swift */,
+				ADC16CE4E4E8619D18BFB306EA8D95DC /* CTBottomSlideTableDelegate.swift */,
+				63E94CCCC05DE308B475AD74AB98FB4D /* CTPanGestureRecognizerExtension.swift */,
+				AEF3A25DE5D297DD1782ACFA796A6805 /* Support Files */,
+			);
+			path = CTSlidingUpPanel;
+			sourceTree = "<group>";
+		};
+		AEF3A25DE5D297DD1782ACFA796A6805 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA454DC3C1EB9999E1EDCEBBCBBCA66D /* CTSlidingUpPanel.modulemap */,
+				652B964D12BEC90B4A41B4D4EB45900D /* CTSlidingUpPanel.xcconfig */,
+				81E60BC71D32B7AF86BBE0A587B8CCBB /* CTSlidingUpPanel-dummy.m */,
+				1033978D9A104CD4132D3CF11781950F /* CTSlidingUpPanel-prefix.pch */,
+				3C1C4955660F8F3616E142CE2A8B6EAA /* CTSlidingUpPanel-umbrella.h */,
+				FF01D05BF004E0D3921D12B59B1301B0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CTSlidingUpPanel";
+			sourceTree = "<group>";
+		};
+		BA5DCADFBEE007B36BDD725CBAB2D0AC /* Pods-CBC AR360UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F4FA81687CF847323A9BC39C5B79DC0 /* Info.plist */,
+				7341BA3426BB8486EE6B5456E5F441D6 /* Pods-CBC AR360UITests.modulemap */,
+				3243E62656D43D63FEB4D3917419337F /* Pods-CBC AR360UITests-acknowledgements.markdown */,
+				1F3C49A8298361B221ACBBED6BB4AE11 /* Pods-CBC AR360UITests-acknowledgements.plist */,
+				B55D3935D8D8833F92CC99032D1CEEC3 /* Pods-CBC AR360UITests-dummy.m */,
+				38F10CB1ADFBB1D3CD94B6FD1BA103AE /* Pods-CBC AR360UITests-frameworks.sh */,
+				9947D4FEF4C4393C47A5D0C155A05101 /* Pods-CBC AR360UITests-resources.sh */,
+				389EC824551CC9BC87F4DF5E2326153A /* Pods-CBC AR360UITests-umbrella.h */,
+				9E902D51A87CE7965FD119008CE42104 /* Pods-CBC AR360UITests.debug.xcconfig */,
+				D230C221150DAA00CCD17DF435B7E624 /* Pods-CBC AR360UITests.release.xcconfig */,
+			);
+			name = "Pods-CBC AR360UITests";
+			path = "Target Support Files/Pods-CBC AR360UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		387BC5A870E7AF725056C6FB68E839E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840C92127C4B080C839930780365E61B /* Pods-CBC AR360Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E765BAA4944DBA35E875C5861CC5CA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3E5EAEC68157648A91295390291C46 /* CTSlidingUpPanel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E054DA9495C23E9F989722B4F8992B50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43946BE496709911FB9D2CB09B883B42 /* Pods-CBC AR360UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB9392C33C51AC41C3CEB4C18256B07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13940EACE80B825F1468661CDA568DB4 /* Pods-CBC AR360-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0FDC4B700FFE0CF82C82FCEE83B6F6C4 /* Pods-CBC AR360UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6650B4BB47B4243462925552C862EBC /* Build configuration list for PBXNativeTarget "Pods-CBC AR360UITests" */;
+			buildPhases = (
+				FEEFE2B86E13FB93A3CD6C0101B2A35E /* Sources */,
+				8EE3DD5AFB88D87FB90C22A0936D35AA /* Frameworks */,
+				E054DA9495C23E9F989722B4F8992B50 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CBC AR360UITests";
+			productName = "Pods-CBC AR360UITests";
+			productReference = 168C38E7AA6673595C20F0110D1CC2F3 /* Pods_CBC_AR360UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		171015227367C6D309F5210DFB2ACA50 /* CTSlidingUpPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8901F3805FAA8DB8A869040E3FC17819 /* Build configuration list for PBXNativeTarget "CTSlidingUpPanel" */;
+			buildPhases = (
+				ABAD4C3F27E23DBB898D670467D428BB /* Sources */,
+				D64E671631F664FEFFFA38632BB81202 /* Frameworks */,
+				6E765BAA4944DBA35E875C5861CC5CA6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTSlidingUpPanel;
+			productName = CTSlidingUpPanel;
+			productReference = E2F60563A383CBCBA508165949E394DC /* CTSlidingUpPanel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E102099FCFB5346EC8ABF36BBDA97B8 /* Pods-CBC AR360Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B8AD3BD79910B827935C4BABA539AED /* Build configuration list for PBXNativeTarget "Pods-CBC AR360Tests" */;
+			buildPhases = (
+				6BAE6FD9B91C0D93D4D7CDC562487C24 /* Sources */,
+				3D20A91ED28CE543F23F503860BEDAAC /* Frameworks */,
+				387BC5A870E7AF725056C6FB68E839E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CBC AR360Tests";
+			productName = "Pods-CBC AR360Tests";
+			productReference = 2748446C74D4A5623F6B0A28D5049440 /* Pods_CBC_AR360Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B56F6F047DB54C17F12B2CF361BC9AF /* Pods-CBC AR360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5184F518C96987B144F1A15A1C409B9 /* Build configuration list for PBXNativeTarget "Pods-CBC AR360" */;
+			buildPhases = (
+				6D6803C2380E7B5B3EAB64DF1EF45F7E /* Sources */,
+				6F1FDEF4603E8D69CEEB40EA96EEA223 /* Frameworks */,
+				ECB9392C33C51AC41C3CEB4C18256B07 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98491828DFA4D60A397EA092DD42BD95 /* PBXTargetDependency */,
+			);
+			name = "Pods-CBC AR360";
+			productName = "Pods-CBC AR360";
+			productReference = 4D4EC9148D828858918A7DDB9B3B0678 /* Pods_CBC_AR360.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 44B43623F332052CEB5D9D3CED5AAC0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171015227367C6D309F5210DFB2ACA50 /* CTSlidingUpPanel */,
+				8B56F6F047DB54C17F12B2CF361BC9AF /* Pods-CBC AR360 */,
+				7E102099FCFB5346EC8ABF36BBDA97B8 /* Pods-CBC AR360Tests */,
+				0FDC4B700FFE0CF82C82FCEE83B6F6C4 /* Pods-CBC AR360UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BAE6FD9B91C0D93D4D7CDC562487C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B169F8EA3958E46DDAF40D8079D01B /* Pods-CBC AR360Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D6803C2380E7B5B3EAB64DF1EF45F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D3995EF8D78487B1DEAB537BB51229 /* Pods-CBC AR360-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAD4C3F27E23DBB898D670467D428BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF71877A6DBC2DDFD875D6D7ACA3020 /* CTBottomSlideController.swift in Sources */,
+				14D1124C697E1A6AC0F4D0E0340EF83A /* CTBottomSlideTableDelegate.swift in Sources */,
+				EB2C8803340C70B574349561BCA85325 /* CTPanGestureRecognizerExtension.swift in Sources */,
+				254BC84CEC7060BFD46B5B499D5C7124 /* CTSlidingUpPanel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEFE2B86E13FB93A3CD6C0101B2A35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FB9AED52BF7BA058647FC4C4728909 /* Pods-CBC AR360UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98491828DFA4D60A397EA092DD42BD95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTSlidingUpPanel;
+			target = 171015227367C6D309F5210DFB2ACA50 /* CTSlidingUpPanel */;
+			targetProxy = 564E1B6A1AC15EB1F6F77DD33AD6DBA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		390DAEEA52A56984F3F2A4B97410CDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D230C221150DAA00CCD17DF435B7E624 /* Pods-CBC AR360UITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CBC AR360UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CBC AR360UITests/Pods-CBC AR360UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CBC_AR360UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3EE3D2E5839DA682EDD3955EF0AEB643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652B964D12BEC90B4A41B4D4EB45900D /* CTSlidingUpPanel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CTSlidingUpPanel/CTSlidingUpPanel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTSlidingUpPanel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTSlidingUpPanel/CTSlidingUpPanel.modulemap";
+				PRODUCT_NAME = CTSlidingUpPanel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		524411CDA500C40EBA9724A681D18A90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E902D51A87CE7965FD119008CE42104 /* Pods-CBC AR360UITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CBC AR360UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CBC AR360UITests/Pods-CBC AR360UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CBC_AR360UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59E77B5B4BA7E4556A69CE6867D4788D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8BCDBF936B3402AEC1028C75D5A6D89 /* Pods-CBC AR360Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CBC AR360Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CBC AR360Tests/Pods-CBC AR360Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CBC_AR360Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A122900DA6EE236A0FA8FF898933A8A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E212BD77FDF933B37A4B6D389ABBEF8E /* Pods-CBC AR360.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CBC AR360/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CBC AR360/Pods-CBC AR360.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CBC_AR360;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC296B7B3290FAB34068BBE15AF48CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6445C0E9F700FA36FF56759006D540E /* Pods-CBC AR360.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CBC AR360/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CBC AR360/Pods-CBC AR360.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CBC_AR360;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEE8238704625913DBD4EE8507D9350C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652B964D12BEC90B4A41B4D4EB45900D /* CTSlidingUpPanel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CTSlidingUpPanel/CTSlidingUpPanel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTSlidingUpPanel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTSlidingUpPanel/CTSlidingUpPanel.modulemap";
+				PRODUCT_NAME = CTSlidingUpPanel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC6C06BD0A727FC26CAEB1CBEF7D1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC8B3D7FB5287051A2C685FAE18E7C8 /* Pods-CBC AR360Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CBC AR360Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CBC AR360Tests/Pods-CBC AR360Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CBC_AR360Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8901F3805FAA8DB8A869040E3FC17819 /* Build configuration list for PBXNativeTarget "CTSlidingUpPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE8238704625913DBD4EE8507D9350C /* Debug */,
+				3EE3D2E5839DA682EDD3955EF0AEB643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B8AD3BD79910B827935C4BABA539AED /* Build configuration list for PBXNativeTarget "Pods-CBC AR360Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6C06BD0A727FC26CAEB1CBEF7D1848 /* Debug */,
+				59E77B5B4BA7E4556A69CE6867D4788D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6650B4BB47B4243462925552C862EBC /* Build configuration list for PBXNativeTarget "Pods-CBC AR360UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524411CDA500C40EBA9724A681D18A90 /* Debug */,
+				390DAEEA52A56984F3F2A4B97410CDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5184F518C96987B144F1A15A1C409B9 /* Build configuration list for PBXNativeTarget "Pods-CBC AR360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC296B7B3290FAB34068BBE15AF48CA0 /* Debug */,
+				A122900DA6EE236A0FA8FF898933A8A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
