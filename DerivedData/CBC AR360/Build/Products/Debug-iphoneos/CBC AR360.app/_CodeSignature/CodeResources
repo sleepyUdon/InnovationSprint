@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		FQ4lGfzpWmlNeyf2KklOAmSc2ic=
+		7REv6UfNSGDcpY3fCsvobQvalXg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-UKd-e1-rn0.nib</key>
 		<data>
-		l/F0f/j7FT6LIjazB03KvrAPFLE=
+		Nva5Jkq9DNayWD5xZbCGBFjk2vc=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		PenQlewnee8QeUDxDCULPCETTSE=
+		QrclIN9Xq9eOdKIcP7on2sQMV2E=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<data>
-		mVJUIPvpH+QYXVLMNI22KF73PyM=
+		3Jk2qaeqEga/UvgTvx+Io0LBLuc=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/Info.plist</key>
 		<data>
@@ -142,11 +142,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ChjV8kkn9gzbhVUZvqk8BQ2eAW4=
+		1yLhKgCPZXqN5oOoWDKF2P6J08M=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>StagApp-Bold.ttf</key>
+		<data>
+		cjKIkro5gVnRIpa0w/mTrPbGGlg=
+		</data>
+		<key>StagApp-Medium.ttf</key>
+		<data>
+		LbjfEzdCiRuXgMxigC1d/4fi4Ts=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -163,11 +171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FQ4lGfzpWmlNeyf2KklOAmSc2ic=
+			7REv6UfNSGDcpY3fCsvobQvalXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			pNveBC8sDUhxwzVKRM54iy+tCqmawJ5++V5FYYmCJPA=
+			XwRF8cfJGtlQromrM2mm7aQ1uWulfisED/PNnzZoSXQ=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -207,11 +215,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l/F0f/j7FT6LIjazB03KvrAPFLE=
+			Nva5Jkq9DNayWD5xZbCGBFjk2vc=
 			</data>
 			<key>hash2</key>
 			<data>
-			8o7/I1sAR4mzAM0ZLca6L57x9VMuzzlh42PdvNNw5qA=
+			34VeZMCK8rbpGBrLCQ6G+jNHtO44t2JwZGXaL3ryXHU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -229,22 +237,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PenQlewnee8QeUDxDCULPCETTSE=
+			QrclIN9Xq9eOdKIcP7on2sQMV2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			7AQxA1MdANA6vy1T8tevzjT8KpXHakjfalAg0kG4tOM=
+			41LypQcZgnGaTF70g8CIo/L4PXjqg1e1ir0yos8omWI=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mVJUIPvpH+QYXVLMNI22KF73PyM=
+			3Jk2qaeqEga/UvgTvx+Io0LBLuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			pGJ1Ty+pbUVX7L9mHvXxWBHGTa6ZLH0QKycGTyMGFl4=
+			vLwslga1UtThY7Re27YYHJhJgznlqHOTt7UEou8b6/Y=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/Info.plist</key>
@@ -531,6 +539,28 @@
 			<key>hash2</key>
 			<data>
 			eOYAGJ2kpL13Y/DmvnOLCeK9zIxWxfyp/p3TR+GcCRQ=
+			</data>
+		</dict>
+		<key>StagApp-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cjKIkro5gVnRIpa0w/mTrPbGGlg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZN7VlHiFdWJNQKmQv40x/EGMFyUzGktfsmc40Kco8/Q=
+			</data>
+		</dict>
+		<key>StagApp-Medium.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LbjfEzdCiRuXgMxigC1d/4fi4Ts=
+			</data>
+			<key>hash2</key>
+			<data>
+			vryvVaIp63Nz8OiCeiGj5zAlHrDbmhmA+IzmDFSrAH4=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

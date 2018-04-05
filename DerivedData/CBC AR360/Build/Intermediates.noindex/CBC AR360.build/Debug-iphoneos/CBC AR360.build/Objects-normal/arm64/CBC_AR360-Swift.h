@@ -289,19 +289,33 @@ SWIFT_CLASS("_TtC9CBC_AR36017SceneLocationView") SWIFT_AVAILABILITY(ios,introduc
 
 
 
-@class UIView;
-@class UISegmentedControl;
+
+SWIFT_CLASS("_TtC9CBC_AR36019StoryAnnotationNode")
+@interface StoryAnnotationNode : LocationNode
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class UIButton;
+@class UITouch;
+@class UIEvent;
 
 SWIFT_CLASS("_TtC9CBC_AR36014ViewController") SWIFT_AVAILABILITY(ios,introduced=11.0)
 @interface ViewController : UIViewController <MKMapViewDelegate>
 @property (nonatomic, weak) IBOutlet SceneLocationView * _Null_unspecified sceneLocationView;
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified bottomView;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
-@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedControl;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified mapButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified ARButton;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
-- (IBAction)handleSegmentedControls:(UISegmentedControl * _Nonnull)sender;
+- (IBAction)handleMapButon:(UIButton * _Nonnull)sender;
+- (IBAction)handleARButton:(UIButton * _Nonnull)sender;
+- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
+- (void)updateUserLocation;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

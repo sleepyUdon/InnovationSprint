@@ -78,7 +78,7 @@
                                         <rect key="frame" x="42" y="187" width="309" height="378"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yonge-and-elm-streets-shooting-bar" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-2S-lqo">
-                                                <rect key="frame" x="19" y="16" width="120" height="100"/>
+                                                <rect key="frame" x="19" y="72" width="120" height="100"/>
                                                 <color key="backgroundColor" white="0.64064911270000002" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="A2z-Dd-qHR"/>
@@ -91,19 +91,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 injured after overnight shooting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-Xl-Usm">
-                                                <rect key="frame" x="147" y="16" width="254" height="21"/>
+                                                <rect key="frame" x="147" y="72" width="121" height="27"/>
                                                 <fontDescription key="fontDescription" name="StagApp-Bold" family="Stag App" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The victims, a man and a woman in their 20s, are expected to survive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
-                                                <rect key="frame" x="147" y="43" width="130" height="21"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                <color key="textColor" red="0.49019607840000001" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5x2-Wf-ElZ">
-                                                <rect key="frame" x="19" y="132" width="258" height="160"/>
+                                                <rect key="frame" x="19" y="193" width="258" height="99"/>
                                                 <mutableString key="text">​Two people were injured in a shooting inside a downtown bar on Tuesday, according to Toronto police. 
 
 Officers responded to reports of gunfire in the area of Yonge and Elm streets at around 1:30 a.m. They arrived to find a man and a woman, both in their 20s, with gunshot wounds. 
@@ -121,17 +115,38 @@ Investigators are appealing for any witnesses.
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHU-xS-a3P">
+                                                <rect key="frame" x="28" y="8" width="240" height="27"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="4" id="Asa-aA-Q9s"/>
+                                                    <constraint firstAttribute="width" constant="150" id="etW-8I-sA4"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The victims, a man and a woman in their 20s, are expected to survive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
+                                                <rect key="frame" x="147" y="112" width="130" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" red="0.49019607840000001" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="5x2-Wf-ElZ" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="0s8-CT-uRe"/>
-                                            <constraint firstItem="XSR-2S-lqo" firstAttribute="top" secondItem="mos-xQ-f7g" secondAttribute="top" constant="16" id="7PF-Oa-q5l"/>
                                             <constraint firstItem="C0H-Xl-Usm" firstAttribute="leading" secondItem="XSR-2S-lqo" secondAttribute="trailing" constant="16" id="CVr-jQ-m6c"/>
+                                            <constraint firstItem="NHU-xS-a3P" firstAttribute="top" secondItem="mos-xQ-f7g" secondAttribute="top" constant="8" id="EQG-qp-JhF"/>
+                                            <constraint firstItem="NHU-xS-a3P" firstAttribute="centerX" secondItem="mos-xQ-f7g" secondAttribute="centerX" id="FZ3-7P-xHd"/>
                                             <constraint firstAttribute="trailing" secondItem="C0H-Xl-Usm" secondAttribute="trailing" constant="8" id="K4Z-NU-AeS"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5x2-Wf-ElZ" secondAttribute="bottom" constant="16" id="Moi-kC-3KI"/>
                                             <constraint firstAttribute="trailing" secondItem="cEH-ms-VxT" secondAttribute="trailing" constant="8" id="QQd-wM-Bue"/>
                                             <constraint firstAttribute="trailing" secondItem="5x2-Wf-ElZ" secondAttribute="trailing" constant="16" id="SbU-XG-GuE"/>
-                                            <constraint firstItem="C0H-Xl-Usm" firstAttribute="top" secondItem="mos-xQ-f7g" secondAttribute="top" constant="16" id="qvZ-y3-xAq"/>
+                                            <constraint firstItem="C0H-Xl-Usm" firstAttribute="top" secondItem="NHU-xS-a3P" secondAttribute="bottom" constant="24" id="c9d-SD-3Pv"/>
+                                            <constraint firstItem="XSR-2S-lqo" firstAttribute="top" secondItem="NHU-xS-a3P" secondAttribute="bottom" constant="24" id="nld-za-7ah"/>
                                             <constraint firstItem="cEH-ms-VxT" firstAttribute="top" secondItem="C0H-Xl-Usm" secondAttribute="bottom" constant="6" id="tvm-vG-N6E"/>
                                             <constraint firstItem="XSR-2S-lqo" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="vJw-f6-RBm"/>
                                             <constraint firstItem="5x2-Wf-ElZ" firstAttribute="top" secondItem="XSR-2S-lqo" secondAttribute="bottom" constant="16" id="vYj-82-aSP"/>

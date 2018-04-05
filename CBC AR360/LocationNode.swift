@@ -92,3 +92,76 @@ open class LocationAnnotationNode: LocationNode {
     }
 }
 
+class StoryAnnotationNode: LocationNode {
+    
+    public let text: String
+    public let deck: String
+    public let annotationNode: SCNNode
+    public var scaleRelativeToDistance = false
+    public let image: String
+    public let date: String
+    
+    public init(location: CLLocation?,text: String, deck: String, image: String, date: String) {
+        self.text = text
+        self.deck = deck
+        self.image = image
+        self.date = date
+        
+        let blackMaterial = SCNMaterial()
+        blackMaterial.diffuse.contents = UIColor.black
+        
+        let whiteMaterial = SCNMaterial()
+        whiteMaterial.diffuse.contents = UIColor.white
+        
+        let label = SCNText(string: text, extrusionDepth: 0.1)
+        label.font = UIFont(name: "StagApp-Medium", size: 3.0)
+        label.materials = [blackMaterial]
+        
+        annotationNode = SCNNode()
+        annotationNode.geometry = label
+        annotationNode.name = deck
+        
+        let plane = SCNPlane(width: 28, height: 5)
+        plane.materials = [whiteMaterial]
+        
+        let planeNode = SCNNode()
+        planeNode.geometry = plane
+        planeNode.position = SCNVector3Make(11, 2, -2)
+        planeNode.name = deck
+        
+        let sphere = SCNSphere(radius: 1.20)
+        sphere.firstMaterial!.diffuse.contents = UIColor.red
+        sphere.firstMaterial!.specular.contents = UIColor.white
+        
+        let sphereNode = SCNNode()
+        sphereNode.geometry = sphere
+        sphereNode.position = SCNVector3Make(-5, 2, 0)
+        sphereNode.name = deck
+        
+        let touchSphere = SCNSphere(radius: 10.0)
+        touchSphere.firstMaterial?.transparency = 0.0
+        
+        let touchSphereNode = SCNNode()
+        touchSphereNode.geometry = touchSphere
+        touchSphereNode.position = SCNVector3Make(3, 0, 0)
+        touchSphereNode.name = deck
+        
+        
+        super.init(location: location)
+        
+        let billboardConstraint = SCNBillboardConstraint()
+        billboardConstraint.freeAxes = SCNBillboardAxis.Y
+        constraints = [billboardConstraint]
+        
+        addChildNode(annotationNode)
+        addChildNode(sphereNode)
+        addChildNode(touchSphereNode)
+        addChildNode(planeNode)
+        
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+

@@ -4,7 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>StagApp-Medium.ttf</string>
+		<string>StagApp-Bold.ttf</string>
 	</array>
 </dict>
 </plist>
