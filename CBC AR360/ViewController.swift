@@ -17,10 +17,11 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     // Set up properties
     @IBOutlet weak var sceneLocationView: SceneLocationView!
-    @IBOutlet var bottomView: UIView!
+    @IBOutlet weak var bottomView: BottomView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var ARButton: UIButton!
+    @IBOutlet weak var containerView: UIView!
     
     var userAnnotation: MKPointAnnotation?
     var locationEstimateAnnotation: MKPointAnnotation?
@@ -29,6 +30,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var viewMode = "2D"
     var bottomController: CTBottomSlideController?
     var updateUserLocationTimer: Timer?
+    
+    var stories: [Story] = []
 
     
     
@@ -36,6 +39,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         
        self.viewMode = "2D"
+        self.containerView.isUserInteractionEnabled = false
         
         // Set up views
         setupBottomView()
@@ -43,37 +47,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         setupButton(button: self.ARButton)
         setupMapView()
         setupARView()
-        
-//        let pinCoordinate = CLLocationCoordinate2D(latitude: 43.64655, longitude: -79.4445287)
-//        let pinLocation = CLLocation(coordinate: pinCoordinate, altitude: 236)
-//        let pinImage = UIImage(named: "pin")!
-//        let pinLocationNode = LocationAnnotationNode(location: pinLocation, image: pinImage)
-//        sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinLocationNode)
-//        
-        let pinCoordinate2 = CLLocationCoordinate2D(latitude: 43.6469222, longitude: -79.4186588)
-        let pinLocation2 = CLLocation(coordinate: pinCoordinate2, altitude: 50)
-        let pinText2 = "#Apartments"
-        let pinLocationNode2 = StoryAnnotationNode(location: pinLocation2, text: pinText2, deck: "Couple has baby to get back at noisy neighbour", image: "Apartments", date: "15 May 2017")
-        sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinLocationNode2)
-        
-        let pinCoordinate3 = CLLocationCoordinate2D(latitude: 43.713303, longitude: -79.394958)
-        let pinLocation3 = CLLocation(coordinate: pinCoordinate3, altitude: 50)
-        let pinText3 = "#Craiglist"
-        let pinLocationNode3 = StoryAnnotationNode(location: pinLocation3, text: pinText3, deck: "Man gravely misunderstands Craigslist ad offering 'one nightstand'", image: "Craiglist", date: "15 April 2017")
-        sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinLocationNode3)
-        
-        let pinCoordinate4 = CLLocationCoordinate2D(latitude: 43.6373712, longitude: 79.427477)
-        let pinLocation4 = CLLocation(coordinate: pinCoordinate4, altitude: 50)
-        let pinText4 = "#InstagramKid"
-        let pinLocationNode4 = StoryAnnotationNode(location: pinLocation4, text: pinText4, deck: "Child sues parents for posting 'embarrassing' baby pictures on social media", image: "instagram-kid", date: "1 March 2017")
-        sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinLocationNode4)
-        
-        let pinCoordinate5 = CLLocationCoordinate2D(latitude: 43.6454625, longitude: -79.386103)
-        let pinLocation5 = CLLocation(coordinate: pinCoordinate5, altitude: 250)
-        let pinText5 = "#SharingIsCaring"
-        let pinLocationNode5 = StoryAnnotationNode(location: pinLocation5, text: pinText5, deck: "Man tries in vain to explain his nachos not for whole table",image: "nacho-sharing", date: "1 January 2017")
-        sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinLocationNode5)
-
+        setupStories()
+        createLocationNodesForMapView()
+        createLocationNodesForARView ()
         
         updateUserLocationTimer = Timer.scheduledTimer(
             timeInterval: 0.5,
@@ -97,12 +73,49 @@ class ViewController: UIViewController, MKMapViewDelegate {
         sceneLocationView.pause()
     }
 
+    // Load Stories
+    func setupStories(){
+        let story1 = Story(title: "#healthInspection", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.713303, longitude: -79.394958, icon: Icon.General)
+        stories.append(story1)
+        
+        let story2 = Story(title: "#stabbing", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6469222, longitude: -79.4186588, icon: Icon.General)
+        stories.append(story2)
+        
+        let story3 = Story(title: "#MTV", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6373712, longitude: -79.427477, icon: Icon.General)
+        stories.append(story3)
+        
+        let story4 = Story(title: "#YayoiKusama", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6454625, longitude: -79.386103, icon: Icon.General)
+        stories.append(story4)
+    }
     
-    // General setup
-
+    // Create all the nodes for the map view
+    func createLocationNodesForMapView(){
+        for story in stories {
+            let mapCLLocation = CLLocationCoordinate2D(latitude: story.latitude, longitude: story.longitude)
+            let mapStoryNode = StoryNode(title: story.title!, deck: story.deck, body: story.body, date: story.date, image: story.image, coordinate: mapCLLocation)
+            self.mapView.addAnnotation(mapStoryNode)
+        }
+    }
+    
+    // Create all the nodes for the AR View
+    func createLocationNodesForARView(){
+        for story in stories {
+            let ARCLLocation = CLLocation(coordinate: CLLocationCoordinate2D(latitude: story.latitude, longitude: story.longitude), altitude: story.altitude)
+            let pinMapLocationNode = LocationAnnotationNode(location: ARCLLocation, image: story.icon.image)
+            let textNode = StoryAnnotationNode(location: ARCLLocation, title: story.title!, deck: story.deck, date: story.date
+            , body: story.body, image: story.image)
+            sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinMapLocationNode)
+            sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: textNode)
+        }
+    }
+    
+    
+    // General UI setup
     func setupBottomView() {
-        bottomController = CTBottomSlideController(parent: view, bottomView: bottomView, tabController: self.tabBarController, navController: self.navigationController, visibleHeight: 134)
-        bottomController?.setAnchorPoint(anchor: 0.7)
+        bottomController = CTBottomSlideController(parent: view, bottomView: bottomView, tabController: nil, navController: nil, visibleHeight: 0)
+        bottomController?.delegate = self
+        bottomController?.setAnchorPoint(anchor: 0.8)
+        bottomController?.setExpandedTopMargin(pixels: 620)
         bottomView.layer.shadowColor = UIColor.gray.cgColor
         bottomView.layer.shadowOffset = CGSize(width: 0, height: -3)
         bottomView.layer.shadowOpacity = 0.2
@@ -121,10 +134,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     func showViewControllers() {
         if viewMode == "2D" {
+            self.mapButton.isHidden = true
+            self.ARButton.isHidden = false
             mapView.alpha = 1
             sceneLocationView.alpha = 0
         } else {
             mapView.alpha = 0
+            self.mapButton.isHidden = false
+            self.ARButton.isHidden = true
             sceneLocationView.alpha = 1
         }
     }
@@ -142,14 +159,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     
     // Buttons Actions
-
     @IBAction func handleMapButon(_ sender: UIButton) {
+        self.mapButton.isHidden = true
+        self.ARButton.isHidden = false
         self.viewMode = "2D"
         mapView.alpha = 1
         sceneLocationView.alpha = 0
     }
     
     @IBAction func handleARButton(_ sender: UIButton) {
+        self.mapButton.isHidden = false
+        self.ARButton.isHidden = true
         self.viewMode = "3D"
         mapView.alpha = 0
         sceneLocationView.alpha = 1
@@ -180,6 +200,18 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         return nil
     }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotationNode = view.annotation as? StoryNode {
+            self.bottomView.image.image = UIImage(named: annotationNode.image)
+            self.bottomView.title.text = annotationNode.title
+            self.bottomView.deck.text = annotationNode.deck
+            self.bottomView.body.text = annotationNode.body
+            self.bottomController?.expandPanel()
+            
+        }
+    }
+    
     
     @objc func updateUserLocation() {
         if let currentLocation = sceneLocationView.currentLocation() {
@@ -214,35 +246,57 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         
-        if let touch = touches.first {
-            if touch.view != nil {
-                if (mapView == touch.view! ||
-                    mapView.recursiveSubviews().contains(touch.view!)) {
-                    centerMapOnUserLocation = false
-                } else {
-                    
-                    let location = touch.location(in: self.view)
-                    
-                    if location.x <= 40 && adjustNorthByTappingSidesOfScreen {
-                        print("left side of the screen")
-                        sceneLocationView.moveSceneHeadingAntiClockwise()
-                    } else if location.x >= view.frame.size.width - 40 && adjustNorthByTappingSidesOfScreen {
-                        print("right side of the screen")
-                        sceneLocationView.moveSceneHeadingClockwise()
-                    } else {
-                        let image = UIImage(named: "pin")!
-                        let annotationNode = LocationAnnotationNode(location: nil, image: image)
-                        annotationNode.scaleRelativeToDistance = true
-                        sceneLocationView.addLocationNodeForCurrentPosition(locationNode: annotationNode)
-                    }
-                }
-            }
+        // expand storyview
+        
+        let touch = touches.first
+        var initialTouchLocation = CGPoint()
+        initialTouchLocation = (touch?.location(in: sceneLocationView))!
+        
+        var hitTestOptions = [SCNHitTestOption: Any]()
+        let results: [SCNHitTestResult] = sceneLocationView.hitTest(initialTouchLocation, options: hitTestOptions)
+        for result in results {
+            print(result)
+            //            if VirtualObject.isNodePartOfVirtualObject(result.node) {
+            //                firstTouchWasOnObject = true
+            //                break
+            print("something touched")
+            
+            let parentNode = result.node.parent as! StoryAnnotationNode
+            self.bottomView.image.image = UIImage(named: parentNode.image)
+            self.bottomView.title.text = parentNode.title
+            self.bottomView.deck.text = parentNode.deck
+            self.bottomView.body.text = parentNode.body
+            self.bottomController?.expandPanel()
+            
         }
     }
-    
-    
-    
-}
+
+//        if let touch = touches.first {
+//            if touch.view != nil {
+//                if (mapView == touch.view! ||
+//                    mapView.recursiveSubviews().contains(touch.view!)) {
+//                    centerMapOnUserLocation = false
+//                } else {
+//
+//                    let location = touch.location(in: self.view)
+//
+//                    if location.x <= 40 && adjustNorthByTappingSidesOfScreen {
+//                        print("left side of the screen")
+//                        sceneLocationView.moveSceneHeadingAntiClockwise()
+//                    } else if location.x >= view.frame.size.width - 40 && adjustNorthByTappingSidesOfScreen {
+//                        print("right side of the screen")
+//                        sceneLocationView.moveSceneHeadingClockwise()
+//                    } else {
+//                        let image = UIImage(named: "pin")!
+//                        let annotationNode = LocationAnnotationNode(location: nil, image: image)
+//                        annotationNode.scaleRelativeToDistance = true
+//                        sceneLocationView.addLocationNodeForCurrentPosition(locationNode: annotationNode)
+//                    }
+//                }
+//            }
+//        }
+    }
+
 
 
 
@@ -270,11 +324,15 @@ extension ViewController: SceneLocationViewDelegate {
 extension ViewController: CTBottomSlideDelegate {
     
     func didPanelCollapse(){
-        
+        self.mapView.alpha = 1
+        self.mapView.isUserInteractionEnabled = true
+        self.containerView.isUserInteractionEnabled = false
     }
     
     func didPanelExpand(){
-        
+        self.mapView.alpha = 0.3
+        self.mapView.isUserInteractionEnabled = false
+        self.containerView.isUserInteractionEnabled = true
     }
     
     func didPanelAnchor(){

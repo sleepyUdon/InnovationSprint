@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		7REv6UfNSGDcpY3fCsvobQvalXg=
+		ZDmeuTW4rFjD/4LhWeu9bFffi8w=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-UKd-e1-rn0.nib</key>
 		<data>
-		Nva5Jkq9DNayWD5xZbCGBFjk2vc=
+		Gvaxd/AiYXhk9ue4uMPyc/Va3M4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		QrclIN9Xq9eOdKIcP7on2sQMV2E=
+		5UVInvnJ6ZM2qna2jxyGRJk+q1w=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<data>
-		3Jk2qaeqEga/UvgTvx+Io0LBLuc=
+		fOSFE4wHt92hr6Il4jnc3PAoXro=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/Info.plist</key>
 		<data>
@@ -171,11 +171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7REv6UfNSGDcpY3fCsvobQvalXg=
+			ZDmeuTW4rFjD/4LhWeu9bFffi8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			XwRF8cfJGtlQromrM2mm7aQ1uWulfisED/PNnzZoSXQ=
+			OIHpu4f6nigtpk1js04HMO3diew02txcD4bQYY9c3d4=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -215,11 +215,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Nva5Jkq9DNayWD5xZbCGBFjk2vc=
+			Gvaxd/AiYXhk9ue4uMPyc/Va3M4=
 			</data>
 			<key>hash2</key>
 			<data>
-			34VeZMCK8rbpGBrLCQ6G+jNHtO44t2JwZGXaL3ryXHU=
+			ZzOEWsY40cXwNFxM/2cK08FxkMFqQ1i2Hl7A6TohBsI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -237,22 +237,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QrclIN9Xq9eOdKIcP7on2sQMV2E=
+			5UVInvnJ6ZM2qna2jxyGRJk+q1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			41LypQcZgnGaTF70g8CIo/L4PXjqg1e1ir0yos8omWI=
+			v1cA5TkObfQ0UtOlDj55MO8KFFwW90K0WSOUwbKpMG4=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Jk2qaeqEga/UvgTvx+Io0LBLuc=
+			fOSFE4wHt92hr6Il4jnc3PAoXro=
 			</data>
 			<key>hash2</key>
 			<data>
-			vLwslga1UtThY7Re27YYHJhJgznlqHOTt7UEou8b6/Y=
+			3/pE7/tRSaWrYbW9/cKR4L3D/lIStJC1BeFl1bpHrpg=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/Info.plist</key>

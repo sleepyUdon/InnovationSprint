@@ -173,13 +173,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 @import CoreLocation;
 @import SceneKit;
 @import ObjectiveC;
-@import MapKit;
 @import ARKit;
-@import CoreGraphics;
 @import Foundation;
+@import MapKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -191,17 +191,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wnullability"
 
 SWIFT_MODULE_NAMESPACE_PUSH("CBC_AR360")
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC9CBC_AR36016ARViewController")
-@interface ARViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIWindow;
 @class UIApplication;
 
@@ -215,6 +204,20 @@ SWIFT_CLASS("_TtC9CBC_AR36011AppDelegate")
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+@class UIImageView;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9CBC_AR36010BottomView")
+@interface BottomView : UIView
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified deck;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified body;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -250,22 +253,6 @@ SWIFT_CLASS("_TtC9CBC_AR36015LocationManager")
 @end
 
 
-@class MKMapView;
-@protocol MKAnnotation;
-@class MKAnnotationView;
-
-SWIFT_CLASS("_TtC9CBC_AR36017MapViewController")
-@interface MapViewController : UIViewController <MKMapViewDelegate>
-@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)viewDidLayoutSubviews;
-- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 
 @protocol SCNSceneRenderer;
@@ -296,24 +283,37 @@ SWIFT_CLASS("_TtC9CBC_AR36019StoryAnnotationNode")
 @end
 
 
+SWIFT_CLASS("_TtC9CBC_AR3609StoryNode")
+@interface StoryNode : NSObject <MKAnnotation>
+@property (nonatomic, readonly, copy) NSString * _Nullable title;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
 
+
+
+@class MKMapView;
 @class UIButton;
+@class MKAnnotationView;
 @class UITouch;
 @class UIEvent;
+@class NSBundle;
 
 SWIFT_CLASS("_TtC9CBC_AR36014ViewController") SWIFT_AVAILABILITY(ios,introduced=11.0)
 @interface ViewController : UIViewController <MKMapViewDelegate>
 @property (nonatomic, weak) IBOutlet SceneLocationView * _Null_unspecified sceneLocationView;
-@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified bottomView;
+@property (nonatomic, weak) IBOutlet BottomView * _Null_unspecified bottomView;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified mapButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified ARButton;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)handleMapButon:(UIButton * _Nonnull)sender;
 - (IBAction)handleARButton:(UIButton * _Nonnull)sender;
 - (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
+- (void)mapView:(MKMapView * _Nonnull)mapView didSelectAnnotationView:(MKAnnotationView * _Nonnull)view;
 - (void)updateUserLocation;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

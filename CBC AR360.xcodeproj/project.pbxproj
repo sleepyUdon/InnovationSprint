@@ -10,13 +10,14 @@
 		688A9DCD5999470D02AFD295 /* Pods_CBC_AR360Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2354A9C39920E102B5FDAD89 /* Pods_CBC_AR360Tests.framework */; };
 		7C0619242075B61300011AAD /* StagApp-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0619222075B41E00011AAD /* StagApp-Bold.ttf */; };
 		7C0619252075B61300011AAD /* StagApp-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0619212075B41D00011AAD /* StagApp-Medium.ttf */; };
+		7C0619272076715100011AAD /* StoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0619262076715100011AAD /* StoryNode.swift */; };
+		7C06192A207680E200011AAD /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C061929207680E200011AAD /* Story.swift */; };
+		7C06192C2076951000011AAD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06192B2076951000011AAD /* BottomView.swift */; };
 		7C48011C2075447B00749701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48011B2075447B00749701 /* AppDelegate.swift */; };
 		7C4801222075447B00749701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801212075447B00749701 /* ViewController.swift */; };
 		7C4801252075447B00749701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4801232075447B00749701 /* Main.storyboard */; };
 		7C4801272075447B00749701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4801262075447B00749701 /* Assets.xcassets */; };
 		7C48012A2075447B00749701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4801282075447B00749701 /* LaunchScreen.storyboard */; };
-		7C4801542075503D00749701 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801532075503D00749701 /* MapViewController.swift */; };
-		7C4801562075504B00749701 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801552075504B00749701 /* ARViewController.swift */; };
 		7C48015A2075A3DB00749701 /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801592075A3DB00749701 /* SceneLocationView.swift */; };
 		7C48015C2075A5A900749701 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48015B2075A5A900749701 /* LocationNode.swift */; };
 		7C48015F2075A5FC00749701 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48015E2075A5FC00749701 /* SceneLocationEstimate.swift */; };
@@ -57,6 +58,9 @@
 		750E418DF98F1211A471106F /* Pods-CBC AR360Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBC AR360Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CBC AR360Tests/Pods-CBC AR360Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7C0619212075B41D00011AAD /* StagApp-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "StagApp-Medium.ttf"; sourceTree = "<group>"; };
 		7C0619222075B41E00011AAD /* StagApp-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "StagApp-Bold.ttf"; sourceTree = "<group>"; };
+		7C0619262076715100011AAD /* StoryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryNode.swift; sourceTree = "<group>"; };
+		7C061929207680E200011AAD /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		7C06192B2076951000011AAD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		7C4801182075447B00749701 /* CBC AR360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CBC AR360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C48011B2075447B00749701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C4801212075447B00749701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +72,6 @@
 		7C4801362075447B00749701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C48013B2075447B00749701 /* CBC AR360UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBC AR360UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4801412075447B00749701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C4801532075503D00749701 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		7C4801552075504B00749701 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		7C4801592075A3DB00749701 /* SceneLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
 		7C48015B2075A5A900749701 /* LocationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
 		7C48015E2075A5FC00749701 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,15 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		7C0619282076716D00011AAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C0619262076715100011AAD /* StoryNode.swift */,
+				7C061929207680E200011AAD /* Story.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		7C48010F2075447B00749701 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				7C48011B2075447B00749701 /* AppDelegate.swift */,
+				7C06192B2076951000011AAD /* BottomView.swift */,
+				7C0619282076716D00011AAD /* Model */,
 				7C0619232075B42200011AAD /* Fonts */,
 				7C48015D2075A5EC00749701 /* ArKit */,
 				7C4801522075501F00749701 /* ViewControllers */,
@@ -197,8 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				7C4801212075447B00749701 /* ViewController.swift */,
-				7C4801532075503D00749701 /* MapViewController.swift */,
-				7C4801552075504B00749701 /* ARViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -529,15 +540,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C48015C2075A5A900749701 /* LocationNode.swift in Sources */,
+				7C0619272076715100011AAD /* StoryNode.swift in Sources */,
 				7C4801652075A64400749701 /* CLLocation+Extensions.swift in Sources */,
 				7C48015A2075A3DB00749701 /* SceneLocationView.swift in Sources */,
 				7C4801222075447B00749701 /* ViewController.swift in Sources */,
 				7C48016B2075A68200749701 /* CGPoint+Extensions.swift in Sources */,
-				7C4801542075503D00749701 /* MapViewController.swift in Sources */,
 				7C4801692075A66E00749701 /* FloatingPoint+Radians.swift in Sources */,
+				7C06192A207680E200011AAD /* Story.swift in Sources */,
 				7C48015F2075A5FC00749701 /* SceneLocationEstimate.swift in Sources */,
+				7C06192C2076951000011AAD /* BottomView.swift in Sources */,
 				7C48011C2075447B00749701 /* AppDelegate.swift in Sources */,
-				7C4801562075504B00749701 /* ARViewController.swift in Sources */,
 				7C4801612075A61800749701 /* SceneLocationEstimate+Extensions.swift in Sources */,
 				7C4801632075A62D00749701 /* LocationManager.swift in Sources */,
 				7C48016D2075A6A300749701 /* SCNNode+Extensions.swift in Sources */,

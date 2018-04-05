@@ -71,7 +71,7 @@ open class LocationAnnotationNode: LocationNode {
     public init(location: CLLocation?, image: UIImage) {
         self.image = image
         
-        let plane = SCNPlane(width: image.size.width / 100, height: image.size.height / 100)
+        let plane = SCNPlane(width: image.size.width / 500, height: image.size.height / 500)
         plane.firstMaterial!.diffuse.contents = image
         plane.firstMaterial!.lightingModel = .constant
         
@@ -94,18 +94,24 @@ open class LocationAnnotationNode: LocationNode {
 
 class StoryAnnotationNode: LocationNode {
     
-    public let text: String
+    public let title: String
     public let deck: String
-    public let annotationNode: SCNNode
-    public var scaleRelativeToDistance = false
-    public let image: String
     public let date: String
+    public let body: String
+    public let image: String
+
     
-    public init(location: CLLocation?,text: String, deck: String, image: String, date: String) {
-        self.text = text
+    
+    public var scaleRelativeToDistance = false
+    public let annotationNode: SCNNode
+    
+    public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: String) {
+        self.title = title
         self.deck = deck
-        self.image = image
         self.date = date
+        self.body = body
+        self.image = image
+
         
         let blackMaterial = SCNMaterial()
         blackMaterial.diffuse.contents = UIColor.black
@@ -113,13 +119,12 @@ class StoryAnnotationNode: LocationNode {
         let whiteMaterial = SCNMaterial()
         whiteMaterial.diffuse.contents = UIColor.white
         
-        let label = SCNText(string: text, extrusionDepth: 0.1)
+        let label = SCNText(string: title, extrusionDepth: 0.1)
         label.font = UIFont(name: "StagApp-Medium", size: 3.0)
         label.materials = [blackMaterial]
         
         annotationNode = SCNNode()
         annotationNode.geometry = label
-        annotationNode.name = deck
         
         let plane = SCNPlane(width: 28, height: 5)
         plane.materials = [whiteMaterial]
@@ -127,7 +132,6 @@ class StoryAnnotationNode: LocationNode {
         let planeNode = SCNNode()
         planeNode.geometry = plane
         planeNode.position = SCNVector3Make(11, 2, -2)
-        planeNode.name = deck
         
         let sphere = SCNSphere(radius: 1.20)
         sphere.firstMaterial!.diffuse.contents = UIColor.red
@@ -136,7 +140,6 @@ class StoryAnnotationNode: LocationNode {
         let sphereNode = SCNNode()
         sphereNode.geometry = sphere
         sphereNode.position = SCNVector3Make(-5, 2, 0)
-        sphereNode.name = deck
         
         let touchSphere = SCNSphere(radius: 10.0)
         touchSphere.firstMaterial?.transparency = 0.0
@@ -144,7 +147,6 @@ class StoryAnnotationNode: LocationNode {
         let touchSphereNode = SCNNode()
         touchSphereNode.geometry = touchSphere
         touchSphereNode.position = SCNVector3Make(3, 0, 0)
-        touchSphereNode.name = deck
         
         
         super.init(location: location)
