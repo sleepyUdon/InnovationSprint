@@ -15,7 +15,7 @@ class StoryNode: NSObject, MKAnnotation {
     let deck: String
     let body: String
     let date: String
-    let image: String
+    let image: String?
     let coordinate: CLLocationCoordinate2D
     
     init(title: String, deck: String, body: String, date: String, image: String, coordinate: CLLocationCoordinate2D) {

@@ -167,4 +167,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "4ad320ea8eed82fb863a158469b32602"
+interface-hash: "d3b9a2816eaf09662e310359cf4fe85f"

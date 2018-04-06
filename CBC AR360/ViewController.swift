@@ -75,25 +75,43 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     // Load Stories
     func setupStories(){
-        let story1 = Story(title: "#healthInspection", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.713303, longitude: -79.394958, icon: Icon.General)
+        let story1 = Story(title: "#healthInspection", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.713303, longitude: -79.394958, icon: Icon.General, type: Type.Story, url: nil)
         stories.append(story1)
         
-        let story2 = Story(title: "#stabbing", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6469222, longitude: -79.4186588, icon: Icon.General)
+        let story2 = Story(title: "#stabbing", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6469222, longitude: -79.4186588, icon: Icon.General, type: Type.Story, url: nil)
         stories.append(story2)
         
-        let story3 = Story(title: "#MTV", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6373712, longitude: -79.427477, icon: Icon.General)
+        let story3 = Story(title: "#MTV", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6373712, longitude: -79.427477, icon: Icon.General, type: Type.Story, url: nil)
         stories.append(story3)
         
-        let story4 = Story(title: "#YayoiKusama", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6454625, longitude: -79.386103, icon: Icon.General)
+        let story4 = Story(title: "#YayoiKusama", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6454625, longitude: -79.386103, icon: Icon.General, type: Type.Story, url: nil)
         stories.append(story4)
+        
+        let story5 = Story(title: "#YayoiKusama", deck: "deck", body: "story", date: "date", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.652397, longitude: -79.412082, icon: Icon.General, type: Type.ARPhoto, url: "http://1.151.236.12/ar360/")
+        stories.append(story5)
     }
     
     // Create all the nodes for the map view
     func createLocationNodesForMapView(){
         for story in stories {
             let mapCLLocation = CLLocationCoordinate2D(latitude: story.latitude, longitude: story.longitude)
-            let mapStoryNode = StoryNode(title: story.title!, deck: story.deck, body: story.body, date: story.date, image: story.image, coordinate: mapCLLocation)
-            self.mapView.addAnnotation(mapStoryNode)
+            
+            switch story.type {
+            case .Story:
+                if let title = story.title {
+                    let mapStoryNode = StoryNode(title: title, deck: story.deck, body: story.body, date: story.date, image: story.image, coordinate: mapCLLocation)
+                    self.mapView.addAnnotation(mapStoryNode)
+                }
+                
+                
+            case .ARVideo, .ARPhoto:
+                if let title = story.title, let url = story.url {
+                    let mapStoryNode = ARMediaNode(title: title, url: url, type: story.type, coordinate: mapCLLocation)
+                    self.mapView.addAnnotation(mapStoryNode)
+                } else {
+                    //TODO: prompt error message
+                }
+            }
         }
     }
     
@@ -203,12 +221,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let annotationNode = view.annotation as? StoryNode {
-            self.bottomView.image.image = UIImage(named: annotationNode.image)
+            self.bottomView.image.image = UIImage(named: annotationNode.image!)
             self.bottomView.title.text = annotationNode.title
             self.bottomView.deck.text = annotationNode.deck
             self.bottomView.body.text = annotationNode.body
             self.bottomController?.expandPanel()
-            
+        } else if let annotationNode = view.annotation as? ARMediaNode {
+            let storyboard = UIStoryboard(name: "ARViewController", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "ARViewController")
+            self.present(controller, animated: true, completion: nil)
         }
     }
     
@@ -261,13 +282,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
             //                break
             print("something touched")
             
-            let parentNode = result.node.parent as! StoryAnnotationNode
-            self.bottomView.image.image = UIImage(named: parentNode.image)
-            self.bottomView.title.text = parentNode.title
-            self.bottomView.deck.text = parentNode.deck
-            self.bottomView.body.text = parentNode.body
-            self.bottomController?.expandPanel()
-            
+            if let parentNode = result.node.parent as? StoryAnnotationNode {
+                self.bottomView.image.image = UIImage(named: parentNode.image)
+                self.bottomView.title.text = parentNode.title
+                self.bottomView.deck.text = parentNode.deck
+                self.bottomView.body.text = parentNode.body
+                self.bottomController?.expandPanel()
+            }
         }
     }
 

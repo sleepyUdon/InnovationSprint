@@ -172,14 +172,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import ObjectiveC;
+@import MapKit;
+@import CoreLocation;
 @import UIKit;
 @import CoreGraphics;
-@import CoreLocation;
 @import SceneKit;
-@import ObjectiveC;
 @import ARKit;
 @import Foundation;
-@import MapKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -191,6 +191,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wnullability"
 
 SWIFT_MODULE_NAMESPACE_PUSH("CBC_AR360")
+
+SWIFT_CLASS("_TtC9CBC_AR36011ARMediaNode")
+@interface ARMediaNode : NSObject <MKAnnotation>
+@property (nonatomic, readonly, copy) NSString * _Nullable title;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9CBC_AR36016ARViewController")
+@interface ARViewController : UIViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -208,7 +225,6 @@ SWIFT_CLASS("_TtC9CBC_AR36011AppDelegate")
 
 @class UILabel;
 @class UIImageView;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC9CBC_AR36010BottomView")
 @interface BottomView : UIView
@@ -297,7 +313,6 @@ SWIFT_CLASS("_TtC9CBC_AR3609StoryNode")
 @class MKAnnotationView;
 @class UITouch;
 @class UIEvent;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC9CBC_AR36014ViewController") SWIFT_AVAILABILITY(ios,introduced=11.0)
 @interface ViewController : UIViewController <MKMapViewDelegate>

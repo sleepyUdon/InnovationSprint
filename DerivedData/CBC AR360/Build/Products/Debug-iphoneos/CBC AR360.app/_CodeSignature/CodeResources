@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-imo-Il-BN1.nib</key>
+		<data>
+		cUG5mYqG57PA5aCYiuIIVX9ibOk=
+		</data>
+		<key>ARViewController.storyboardc/ARViewController.nib</key>
+		<data>
+		OrBRnAS3i4X/LBDO8zHs4Jpkoz0=
+		</data>
+		<key>ARViewController.storyboardc/Info.plist</key>
+		<data>
+		KAdPU5WpboTotSbGsaZ+HOofkew=
+		</data>
 		<key>Assets.car</key>
 		<data>
 		ZDmeuTW4rFjD/4LhWeu9bFffi8w=
@@ -167,6 +179,39 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-imo-Il-BN1.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cUG5mYqG57PA5aCYiuIIVX9ibOk=
+			</data>
+			<key>hash2</key>
+			<data>
+			AksyJPHB3w+nQLVVxNgvN8VOef9dF3leViPZ8TppMXo=
+			</data>
+		</dict>
+		<key>ARViewController.storyboardc/ARViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OrBRnAS3i4X/LBDO8zHs4Jpkoz0=
+			</data>
+			<key>hash2</key>
+			<data>
+			D3vdiAi0xEaggaou9ArnVElqEH4Xn1F9BUW/pnFK3AY=
+			</data>
+		</dict>
+		<key>ARViewController.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KAdPU5WpboTotSbGsaZ+HOofkew=
+			</data>
+			<key>hash2</key>
+			<data>
+			KAw4SFN38aL2ijEXVSv2FZWKkZphSJ8UNuKwnjaomCw=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash</key>

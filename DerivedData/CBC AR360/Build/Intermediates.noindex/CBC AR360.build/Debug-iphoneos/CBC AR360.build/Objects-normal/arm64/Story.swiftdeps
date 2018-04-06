@@ -2,12 +2,15 @@
 provides-top-level:
 - "Story"
 - "Icon"
+- "Type"
 provides-nominal:
 - "9CBC_AR3605StoryV"
 - "9CBC_AR3604IconO"
+- "9CBC_AR3604TypeO"
 provides-member:
 - ["9CBC_AR3605StoryV", ""]
 - ["9CBC_AR3604IconO", ""]
+- ["9CBC_AR3604TypeO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
@@ -17,6 +20,7 @@ depends-top-level:
 - "Story"
 - "String"
 - "StringLiteralType"
+- "Type"
 - "UIImage"
 - !private "_ImageLiteralType"
 - !private "~="
@@ -101,6 +105,7 @@ depends-member:
 - ["9CBC_AR3605StoryV", "Double"]
 - ["9CBC_AR3605StoryV", "Icon"]
 - ["9CBC_AR3605StoryV", "String"]
+- ["9CBC_AR3605StoryV", "Type"]
 - ["9CBC_AR3605StoryV", "altitude"]
 - ["9CBC_AR3605StoryV", "body"]
 - ["9CBC_AR3605StoryV", "date"]
@@ -111,11 +116,21 @@ depends-member:
 - ["9CBC_AR3605StoryV", "latitude"]
 - ["9CBC_AR3605StoryV", "longitude"]
 - ["9CBC_AR3605StoryV", "title"]
+- ["9CBC_AR3605StoryV", "type"]
+- ["9CBC_AR3605StoryV", "url"]
 - !private ["s10StrideableP", "hashValue"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
+- ["9CBC_AR3604TypeO", "ARPhoto"]
+- ["9CBC_AR3604TypeO", "ARVideo"]
+- ["9CBC_AR3604TypeO", "RawValue"]
+- ["9CBC_AR3604TypeO", "Story"]
+- ["9CBC_AR3604TypeO", "deinit"]
+- ["9CBC_AR3604TypeO", "hashValue"]
+- ["9CBC_AR3604TypeO", "init"]
+- ["9CBC_AR3604TypeO", "rawValue"]
 - ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -180,6 +195,7 @@ depends-nominal:
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
+- "9CBC_AR3604TypeO"
 - "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -227,4 +243,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "cd402ac8d04435ce0d86c165c4aa5269"
+interface-hash: "172fd3da967488d9e4fa6ac74522d860"

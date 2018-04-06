@@ -20,6 +20,8 @@ struct Story {
     let longitude: Double
     let altitude: Double = 50.0
     let icon: Icon
+    let type: Type
+    let url: String?
 }
 
 enum Icon: String {
@@ -28,10 +30,15 @@ enum Icon: String {
     var image: UIImage {
         switch self {
         case .General: return #imageLiteral(resourceName: "pin")
-            
-            
         }
     }
+}
+
+enum Type: String {
+    case Story
+    case ARVideo
+    case ARPhoto
     
 }
+
 

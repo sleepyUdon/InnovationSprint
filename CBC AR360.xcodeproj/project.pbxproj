@@ -13,6 +13,9 @@
 		7C0619272076715100011AAD /* StoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0619262076715100011AAD /* StoryNode.swift */; };
 		7C06192A207680E200011AAD /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C061929207680E200011AAD /* Story.swift */; };
 		7C06192C2076951000011AAD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06192B2076951000011AAD /* BottomView.swift */; };
+		7C06192E2076FEFC00011AAD /* ARMediaNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06192D2076FEFC00011AAD /* ARMediaNode.swift */; };
+		7C061930207705B700011AAD /* ARViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C06192F207705B700011AAD /* ARViewController.storyboard */; };
+		7C061932207705D200011AAD /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C061931207705D200011AAD /* ARViewController.swift */; };
 		7C48011C2075447B00749701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48011B2075447B00749701 /* AppDelegate.swift */; };
 		7C4801222075447B00749701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4801212075447B00749701 /* ViewController.swift */; };
 		7C4801252075447B00749701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4801232075447B00749701 /* Main.storyboard */; };
@@ -61,6 +64,9 @@
 		7C0619262076715100011AAD /* StoryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryNode.swift; sourceTree = "<group>"; };
 		7C061929207680E200011AAD /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		7C06192B2076951000011AAD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		7C06192D2076FEFC00011AAD /* ARMediaNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMediaNode.swift; sourceTree = "<group>"; };
+		7C06192F207705B700011AAD /* ARViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARViewController.storyboard; sourceTree = "<group>"; };
+		7C061931207705D200011AAD /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		7C4801182075447B00749701 /* CBC AR360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CBC AR360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C48011B2075447B00749701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C4801212075447B00749701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7C0619262076715100011AAD /* StoryNode.swift */,
+				7C06192D2076FEFC00011AAD /* ARMediaNode.swift */,
 				7C061929207680E200011AAD /* Story.swift */,
 			);
 			name = Model;
@@ -202,6 +209,7 @@
 			children = (
 				7C4801282075447B00749701 /* LaunchScreen.storyboard */,
 				7C4801232075447B00749701 /* Main.storyboard */,
+				7C06192F207705B700011AAD /* ARViewController.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				7C4801212075447B00749701 /* ViewController.swift */,
+				7C061931207705D200011AAD /* ARViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -364,6 +373,7 @@
 				7C0619252075B61300011AAD /* StagApp-Medium.ttf in Resources */,
 				7C48012A2075447B00749701 /* LaunchScreen.storyboard in Resources */,
 				7C4801272075447B00749701 /* Assets.xcassets in Resources */,
+				7C061930207705B700011AAD /* ARViewController.storyboard in Resources */,
 				7C4801252075447B00749701 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,11 +556,13 @@
 				7C4801222075447B00749701 /* ViewController.swift in Sources */,
 				7C48016B2075A68200749701 /* CGPoint+Extensions.swift in Sources */,
 				7C4801692075A66E00749701 /* FloatingPoint+Radians.swift in Sources */,
+				7C06192E2076FEFC00011AAD /* ARMediaNode.swift in Sources */,
 				7C06192A207680E200011AAD /* Story.swift in Sources */,
 				7C48015F2075A5FC00749701 /* SceneLocationEstimate.swift in Sources */,
 				7C06192C2076951000011AAD /* BottomView.swift in Sources */,
 				7C48011C2075447B00749701 /* AppDelegate.swift in Sources */,
 				7C4801612075A61800749701 /* SceneLocationEstimate+Extensions.swift in Sources */,
+				7C061932207705D200011AAD /* ARViewController.swift in Sources */,
 				7C4801632075A62D00749701 /* LocationManager.swift in Sources */,
 				7C48016D2075A6A300749701 /* SCNNode+Extensions.swift in Sources */,
 				7C4801672075A65700749701 /* SCNVector3+Extensions.swift in Sources */,
