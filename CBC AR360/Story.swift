@@ -25,11 +25,17 @@ struct Story {
 }
 
 enum Icon: String {
-    case General
+    case Location
+    case Breaking
+    case AR
+    case Sports
     
     var image: UIImage {
         switch self {
-        case .General: return #imageLiteral(resourceName: "pin")
+        case .Location: return #imageLiteral(resourceName: "i_location")
+        case .Breaking: return #imageLiteral(resourceName: "i_breaking")
+        case .AR: return #imageLiteral(resourceName: "i_360")
+        case .Sports: return #imageLiteral(resourceName: "i_360")
         }
     }
 }

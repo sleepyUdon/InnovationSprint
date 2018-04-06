@@ -55,7 +55,6 @@ depends-top-level:
 - "MKMapViewDelegate"
 - !private "MKMarkerAnnotationView"
 - "MKPointAnnotation"
-- !private "MKUserLocation"
 - !private "NSEC_PER_SEC"
 - !private "SCNHitTestOption"
 - !private "SCNHitTestResult"
@@ -82,6 +81,8 @@ depends-top-level:
 - "UIViewController"
 - "ViewController"
 - "Void"
+- !private "_ColorLiteralType"
+- !private "_ImageLiteralType"
 - !private "print"
 depends-member:
 - !private ["9CBC_AR36011ARMediaNodeC", "deinit"]
@@ -659,6 +660,7 @@ depends-member:
 - !private ["s9EquatableP", "ARMediaNode"]
 - ["s9EquatableP", "ARPhoto"]
 - ["s9EquatableP", "ARVideo"]
+- !private ["s9EquatableP", "Breaking"]
 - !private ["s9EquatableP", "CGPoint"]
 - !private ["s9EquatableP", "CGSize"]
 - !private ["s9EquatableP", "CLLocation"]
@@ -667,15 +669,16 @@ depends-member:
 - !private ["s9EquatableP", "DispatchQueue"]
 - !private ["s9EquatableP", "DispatchTime"]
 - !private ["s9EquatableP", "Double"]
-- !private ["s9EquatableP", "General"]
 - !private ["s9EquatableP", "Icon"]
 - !private ["s9EquatableP", "Int64"]
+- !private ["s9EquatableP", "Location"]
 - !private ["s9EquatableP", "LocationAnnotationNode"]
 - !private ["s9EquatableP", "MKCoordinateSpan"]
 - !private ["s9EquatableP", "MKMarkerAnnotationView"]
 - !private ["s9EquatableP", "MKPointAnnotation"]
 - !private ["s9EquatableP", "NSEC_PER_SEC"]
 - !private ["s9EquatableP", "SCNHitTestOption"]
+- !private ["s9EquatableP", "Sports"]
 - ["s9EquatableP", "Story"]
 - !private ["s9EquatableP", "StoryAnnotationNode"]
 - !private ["s9EquatableP", "StoryNode"]
@@ -802,6 +805,7 @@ depends-member:
 - !private ["s8HashableP", "ARMediaNode"]
 - ["s8HashableP", "ARPhoto"]
 - ["s8HashableP", "ARVideo"]
+- !private ["s8HashableP", "Breaking"]
 - !private ["s8HashableP", "CGPoint"]
 - !private ["s8HashableP", "CGSize"]
 - !private ["s8HashableP", "CLLocation"]
@@ -810,15 +814,16 @@ depends-member:
 - !private ["s8HashableP", "DispatchQueue"]
 - !private ["s8HashableP", "DispatchTime"]
 - !private ["s8HashableP", "Double"]
-- !private ["s8HashableP", "General"]
 - !private ["s8HashableP", "Icon"]
 - !private ["s8HashableP", "Int64"]
+- !private ["s8HashableP", "Location"]
 - !private ["s8HashableP", "LocationAnnotationNode"]
 - !private ["s8HashableP", "MKCoordinateSpan"]
 - !private ["s8HashableP", "MKMarkerAnnotationView"]
 - !private ["s8HashableP", "MKPointAnnotation"]
 - !private ["s8HashableP", "NSEC_PER_SEC"]
 - !private ["s8HashableP", "SCNHitTestOption"]
+- !private ["s8HashableP", "Sports"]
 - ["s8HashableP", "Story"]
 - !private ["s8HashableP", "StoryAnnotationNode"]
 - !private ["s8HashableP", "StoryNode"]
@@ -927,7 +932,9 @@ depends-member:
 - !private ["s8HashableP", "viewWillAppear"]
 - !private ["s8HashableP", "viewWillDisappear"]
 - ["s8HashableP", ""]
-- !private ["9CBC_AR3604IconO", "General"]
+- !private ["9CBC_AR3604IconO", "Breaking"]
+- !private ["9CBC_AR3604IconO", "Location"]
+- !private ["9CBC_AR3604IconO", "Sports"]
 - !private ["9CBC_AR3604IconO", "image"]
 - !private ["s5Int64V", "init"]
 - !private ["9CBC_AR36022LocationAnnotationNodeC", "deinit"]
@@ -1264,7 +1271,6 @@ depends-member:
 - ["So8NSObjectC", "MKMapView"]
 - !private ["So8NSObjectC", "MKMarkerAnnotationView"]
 - ["So8NSObjectC", "MKPointAnnotation"]
-- !private ["So8NSObjectC", "MKUserLocation"]
 - !private ["So8NSObjectC", "NSEC_PER_SEC"]
 - !private ["So8NSObjectC", "SCNHitTestOption"]
 - !private ["So8NSObjectC", "SCNHitTestResult"]
@@ -1540,7 +1546,9 @@ depends-member:
 - ["s26RangeReplaceableCollectionP", "init"]
 - ["s16RawRepresentableP", "ARPhoto"]
 - ["s16RawRepresentableP", "ARVideo"]
-- !private ["s16RawRepresentableP", "General"]
+- !private ["s16RawRepresentableP", "Breaking"]
+- !private ["s16RawRepresentableP", "Location"]
+- !private ["s16RawRepresentableP", "Sports"]
 - ["s16RawRepresentableP", "Story"]
 - !private ["s16RawRepresentableP", "allowUserInteraction"]
 - !private ["s16RawRepresentableP", "image"]
@@ -1888,7 +1896,6 @@ depends-member:
 - !private ["So7UIColorC", "cgColor"]
 - !private ["So7UIColorC", "darkGray"]
 - !private ["So7UIColorC", "gray"]
-- !private ["So7UIColorC", "init"]
 - !private ["So18UIContentContainerP", "ARButton"]
 - !private ["So18UIContentContainerP", "ARMediaNode"]
 - !private ["So18UIContentContainerP", "CGPoint"]
@@ -2281,7 +2288,6 @@ depends-member:
 - ["So11UIResponderC", "MKMapView"]
 - !private ["So11UIResponderC", "MKMarkerAnnotationView"]
 - ["So11UIResponderC", "MKPointAnnotation"]
-- !private ["So11UIResponderC", "MKUserLocation"]
 - !private ["So11UIResponderC", "SCNHitTestOption"]
 - !private ["So11UIResponderC", "SCNHitTestResult"]
 - ["So11UIResponderC", "SCNNode"]
@@ -2704,7 +2710,6 @@ depends-member:
 - ["So16UIViewControllerC", "MKMapView"]
 - !private ["So16UIViewControllerC", "MKMarkerAnnotationView"]
 - ["So16UIViewControllerC", "MKPointAnnotation"]
-- !private ["So16UIViewControllerC", "MKUserLocation"]
 - !private ["So16UIViewControllerC", "SCNHitTestOption"]
 - !private ["So16UIViewControllerC", "SCNHitTestResult"]
 - ["So16UIViewControllerC", "SCNNode"]
@@ -2794,7 +2799,6 @@ depends-member:
 - ["9CBC_AR36014ViewControllerC", "MKMapView"]
 - !private ["9CBC_AR36014ViewControllerC", "MKMarkerAnnotationView"]
 - ["9CBC_AR36014ViewControllerC", "MKPointAnnotation"]
-- !private ["9CBC_AR36014ViewControllerC", "MKUserLocation"]
 - !private ["9CBC_AR36014ViewControllerC", "SCNHitTestOption"]
 - !private ["9CBC_AR36014ViewControllerC", "SCNHitTestResult"]
 - ["9CBC_AR36014ViewControllerC", "SCNNode"]
@@ -2911,7 +2915,6 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "darkGray"]
 - !private ["s26_ExpressibleByColorLiteralP", "gray"]
-- !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
