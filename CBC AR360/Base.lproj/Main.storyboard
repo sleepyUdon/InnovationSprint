@@ -170,9 +170,9 @@ Investigators are appealing for any witnesses.
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The victims, a man and a woman in their 20s, are expected to survive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday, February 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
                                                 <rect key="frame" x="147" y="112" width="130" height="21"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.49019607840000001" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -180,6 +180,7 @@ Investigators are appealing for any witnesses.
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="5x2-Wf-ElZ" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="0s8-CT-uRe"/>
+                                            <constraint firstItem="cEH-ms-VxT" firstAttribute="bottom" secondItem="XSR-2S-lqo" secondAttribute="bottom" id="4c8-s8-iEV"/>
                                             <constraint firstItem="C0H-Xl-Usm" firstAttribute="leading" secondItem="XSR-2S-lqo" secondAttribute="trailing" constant="16" id="CVr-jQ-m6c"/>
                                             <constraint firstItem="NHU-xS-a3P" firstAttribute="top" secondItem="mos-xQ-f7g" secondAttribute="top" constant="8" id="EQG-qp-JhF"/>
                                             <constraint firstItem="NHU-xS-a3P" firstAttribute="centerX" secondItem="mos-xQ-f7g" secondAttribute="centerX" id="FZ3-7P-xHd"/>
@@ -196,7 +197,7 @@ Investigators are appealing for any witnesses.
                                         </constraints>
                                         <connections>
                                             <outlet property="body" destination="5x2-Wf-ElZ" id="zSF-pd-YiZ"/>
-                                            <outlet property="deck" destination="cEH-ms-VxT" id="lte-XF-MP3"/>
+                                            <outlet property="date" destination="cEH-ms-VxT" id="04g-vs-t4j"/>
                                             <outlet property="image" destination="XSR-2S-lqo" id="VNb-SW-XET"/>
                                             <outlet property="title" destination="C0H-Xl-Usm" id="qnm-79-iG9"/>
                                         </connections>
@@ -219,7 +220,7 @@ Investigators are appealing for any witnesses.
                             <constraint firstItem="9AZ-Pd-RE1" firstAttribute="top" secondItem="sBg-Oc-jnA" secondAttribute="bottom" id="Pkc-Th-enj"/>
                             <constraint firstAttribute="trailing" secondItem="3IN-M3-qvP" secondAttribute="trailing" id="QcC-65-BYq"/>
                             <constraint firstItem="9AZ-Pd-RE1" firstAttribute="leading" secondItem="UKd-e1-rn0" secondAttribute="leading" id="Qzu-Ek-wlZ"/>
-                            <constraint firstItem="Nxk-XX-or5" firstAttribute="top" secondItem="YGF-5J-bYV" secondAttribute="bottom" id="Zdv-c2-wbr"/>
+                            <constraint firstAttribute="bottom" secondItem="YGF-5J-bYV" secondAttribute="bottom" id="Zdv-c2-wbr"/>
                             <constraint firstAttribute="trailing" secondItem="YGF-5J-bYV" secondAttribute="trailing" id="ifD-4U-sCg"/>
                             <constraint firstItem="fMb-gc-owr" firstAttribute="top" secondItem="sBg-Oc-jnA" secondAttribute="bottom" constant="30" id="k3D-3I-chk"/>
                             <constraint firstItem="XgJ-Vw-3wN" firstAttribute="centerY" secondItem="fMb-gc-owr" secondAttribute="centerY" id="l1T-wi-k8h"/>

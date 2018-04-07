@@ -7,7 +7,7 @@ provides-member:
 - ["9CBC_AR36010BottomViewC", ""]
 provides-dynamic-lookup:
 - "body"
-- "deck"
+- "date"
 - "image"
 - "title"
 depends-top-level:
@@ -19,7 +19,7 @@ depends-member:
 - ["9CBC_AR36010BottomViewC", "UIImageView"]
 - ["9CBC_AR36010BottomViewC", "UILabel"]
 - ["9CBC_AR36010BottomViewC", "body"]
-- ["9CBC_AR36010BottomViewC", "deck"]
+- ["9CBC_AR36010BottomViewC", "date"]
 - ["9CBC_AR36010BottomViewC", "deinit"]
 - ["9CBC_AR36010BottomViewC", "image"]
 - ["9CBC_AR36010BottomViewC", "init"]
@@ -41,7 +41,7 @@ depends-member:
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "body"]
-- ["So8NSObjectC", "deck"]
+- ["So8NSObjectC", "date"]
 - ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "title"]
@@ -66,7 +66,7 @@ depends-member:
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "body"]
-- ["So11UIResponderC", "deck"]
+- ["So11UIResponderC", "date"]
 - ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "title"]
@@ -77,7 +77,7 @@ depends-member:
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "body"]
-- ["So6UIViewC", "deck"]
+- ["So6UIViewC", "date"]
 - ["So6UIViewC", "image"]
 - ["So6UIViewC", "init"]
 - ["So6UIViewC", "title"]
@@ -141,4 +141,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "89ab32ead588b5ba5f9af005bf1926ad"
+interface-hash: "a641cca79f6f9904e5e2f436e73e3d58"

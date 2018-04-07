@@ -18,7 +18,7 @@ struct Story {
     let image: String
     let latitude: Double
     let longitude: Double
-    let altitude: Double = 50.0
+    let altitude: Double = 76.0
     let icon: Icon
     let type: Type
     let url: String?

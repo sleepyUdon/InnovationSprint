@@ -236,7 +236,7 @@ SWIFT_CLASS("_TtC9CBC_AR36011AppDelegate")
 SWIFT_CLASS("_TtC9CBC_AR36010BottomView")
 @interface BottomView : UIView
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified title;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified deck;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified date;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified body;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;

@@ -60,7 +60,7 @@ open class LocationAnnotationNode: LocationNode {
     public let image: UIImage
     public let icon: Icon
 
-    public var scaleRelativeToDistance = false
+    public var scaleRelativeToDistance = true
     public let annotationNode: SCNNode
 
     public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: UIImage, icon: Icon) {
@@ -72,8 +72,7 @@ open class LocationAnnotationNode: LocationNode {
         self.icon = icon
 
         annotationNode = SCNNode()
-
-        let plane = SCNPlane(width: icon.ARimage.size.width / 50, height: icon.ARimage.size.height / 50)
+        let plane = SCNPlane(width: icon.ARimage.size.width, height: icon.ARimage.size.height)
         plane.firstMaterial!.diffuse.contents = icon.ARimage
         plane.firstMaterial!.lightingModel = .constant
         
@@ -102,7 +101,7 @@ class StoryAnnotationNode: LocationNode {
     public let body: String
     public let image: UIImage
 
-    public var scaleRelativeToDistance = false
+    public var scaleRelativeToDistance = true
     public let annotationNode: SCNNode
     
     public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: UIImage) {

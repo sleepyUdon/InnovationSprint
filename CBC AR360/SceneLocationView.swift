@@ -372,25 +372,29 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         
         if locationNode.locationConfirmed &&
             (distance > 100 || locationNode.continuallyAdjustNodePositionWhenWithinRange || initialSetup) {
-            if distance > 100 {
+            if distance > 1000 {
+
                 //If the item is too far away, bring it closer and scale it down
                 let scale = 100 / Float(distance)
-                
+
                 adjustedDistance = distance * Double(scale)
-                
-                let adjustedTranslation = SCNVector3(
-                    x: Float(locationTranslation.longitudeTranslation) * scale,
-                    y: Float(locationTranslation.altitudeTranslation) * scale,
-                    z: Float(locationTranslation.latitudeTranslation) * scale)
-                
-                let position = SCNVector3(
-                    x: currentPosition.x + adjustedTranslation.x,
-                    y: currentPosition.y + adjustedTranslation.y,
-                    z: currentPosition.z - adjustedTranslation.z)
-                
-                locationNode.position = position
-                
-                locationNode.scale = SCNVector3(x: scale, y: scale, z: scale)
+
+//                let adjustedTranslation = SCNVector3(
+//                    x: Float(locationTranslation.longitudeTranslation) * scale,
+//                    y: Float(locationTranslation.altitudeTranslation) * scale,
+//                    z: Float(locationTranslation.latitudeTranslation) * scale)
+
+//                let position = SCNVector3(
+//                    x: currentPosition.x + adjustedTranslation.x,
+//                    y: currentPosition.y + adjustedTranslation.y,
+//                    z: currentPosition.z - adjustedTranslation.z)
+
+                //If the item is too far away, hide it
+                locationNode.isHidden = true
+
+//                locationNode.position = position
+//
+//                locationNode.scale = SCNVector3(x: scale, y: scale, z: scale)
             } else {
                 adjustedDistance = distance
                 let position = SCNVector3(

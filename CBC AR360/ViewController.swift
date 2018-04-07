@@ -23,6 +23,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var ARButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     
+    var userLocation: SCNVector3?
     var userAnnotation: MKPointAnnotation?
     var locationEstimateAnnotation: MKPointAnnotation?
     var centerMapOnUserLocation: Bool = true
@@ -41,6 +42,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
        self.viewMode = "2D"
         self.containerView.isUserInteractionEnabled = false
         
+        guard let pointOfView = self.sceneLocationView.pointOfView else { return }
+        self.userLocation = pointOfView.position
+
         // Set up views
         setupBottomView()
         setupButton(button: self.mapButton)
@@ -51,6 +55,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         createLocationNodesForMapView()
         createLocationNodesForARView ()
         
+
         updateUserLocationTimer = Timer.scheduledTimer(
             timeInterval: 0.5,
             target: self,
@@ -75,30 +80,34 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     // Load Stories
     func setupStories(){
-        let story1 = Story(title: "#UHNApology", deck: "UHN apologizes for Toronto General vent grate that's 'hostile' to the homeless", body: "The University Health Network (UHN) apologized Wednesday for installing a grate over a vent outside of the Toronto General Hospital's Emergency Department specifically to deter homeless people from sleeping there, and says it will be removed.\n\nChan said the grate was installed because the area sees significant traffic from cars, ambulances and people. \n\nThere were also safety concerns with garbage and needles. UHN spokesperson Gill Howard told CBC's Metro Morning last Thursday that many Toronto General Emergency staff have already tried to help the homeless in front of the hospital.", date: "April 2, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6590522, longitude: -79.3901497, icon: Icon.Location, type: Type.Location, url: nil)
+        let story1 = Story(title: "#UHNApology", deck: "UHN apologizes for Toronto General vent grate that's 'hostile' to the homeless", body: "The University Health Network (UHN) apologized Wednesday for installing a grate over a vent outside of the Toronto General Hospital's Emergency Department specifically to deter homeless people from sleeping there, and says it will be removed.\n\nChan said the grate was installed because the area sees significant traffic from cars, ambulances and people. \n\nThere were also safety concerns with garbage and needles. UHN spokesperson Gill Howard told CBC's Metro Morning last Thursday that many Toronto General Emergency staff have already tried to help the homeless in front of the hospital.", date: "April 2, 2018", image: "UHN", latitude: 43.6590522, longitude: -79.3901497, icon: Icon.Location, type: Type.Location, url: nil)
         stories.append(story1)
         
-        let story2 = Story(title: "#GrilledCheese", deck: "Hundreds line up in cold for oversold grilled cheese festival", body: "An inaugural Toronto food festival left many waiting outside in the cold instead of enjoying some much-needed comfort food after the event was oversold by hundreds of tickets. \n\nClose to two dozen local vendors served up soup and sandwiches at the Grilled Cheese Fest Friday night at Roy Thomson Hall.\n\nOrganizer Melissa Chien said the event however was oversold by roughly 700 tickets leaving many outside the venue waiting to get in as temperatures dipped to - 15 C with the windchill.  The capacity for the event is 1500 people.\n\nThose locked out of the event took to Twitter to voice their frustration after paying $39.99 plus HST for the promise of all-you-can-eat grilled cheese, gourmet soups, and three beer samples.", date: "Today", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6469311, longitude: -79.3885312, icon: Icon.Breaking, type: Type.Breaking, url: nil)
+        let story2 = Story(title: "#GrilledCheese", deck: "Hundreds line up in cold for oversold grilled cheese festival", body: "An inaugural Toronto food festival left many waiting outside in the cold instead of enjoying some much-needed comfort food after the event was oversold by hundreds of tickets. \n\nClose to two dozen local vendors served up soup and sandwiches at the Grilled Cheese Fest Friday night at Roy Thomson Hall.\n\nOrganizer Melissa Chien said the event however was oversold by roughly 700 tickets leaving many outside the venue waiting to get in as temperatures dipped to - 15 C with the windchill.  The capacity for the event is 1500 people.\n\nThose locked out of the event took to Twitter to voice their frustration after paying $39.99 plus HST for the promise of all-you-can-eat grilled cheese, gourmet soups, and three beer samples.", date: "Today", image: "GrilledCheese", latitude: 43.6469311, longitude: -79.3885312, icon: Icon.Breaking, type: Type.Breaking, url: nil)
         stories.append(story2)
         
-        let story3 = Story(title: "#CondoFire", deck: "Southbound lanes of Spadina Avenue at Queen Street West closed", body: "Toronto firefighters managed to put out a fire on an upper floor of a condominium building near a major downtown intersection on Tuesday night.\n\nFirefighters said the 2-alarm fire at The Morgan building, a former warehouse converted into condominiums, was reported around 6:30 p.m. Thick black smoke and some flames could be seen pouring from one condo unit on the sixth floor.\n\nToronto Fire officials said the fire was knocked down in about 10 minutes. Nobody was injured.\n\nSome residents moved to the roof amid the blaze, firefighters said.\n\nIts unclear what caused the fire at this time.\n\nPolice have closed the southbound lanes of Spadina Avenue at Queen Street West.", date: "Today", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6478056, longitude: -79.4046328, icon: Icon.Breaking, type: Type.Breaking, url: nil)
+        let story3 = Story(title: "#CondoFire", deck: "Southbound lanes of Spadina Avenue at Queen Street West closed", body: "Toronto firefighters managed to put out a fire on an upper floor of a condominium building near a major downtown intersection on Tuesday night.\n\nFirefighters said the 2-alarm fire at The Morgan building, a former warehouse converted into condominiums, was reported around 6:30 p.m. Thick black smoke and some flames could be seen pouring from one condo unit on the sixth floor.\n\nToronto Fire officials said the fire was knocked down in about 10 minutes. Nobody was injured.\n\nSome residents moved to the roof amid the blaze, firefighters said.\n\nIts unclear what caused the fire at this time.\n\nPolice have closed the southbound lanes of Spadina Avenue at Queen Street West.", date: "Today", image: "CondoFire", latitude: 43.6478056, longitude: -79.4046328, icon: Icon.Breaking, type: Type.Breaking, url: nil)
         stories.append(story3)
         
-        let story4 = Story(title: "#KingStPilot", deck: "Video of drivers ignoring King Street pilot has critic questioning police enforcement", body: "A taxi, then a black sedan, park in a TTC streetcar stop at King Street West and Peter Street.\n\nA growling Maserati leads a stream of cars going straight through that intersection, while at least two more vehicles make illegal left turns.\n\nNearly every motorist in the one-minute-and-nine-second video is breaking the rules of the King Street pilot project, the city's high-profile attempt to improve streetcar service in the downtown core.\n\nNot one driver, not even the driver filmed breaking the law right in front of a police cruiser, appears to get a ticket.", date: "April 2, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6460226, longitude: -79.4010278, icon: Icon.Location, type: Type.Location, url: nil)
+        let story4 = Story(title: "#KingStPilot", deck: "Video of drivers ignoring King Street pilot has critic questioning police enforcement", body: "A taxi, then a black sedan, park in a TTC streetcar stop at King Street West and Peter Street.\n\nA growling Maserati leads a stream of cars going straight through that intersection, while at least two more vehicles make illegal left turns.\n\nNearly every motorist in the one-minute-and-nine-second video is breaking the rules of the King Street pilot project, the city's high-profile attempt to improve streetcar service in the downtown core.\n\nNot one driver, not even the driver filmed breaking the law right in front of a police cruiser, appears to get a ticket.", date: "April 2, 2018", image: "KingPilot", latitude: 43.6460226, longitude: -79.4010278, icon: Icon.Location, type: Type.Location, url: nil)
         stories.append(story4)
         
-        let story5 = Story(title: "#HomeOpener", deck: "Yankees beat Blue Jays 6-1 in Toronto's home opener", body: "The New York Yankees beat the Blue Jays 6-1 in the Toronto team's home opener at the Rogers Centre on Thursday.\n\nThe team honoured late pitcher Roy Halladay during a pre-game tribute at the Roger's Centre. Halladay's wife, Brandy, and sons, Braden and Ryan, stood on the infield as the his number, 32, was hoisted into the rafters. Halladay is the second Blue Jay in franchise history to have his number retired, alongside Roberto Alomar. There were two very noticeable absentees at the game this afternoon, one on the field and the other up in the broadcast booth.\n\nFor the first time since 2009, the Blue Jays will open a season without Jose Bautista as a member of the team.", date: "March 29, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6429557, longitude: -79.3905708, icon: Icon.Sports, type: Type.Sports, url: "http://1.151.236.12/ar360/")
+        let story5 = Story(title: "#HomeOpener", deck: "Yankees beat Blue Jays 6-1 in Toronto's home opener", body: "The New York Yankees beat the Blue Jays 6-1 in the Toronto team's home opener at the Rogers Centre on Thursday.\n\nThe team honoured late pitcher Roy Halladay during a pre-game tribute at the Roger's Centre. Halladay's wife, Brandy, and sons, Braden and Ryan, stood on the infield as the his number, 32, was hoisted into the rafters. Halladay is the second Blue Jay in franchise history to have his number retired, alongside Roberto Alomar. There were two very noticeable absentees at the game this afternoon, one on the field and the other up in the broadcast booth.\n\nFor the first time since 2009, the Blue Jays will open a season without Jose Bautista as a member of the team.", date: "March 29, 2018", image: "HomeOpener", latitude: 43.6429557, longitude: -79.3905708, icon: Icon.Sports, type: Type.Sports, url: "http://1.151.236.12/ar360/")
         stories.append(story5)
         
-        let story6 = Story(title: "#Concert", deck: "The Crooked - Live at the Steam Whistle Brewing", body: "story", date: "February 15, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Sports, type: Type.ARVideo, url: "http://1.151.236.12/ar360/")
+        let story6 = Story(title: "#Concert", deck: "The Crooked - Live at the Steam Whistle Brewing", body: "story", date: "February 15, 2018", image: "LeesPalace", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Sports, type: Type.ARVideo, url: "http://1.151.236.12/ar360/")
         stories.append(story6)
         
-        let story7 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "story", date: "February 15, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Location, type: Type.ARPhoto, url: nil)
+        let story7 = Story(title: "#RipleyProtest", deck: "Aquatic animals don't belong in a 'bathtub' say Ripley's Aquarium protestors", body: "Protestors wrapped in fishing nets lay prostrate in front of Ripley's Aquarium on Saturday afternoon, while others carried signs reading messages like \"abolish fishing\" and \"animals are not ours to use.\"\n\nAround two dozen activists took part in the demonstration to protest both hunting marine animals, and having them in captivity at aquariums.\n\n\"Hundreds of billions of marine animals are murdered every year when we don't need to consume a single fish, or lobster, or any animal,\" said protestor Len Goldberg.", date: "March 15, 2018", image: "InnovationSprint", latitude: 43.6427545, longitude: -79.3883146, icon: Icon.Location, type: Type.Location, url: nil)
         stories.append(story7)
         
-        let story8 = Story(title: "#Concert", deck: "The Crooked - Live at the Steam Whistle Brewing", body: "story", date: "February 15, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.Sports, type: Type.ARVideo, url: "http://1.151.236.12/ar360/")
+        let story8 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nA few years ago, if someone had suggested that we might undertake something like this, I would’ve responded that we weren’t really in a position to innovate. There was so much obvious work that still needed to be done.\n\nBut now, we’ve reached a point that the path forward is less and less obvious because we’re working close to the edge of what’s possible.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Location, type: Type.ARPhoto, url: nil)
         stories.append(story8)
+        
+        let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nA few years ago, if someone had suggested that we might undertake something like this, I would’ve responded that we weren’t really in a position to innovate. There was so much obvious work that still needed to be done.\n\nBut now, we’ve reached a point that the path forward is less and less obvious because we’re working close to the edge of what’s possible.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.Location, type: Type.ARPhoto, url: nil)
+        stories.append(story9)
 
+        
         
     }
     
@@ -243,8 +252,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let annotationNode = view.annotation as? StoryNode {
             self.bottomView.image.image = UIImage(named: annotationNode.image!)
-            self.bottomView.title.text = annotationNode.title
-            self.bottomView.deck.text = annotationNode.deck
+            self.bottomView.title.text = annotationNode.deck
+            self.bottomView.date.text = annotationNode.date
             self.bottomView.body.text = annotationNode.body
             self.bottomController?.expandPanel()
         } else if let annotationNode = view.annotation as? ARMediaNode {
@@ -259,6 +268,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         if let currentLocation = sceneLocationView.currentLocation() {
             DispatchQueue.main.async {
                 
+                guard let pointOfView = self.sceneLocationView.pointOfView else { return }
+                self.userLocation = pointOfView.position
+
                 if let bestEstimate = self.sceneLocationView.bestLocationEstimate(),
                     let position = self.sceneLocationView.currentScenePosition() {
                 }
@@ -306,8 +318,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
             if let parentNode = result.node.parent as? LocationAnnotationNode {
                 self.mapView.isHidden = true
                 self.bottomView.image.image = parentNode.image
-                self.bottomView.title.text = parentNode.title
-                self.bottomView.deck.text = parentNode.deck
+                self.bottomView.title.text = parentNode.deck
+                self.bottomView.date.text = parentNode.date
                 self.bottomView.body.text = parentNode.body
                 self.bottomController?.expandPanel()
             }
@@ -343,6 +355,8 @@ extension ViewController: SceneLocationViewDelegate {
 extension ViewController: CTBottomSlideDelegate {
     
     func didPanelCollapse(){
+        
+        //TODO: different logic in AR or map mode
         self.mapView.alpha = 1
         self.sceneLocationView.alpha = 1
         self.mapView.isUserInteractionEnabled = true
@@ -350,6 +364,8 @@ extension ViewController: CTBottomSlideDelegate {
     }
     
     func didPanelExpand(){
+        //TODO: different logic in AR or map mode
+
         self.mapView.alpha = 0.3
         self.sceneLocationView.alpha = 0.3
         self.mapView.isUserInteractionEnabled = false

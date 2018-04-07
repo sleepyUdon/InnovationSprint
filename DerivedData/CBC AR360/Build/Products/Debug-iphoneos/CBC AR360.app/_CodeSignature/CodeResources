@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		62TenkxZAbtMbg8OltKKfxG1MJA=
+		j1Jq+DbfjO2p+HF+RcihkBZZc48=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-UKd-e1-rn0.nib</key>
 		<data>
-		pOixfa9zDSQYBOhdWE6YK0WMZU8=
+		DeZMY0YFt7SdsY4GeupJjC5Yero=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		KO//5eGvS+PcbEikkZp5QoBAd6A=
+		RibmXZtqtLcReQSBelmK/m4AzNE=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<data>
@@ -216,11 +216,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			62TenkxZAbtMbg8OltKKfxG1MJA=
+			j1Jq+DbfjO2p+HF+RcihkBZZc48=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ynpwhhx8ezgi3vl/k0u53lvJPHd1Kj2cije+J5w7Nyk=
+			0vgi1lJZzC3/XQL6KPAo+eDyQH679jYTZX+FR6XVUUc=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pOixfa9zDSQYBOhdWE6YK0WMZU8=
+			DeZMY0YFt7SdsY4GeupJjC5Yero=
 			</data>
 			<key>hash2</key>
 			<data>
-			S8tM4qhKKfB1fyO/Owybc0gHAMq0BvOsNOXBXGfbhCw=
+			Ggy4NYdKVEESXkfOCZ9BDAfsOmwVk02bCELBLg5z5N4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -282,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KO//5eGvS+PcbEikkZp5QoBAd6A=
+			RibmXZtqtLcReQSBelmK/m4AzNE=
 			</data>
 			<key>hash2</key>
 			<data>
-			aHgzgCpvILAvF2coVMaUQlFqnaRd825H17kN2PvUQUw=
+			hpVbCuBDXAcde4BT1ZQaDkKIzJHULhNVQT6oZmz0soc=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
