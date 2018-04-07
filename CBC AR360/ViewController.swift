@@ -101,7 +101,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let story7 = Story(title: "#RipleyProtest", deck: "Aquatic animals don't belong in a 'bathtub' say Ripley's Aquarium protestors", body: "Protestors wrapped in fishing nets lay prostrate in front of Ripley's Aquarium on Saturday afternoon, while others carried signs reading messages like \"abolish fishing\" and \"animals are not ours to use.\"\n\nAround two dozen activists took part in the demonstration to protest both hunting marine animals, and having them in captivity at aquariums.\n\n\"Hundreds of billions of marine animals are murdered every year when we don't need to consume a single fish, or lobster, or any animal,\" said protestor Len Goldberg.", date: "March 15, 2018", image: "InnovationSprint", latitude: 43.6427545, longitude: -79.3883146, icon: Icon.Location, type: Type.Location, url: nil)
         stories.append(story7)
         
-        let story8 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nA few years ago, if someone had suggested that we might undertake something like this, I would’ve responded that we weren’t really in a position to innovate. There was so much obvious work that still needed to be done.\n\nBut now, we’ve reached a point that the path forward is less and less obvious because we’re working close to the edge of what’s possible.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Location, type: Type.ARPhoto, url: nil)
+        let story8 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Location, type: Type.ARPhoto, url: nil)
         stories.append(story8)
         
         let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nA few years ago, if someone had suggested that we might undertake something like this, I would’ve responded that we weren’t really in a position to innovate. There was so much obvious work that still needed to be done.\n\nBut now, we’ve reached a point that the path forward is less and less obvious because we’re working close to the edge of what’s possible.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.Location, type: Type.ARPhoto, url: nil)
@@ -172,13 +172,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
         if viewMode == "2D" {
             self.mapButton.isHidden = true
             self.ARButton.isHidden = false
-            mapView.alpha = 1
-            sceneLocationView.alpha = 0
+            mapView.isHidden = false
+            sceneLocationView.isHidden = true
         } else {
-            mapView.alpha = 0
             self.mapButton.isHidden = false
             self.ARButton.isHidden = true
-            sceneLocationView.alpha = 1
+            mapView.isHidden = true
+            sceneLocationView.isHidden = false
         }
     }
     
@@ -199,16 +199,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
         self.mapButton.isHidden = true
         self.ARButton.isHidden = false
         self.viewMode = "2D"
-        mapView.alpha = 1
-        sceneLocationView.alpha = 0
+        mapView.isHidden = false
+        sceneLocationView.isHidden = true
     }
     
     @IBAction func handleARButton(_ sender: UIButton) {
         self.mapButton.isHidden = false
         self.ARButton.isHidden = true
         self.viewMode = "3D"
-        mapView.alpha = 0
-        sceneLocationView.alpha = 1
+        mapView.isHidden = true
+        sceneLocationView.isHidden = false
     }
     
 
@@ -355,12 +355,10 @@ extension ViewController: SceneLocationViewDelegate {
 extension ViewController: CTBottomSlideDelegate {
     
     func didPanelCollapse(){
-        
-        //TODO: different logic in AR or map mode
-        self.mapView.alpha = 1
-        self.sceneLocationView.alpha = 1
-        self.mapView.isUserInteractionEnabled = true
-        self.containerView.isUserInteractionEnabled = false
+            self.mapView.alpha = 1
+            self.sceneLocationView.alpha = 1
+            self.mapView.isUserInteractionEnabled = true
+            self.containerView.isUserInteractionEnabled = false
     }
     
     func didPanelExpand(){
@@ -370,6 +368,7 @@ extension ViewController: CTBottomSlideDelegate {
         self.sceneLocationView.alpha = 0.3
         self.mapView.isUserInteractionEnabled = false
         self.containerView.isUserInteractionEnabled = true
+    
     }
     
     func didPanelAnchor(){
