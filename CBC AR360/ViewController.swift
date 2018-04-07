@@ -131,11 +131,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func createLocationNodesForARView(){
         for story in stories {
             let ARCLLocation = CLLocation(coordinate: CLLocationCoordinate2D(latitude: story.latitude, longitude: story.longitude), altitude: story.altitude)
-            let pinMapLocationNode = LocationAnnotationNode(location: ARCLLocation, image: story.icon.image)
-            let textNode = StoryAnnotationNode(location: ARCLLocation, title: story.title!, deck: story.deck, date: story.date
-            , body: story.body, image: story.image)
+            let pinMapLocationNode = LocationAnnotationNode(location: ARCLLocation, title: story.title!, deck: story.deck, date: story.date, body: story.body, image: UIImage(named:story.image)!, icon: story.icon)
             sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinMapLocationNode)
-            sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: textNode)
         }
     }
     
@@ -306,8 +303,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
             //                break
             print("something touched")
             
-            if let parentNode = result.node.parent as? StoryAnnotationNode {
-                self.bottomView.image.image = UIImage(named: parentNode.image)
+            if let parentNode = result.node.parent as? LocationAnnotationNode {
+                self.mapView.isHidden = true
+                self.bottomView.image.image = parentNode.image
                 self.bottomView.title.text = parentNode.title
                 self.bottomView.deck.text = parentNode.deck
                 self.bottomView.body.text = parentNode.body
@@ -316,30 +314,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
         }
     }
 
-//        if let touch = touches.first {
-//            if touch.view != nil {
-//                if (mapView == touch.view! ||
-//                    mapView.recursiveSubviews().contains(touch.view!)) {
-//                    centerMapOnUserLocation = false
-//                } else {
-//
-//                    let location = touch.location(in: self.view)
-//
-//                    if location.x <= 40 && adjustNorthByTappingSidesOfScreen {
-//                        print("left side of the screen")
-//                        sceneLocationView.moveSceneHeadingAntiClockwise()
-//                    } else if location.x >= view.frame.size.width - 40 && adjustNorthByTappingSidesOfScreen {
-//                        print("right side of the screen")
-//                        sceneLocationView.moveSceneHeadingClockwise()
-//                    } else {
-//                        let image = UIImage(named: "pin")!
-//                        let annotationNode = LocationAnnotationNode(location: nil, image: image)
-//                        annotationNode.scaleRelativeToDistance = true
-//                        sceneLocationView.addLocationNodeForCurrentPosition(locationNode: annotationNode)
-//                    }
-//                }
-//            }
-//        }
     }
 
 
@@ -370,12 +344,14 @@ extension ViewController: CTBottomSlideDelegate {
     
     func didPanelCollapse(){
         self.mapView.alpha = 1
+        self.sceneLocationView.alpha = 1
         self.mapView.isUserInteractionEnabled = true
         self.containerView.isUserInteractionEnabled = false
     }
     
     func didPanelExpand(){
         self.mapView.alpha = 0.3
+        self.sceneLocationView.alpha = 0.3
         self.mapView.isUserInteractionEnabled = false
         self.containerView.isUserInteractionEnabled = true
     }

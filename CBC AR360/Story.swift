@@ -24,7 +24,7 @@ struct Story {
     let url: String?
 }
 
-enum Icon: String {
+public enum Icon: String {
     case Location
     case Breaking
     case AR
@@ -38,9 +38,18 @@ enum Icon: String {
         case .Sports: return #imageLiteral(resourceName: "i_location_BW")
         }
     }
+    
+    var ARimage: UIImage {
+        switch self {
+        case .Location: return #imageLiteral(resourceName: "i_location")
+        case .Breaking: return #imageLiteral(resourceName: "i_breaking")
+        case .AR: return #imageLiteral(resourceName: "i_360")
+        case .Sports: return #imageLiteral(resourceName: "i_location")
+        }
+    }
 }
 
-enum Type: String {
+public enum Type: String {
     case Location
     case Breaking
     case Sports
