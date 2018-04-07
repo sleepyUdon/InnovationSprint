@@ -137,8 +137,10 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - ["9CBC_AR3604TypeO", "ARPhoto"]
 - ["9CBC_AR3604TypeO", "ARVideo"]
+- ["9CBC_AR3604TypeO", "Breaking"]
+- ["9CBC_AR3604TypeO", "Location"]
 - ["9CBC_AR3604TypeO", "RawValue"]
-- ["9CBC_AR3604TypeO", "Story"]
+- ["9CBC_AR3604TypeO", "Sports"]
 - ["9CBC_AR3604TypeO", "deinit"]
 - ["9CBC_AR3604TypeO", "hashValue"]
 - ["9CBC_AR3604TypeO", "init"]
@@ -255,4 +257,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "f51bdebecef30abddb94e590bc50185d"
+interface-hash: "b91bc08c94eefe1c5dcabf6574f5cbd4"

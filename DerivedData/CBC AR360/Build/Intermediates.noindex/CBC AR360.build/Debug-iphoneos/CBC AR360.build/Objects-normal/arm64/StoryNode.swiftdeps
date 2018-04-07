@@ -16,6 +16,7 @@ depends-top-level:
 - "StoryNode"
 - "String"
 - !private "StringLiteralType"
+- "Type"
 depends-member:
 - !private ["s7CVarArgP", "body"]
 - ["s7CVarArgP", "coordinate"]
@@ -25,6 +26,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "subtitle"]
 - ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "type"]
 - ["s7CVarArgP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "body"]
 - ["s28CustomDebugStringConvertibleP", "coordinate"]
@@ -34,6 +36,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "subtitle"]
 - ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "body"]
@@ -44,6 +47,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "subtitle"]
 - ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "type"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9EquatableP", "body"]
 - ["s9EquatableP", "coordinate"]
@@ -53,6 +57,7 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - ["s9EquatableP", "subtitle"]
 - ["s9EquatableP", "title"]
+- !private ["s9EquatableP", "type"]
 - ["s9EquatableP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -65,6 +70,7 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - ["s8HashableP", "subtitle"]
 - ["s8HashableP", "title"]
+- !private ["s8HashableP", "type"]
 - ["s8HashableP", ""]
 - !private ["So12MKAnnotationP", "body"]
 - ["So12MKAnnotationP", "coordinate"]
@@ -73,9 +79,11 @@ depends-member:
 - !private ["So12MKAnnotationP", "image"]
 - ["So12MKAnnotationP", "subtitle"]
 - ["So12MKAnnotationP", "title"]
+- !private ["So12MKAnnotationP", "type"]
 - ["So12MKAnnotationP", ""]
 - ["So8NSObjectC", "CLLocationCoordinate2D"]
 - ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Type"]
 - ["So8NSObjectC", "body"]
 - ["So8NSObjectC", "coordinate"]
 - ["So8NSObjectC", "date"]
@@ -84,6 +92,7 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "subtitle"]
 - ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "type"]
 - ["So8NSObjectC", ""]
 - !private ["So16NSObjectProtocolP", "body"]
 - ["So16NSObjectProtocolP", "coordinate"]
@@ -93,10 +102,12 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - ["So16NSObjectProtocolP", "subtitle"]
 - ["So16NSObjectProtocolP", "title"]
+- !private ["So16NSObjectProtocolP", "type"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["s12StaticStringV", "init"]
 - ["9CBC_AR3609StoryNodeC", "CLLocationCoordinate2D"]
 - ["9CBC_AR3609StoryNodeC", "String"]
+- ["9CBC_AR3609StoryNodeC", "Type"]
 - ["9CBC_AR3609StoryNodeC", "body"]
 - ["9CBC_AR3609StoryNodeC", "coordinate"]
 - ["9CBC_AR3609StoryNodeC", "date"]
@@ -106,6 +117,7 @@ depends-member:
 - ["9CBC_AR3609StoryNodeC", "init"]
 - ["9CBC_AR3609StoryNodeC", "subtitle"]
 - ["9CBC_AR3609StoryNodeC", "title"]
+- ["9CBC_AR3609StoryNodeC", "type"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -117,6 +129,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "subtitle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
 - "s7CVarArgP"
@@ -167,4 +180,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "d3b9a2816eaf09662e310359cf4fe85f"
+interface-hash: "62089d5aa00cc2367f15bcc5e7615537"

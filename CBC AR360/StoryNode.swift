@@ -17,15 +17,17 @@ class StoryNode: NSObject, MKAnnotation {
     let date: String
     let image: String?
     let coordinate: CLLocationCoordinate2D
-    
-    init(title: String, deck: String, body: String, date: String, image: String, coordinate: CLLocationCoordinate2D) {
+    let type: Type
+
+    init(title: String, deck: String, body: String, date: String, image: String, coordinate: CLLocationCoordinate2D, type: Type) {
         self.title = title
         self.deck = deck
         self.body = body
         self.date = date
         self.image = image
         self.coordinate = coordinate
-        
+        self.type = type
+
         super.init()
     }
 }
