@@ -95,6 +95,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         let story7 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "story", date: "February 15, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Location, type: Type.ARPhoto, url: nil)
         stories.append(story7)
+        
+        let story8 = Story(title: "#Concert", deck: "The Crooked - Live at the Steam Whistle Brewing", body: "story", date: "February 15, 2018", image: "yonge-and-elm-streets-shooting-bar", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.Sports, type: Type.ARVideo, url: "http://1.151.236.12/ar360/")
+        stories.append(story8)
 
         
     }

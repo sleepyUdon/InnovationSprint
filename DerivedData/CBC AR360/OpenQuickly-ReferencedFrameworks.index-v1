@@ -2,12 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
+	<string>WebKit</string>
+	<string>MapKit</string>
 	<string>SceneKit</string>
 	<string>CTSlidingUpPanel</string>
-	<string>CoreLocation</string>
 	<string>ARKit</string>
-	<string>MapKit</string>
 	<string>UIKit</string>
+	<string>CoreLocation</string>
 	<string>Foundation</string>
 </array>
 </plist>

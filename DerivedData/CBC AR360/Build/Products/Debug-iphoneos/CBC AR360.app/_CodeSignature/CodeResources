@@ -4,13 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-imo-Il-BN1.nib</key>
+		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-FV7-FS-8Sa.nib</key>
 		<data>
-		cUG5mYqG57PA5aCYiuIIVX9ibOk=
+		4df05pdZWrLaxUozqHrnTtuHo88=
 		</data>
 		<key>ARViewController.storyboardc/ARViewController.nib</key>
 		<data>
-		OrBRnAS3i4X/LBDO8zHs4Jpkoz0=
+		02igOgIx974cZJwcHdFlxObD2uw=
 		</data>
 		<key>ARViewController.storyboardc/Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Cl3kjlbpCrW2il7k50EJEGmLeR0=
+		KgRwRf55Zjws5vwrjzgfBkOJpJI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-UKd-e1-rn0.nib</key>
 		<data>
-		Gvaxd/AiYXhk9ue4uMPyc/Va3M4=
+		ajBmA1ixtCp7gxFQTFNZd8Q2CNk=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		5UVInvnJ6ZM2qna2jxyGRJk+q1w=
+		pxS/vOTHu1HIGxwPQO92z7Q6fjg=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<data>
@@ -179,26 +179,26 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-imo-Il-BN1.nib</key>
+		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-FV7-FS-8Sa.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cUG5mYqG57PA5aCYiuIIVX9ibOk=
+			4df05pdZWrLaxUozqHrnTtuHo88=
 			</data>
 			<key>hash2</key>
 			<data>
-			AksyJPHB3w+nQLVVxNgvN8VOef9dF3leViPZ8TppMXo=
+			xD+Gms6fNrDrGjHKoyKGyBZntFHdWnqJnz+CmV4D1ww=
 			</data>
 		</dict>
 		<key>ARViewController.storyboardc/ARViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OrBRnAS3i4X/LBDO8zHs4Jpkoz0=
+			02igOgIx974cZJwcHdFlxObD2uw=
 			</data>
 			<key>hash2</key>
 			<data>
-			D3vdiAi0xEaggaou9ArnVElqEH4Xn1F9BUW/pnFK3AY=
+			xbLAqH0RENUfLTFvZvbrUJkPxsAgwvzh5vlF0LrMtvQ=
 			</data>
 		</dict>
 		<key>ARViewController.storyboardc/Info.plist</key>
@@ -216,11 +216,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cl3kjlbpCrW2il7k50EJEGmLeR0=
+			KgRwRf55Zjws5vwrjzgfBkOJpJI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y+oHdLt7KWAGVN7tB1oTzD+IE+K5gHqwEs1dtoAXA6M=
+			ekOfplwyfOF5inPWEOGVpgpfC6j4k3SWeIZJ9Hm+xGw=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gvaxd/AiYXhk9ue4uMPyc/Va3M4=
+			ajBmA1ixtCp7gxFQTFNZd8Q2CNk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZzOEWsY40cXwNFxM/2cK08FxkMFqQ1i2Hl7A6TohBsI=
+			gLVUtFHGHTIde7lCG9/oV4ow7L+zg/qzucC/EX2yf5s=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -282,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5UVInvnJ6ZM2qna2jxyGRJk+q1w=
+			pxS/vOTHu1HIGxwPQO92z7Q6fjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			v1cA5TkObfQ0UtOlDj55MO8KFFwW90K0WSOUwbKpMG4=
+			SkEecpRJWCcNMiW9hLfsRIR+zNDZtfctlaUGkrkRovE=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>

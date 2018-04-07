@@ -199,11 +199,18 @@ SWIFT_CLASS("_TtC9CBC_AR36011ARMediaNode")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
+@class WKWebView;
+@protocol UIViewControllerTransitionCoordinator;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9CBC_AR36016ARViewController")
 @interface ARViewController : UIViewController
+@property (nonatomic, strong) IBOutlet WKWebView * _Null_unspecified webview;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)handleCloseButton;
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
