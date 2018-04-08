@@ -6,11 +6,11 @@
 	<dict>
 		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-FV7-FS-8Sa.nib</key>
 		<data>
-		iG0zJoXrA4JHgtMJkUxfDejLL8s=
+		J8VW1sVoPp4ikuX6ErARueaetX4=
 		</data>
 		<key>ARViewController.storyboardc/ARViewController.nib</key>
 		<data>
-		UogjVR3TjisVhrqhdUsEtMtazZI=
+		oUcmAdplQYCUrKacJu4FwJ5oTPk=
 		</data>
 		<key>ARViewController.storyboardc/Info.plist</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-UKd-e1-rn0.nib</key>
 		<data>
-		DeZMY0YFt7SdsY4GeupJjC5Yero=
+		/FWJo/0UMsMhaOb/xYaRlzPTseE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		RibmXZtqtLcReQSBelmK/m4AzNE=
+		ysybmmQGu2xmqKmr/nH3iz7Y4g4=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<data>
@@ -183,22 +183,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iG0zJoXrA4JHgtMJkUxfDejLL8s=
+			J8VW1sVoPp4ikuX6ErARueaetX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hNip2ycI7VCdOMcm9kmCbA4oh85MdWV+HITIXUWdEdY=
+			ZQxg216Ob4iaPgZHG0LEXsEL1HYN/D1xW1fno0L48Xs=
 			</data>
 		</dict>
 		<key>ARViewController.storyboardc/ARViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UogjVR3TjisVhrqhdUsEtMtazZI=
+			oUcmAdplQYCUrKacJu4FwJ5oTPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			fdLm+BQDDWcgcbws7QhEDiO3nQOc9sId3/+UYqd/iEU=
+			JRUUWa8lWk2g9b+qyTd4so+lcE6YUpohu2fbTpUCIlE=
 			</data>
 		</dict>
 		<key>ARViewController.storyboardc/Info.plist</key>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DeZMY0YFt7SdsY4GeupJjC5Yero=
+			/FWJo/0UMsMhaOb/xYaRlzPTseE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ggy4NYdKVEESXkfOCZ9BDAfsOmwVk02bCELBLg5z5N4=
+			U9ZEdsoKu0fJobB+sK6go1QHzagbwiuyr/mMpeMUUPw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -282,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RibmXZtqtLcReQSBelmK/m4AzNE=
+			ysybmmQGu2xmqKmr/nH3iz7Y4g4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hpVbCuBDXAcde4BT1ZQaDkKIzJHULhNVQT6oZmz0soc=
+			+6f2TWgMDbbbwgxTRns4PCfGdpsAkLSYhZDWSDnb6hY=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>

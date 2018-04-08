@@ -4,8 +4,8 @@
 <array>
 	<string>WebKit</string>
 	<string>MapKit</string>
-	<string>SceneKit</string>
 	<string>CTSlidingUpPanel</string>
+	<string>SceneKit</string>
 	<string>ARKit</string>
 	<string>UIKit</string>
 	<string>CoreLocation</string>

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -119,28 +118,45 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mos-xQ-f7g" customClass="BottomView" customModule="CBC_AR360" customModuleProvider="target">
                                         <rect key="frame" x="42" y="333" width="309" height="232"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yonge-and-elm-streets-shooting-bar" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-2S-lqo">
-                                                <rect key="frame" x="19" y="72" width="120" height="100"/>
-                                                <color key="backgroundColor" white="0.64064911270000002" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="A2z-Dd-qHR"/>
-                                                    <constraint firstAttribute="height" constant="80" id="eUT-jB-lmY"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 injured after overnight shooting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-Xl-Usm">
-                                                <rect key="frame" x="147" y="72" width="121" height="27"/>
-                                                <fontDescription key="fontDescription" name="StagApp-Bold" family="Stag App" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-7M-Ibw">
+                                                <rect key="frame" x="19" y="72" width="1033.5" height="80"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yonge-and-elm-streets-shooting-bar" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-2S-lqo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" white="0.64064911270000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="eUT-jB-lmY"/>
+                                                            <constraint firstAttribute="width" constant="80" id="wKJ-F0-0zV"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-Bx-Pfs">
+                                                        <rect key="frame" x="96" y="0.0" width="1033.5" height="41"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 injured after overnight shooting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-Xl-Usm">
+                                                                <rect key="frame" x="8" y="0.0" width="1033.5" height="16"/>
+                                                                <fontDescription key="fontDescription" name="StagApp-Bold" family="Stag App" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday, February 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
+                                                                <rect key="frame" x="8" y="24" width="1033.5" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" red="0.49019607840000001" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="0.0"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5x2-Wf-ElZ">
                                                 <rect key="frame" x="19" y="193" width="258" height="99"/>
-                                                <mutableString key="text">​Two people were injured in a shooting inside a downtown bar on Tuesday, according to Toronto police. 
+                                                <string key="text">​Two people were injured in a shooting inside a downtown bar on Tuesday, according to Toronto police. 
 
 Officers responded to reports of gunfire in the area of Yonge and Elm streets at around 1:30 a.m. They arrived to find a man and a woman, both in their 20s, with gunshot wounds. 
 
@@ -152,7 +168,7 @@ Forensic investigators were still on scene early Tuesday morning.
 
 Investigators are appealing for any witnesses.
 
-</mutableString>
+</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -170,30 +186,18 @@ Investigators are appealing for any witnesses.
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday, February 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
-                                                <rect key="frame" x="147" y="112" width="130" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" red="0.49019607840000001" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="5x2-Wf-ElZ" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="0s8-CT-uRe"/>
-                                            <constraint firstItem="cEH-ms-VxT" firstAttribute="bottom" secondItem="XSR-2S-lqo" secondAttribute="bottom" id="4c8-s8-iEV"/>
-                                            <constraint firstItem="C0H-Xl-Usm" firstAttribute="leading" secondItem="XSR-2S-lqo" secondAttribute="trailing" constant="16" id="CVr-jQ-m6c"/>
                                             <constraint firstItem="NHU-xS-a3P" firstAttribute="top" secondItem="mos-xQ-f7g" secondAttribute="top" constant="8" id="EQG-qp-JhF"/>
                                             <constraint firstItem="NHU-xS-a3P" firstAttribute="centerX" secondItem="mos-xQ-f7g" secondAttribute="centerX" id="FZ3-7P-xHd"/>
-                                            <constraint firstAttribute="trailing" secondItem="C0H-Xl-Usm" secondAttribute="trailing" constant="8" id="K4Z-NU-AeS"/>
+                                            <constraint firstItem="ymf-7M-Ibw" firstAttribute="top" secondItem="NHU-xS-a3P" secondAttribute="bottom" constant="25" id="Hto-8F-d9j"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5x2-Wf-ElZ" secondAttribute="bottom" constant="16" id="Moi-kC-3KI"/>
-                                            <constraint firstAttribute="trailing" secondItem="cEH-ms-VxT" secondAttribute="trailing" constant="8" id="QQd-wM-Bue"/>
                                             <constraint firstAttribute="trailing" secondItem="5x2-Wf-ElZ" secondAttribute="trailing" constant="16" id="SbU-XG-GuE"/>
-                                            <constraint firstItem="C0H-Xl-Usm" firstAttribute="top" secondItem="NHU-xS-a3P" secondAttribute="bottom" constant="20" id="c9d-SD-3Pv"/>
-                                            <constraint firstItem="XSR-2S-lqo" firstAttribute="top" secondItem="NHU-xS-a3P" secondAttribute="bottom" constant="20" id="nld-za-7ah"/>
-                                            <constraint firstItem="cEH-ms-VxT" firstAttribute="top" secondItem="C0H-Xl-Usm" secondAttribute="bottom" constant="6" id="tvm-vG-N6E"/>
-                                            <constraint firstItem="XSR-2S-lqo" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="vJw-f6-RBm"/>
-                                            <constraint firstItem="5x2-Wf-ElZ" firstAttribute="top" secondItem="XSR-2S-lqo" secondAttribute="bottom" constant="32" id="vYj-82-aSP"/>
-                                            <constraint firstItem="cEH-ms-VxT" firstAttribute="leading" secondItem="XSR-2S-lqo" secondAttribute="trailing" constant="16" id="ygE-sS-mYu"/>
+                                            <constraint firstAttribute="trailing" secondItem="ymf-7M-Ibw" secondAttribute="trailing" constant="16" id="TVR-tA-Kmh"/>
+                                            <constraint firstItem="ymf-7M-Ibw" firstAttribute="leading" secondItem="mos-xQ-f7g" secondAttribute="leading" constant="16" id="iBq-kU-Gwj"/>
+                                            <constraint firstItem="5x2-Wf-ElZ" firstAttribute="top" secondItem="ymf-7M-Ibw" secondAttribute="bottom" constant="25" id="lo7-16-6N0"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="body" destination="5x2-Wf-ElZ" id="zSF-pd-YiZ"/>
@@ -232,9 +236,12 @@ Investigators are appealing for any witnesses.
                         <outlet property="ARButton" destination="fMb-gc-owr" id="uNK-Qu-0Nk"/>
                         <outlet property="bottomView" destination="mos-xQ-f7g" id="sSA-bF-nuE"/>
                         <outlet property="containerView" destination="3IN-M3-qvP" id="C2t-fD-7zH"/>
+                        <outlet property="imageHeight" destination="eUT-jB-lmY" id="PU4-ax-rrU"/>
+                        <outlet property="imageWidth" destination="wKJ-F0-0zV" id="cQs-lE-Atg"/>
                         <outlet property="mapButton" destination="XgJ-Vw-3wN" id="SB4-Yj-Ov1"/>
                         <outlet property="mapView" destination="9AZ-Pd-RE1" id="WtT-JT-twI"/>
                         <outlet property="sceneLocationView" destination="YGF-5J-bYV" id="LfM-fa-J13"/>
+                        <outlet property="stackView" destination="ymf-7M-Ibw" id="LYu-5I-bbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

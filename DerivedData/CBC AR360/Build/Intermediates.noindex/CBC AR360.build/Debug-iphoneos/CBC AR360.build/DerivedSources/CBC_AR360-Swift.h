@@ -317,6 +317,8 @@ SWIFT_CLASS("_TtC9CBC_AR3609StoryNode")
 
 @class MKMapView;
 @class UIButton;
+@class UIStackView;
+@class NSLayoutConstraint;
 @class MKAnnotationView;
 @class UITouch;
 @class UIEvent;
@@ -329,6 +331,9 @@ SWIFT_CLASS("_TtC9CBC_AR36014ViewController") SWIFT_AVAILABILITY(ios,introduced=
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified mapButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified ARButton;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
+@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified stackView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified imageHeight;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified imageWidth;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;

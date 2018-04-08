@@ -22,6 +22,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var ARButton: UIButton!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    @IBOutlet weak var imageWidth: NSLayoutConstraint!
     
     var userLocation: SCNVector3?
     var userAnnotation: MKPointAnnotation?
@@ -104,7 +107,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let story8 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Location, type: Type.ARPhoto, url: nil)
         stories.append(story8)
         
-        let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nA few years ago, if someone had suggested that we might undertake something like this, I would’ve responded that we weren’t really in a position to innovate. There was so much obvious work that still needed to be done.\n\nBut now, we’ve reached a point that the path forward is less and less obvious because we’re working close to the edge of what’s possible.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.Location, type: Type.ARPhoto, url: nil)
+        let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.Location, type: Type.ARPhoto, url: nil)
         stories.append(story9)
 
         
@@ -150,7 +153,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func setupBottomView() {
         bottomController = CTBottomSlideController(parent: view, bottomView: bottomView, tabController: nil, navController: nil, visibleHeight: 0)
         bottomController?.delegate = self
-        bottomController?.setAnchorPoint(anchor: 0.8)
+        bottomController?.setAnchorPoint(anchor: 1.0)
         bottomController?.setExpandedTopMargin(pixels: 620)
         bottomView.layer.shadowColor = UIColor.gray.cgColor
         bottomView.layer.shadowOffset = CGSize(width: 0, height: -3)
@@ -355,24 +358,29 @@ extension ViewController: SceneLocationViewDelegate {
 extension ViewController: CTBottomSlideDelegate {
     
     func didPanelCollapse(){
-            self.mapView.alpha = 1
-            self.sceneLocationView.alpha = 1
-            self.mapView.isUserInteractionEnabled = true
-            self.containerView.isUserInteractionEnabled = false
+        self.mapView.alpha = 1
+        self.sceneLocationView.alpha = 1
+        self.mapView.isUserInteractionEnabled = true
+        self.containerView.isUserInteractionEnabled = false
     }
     
     func didPanelExpand(){
-        //TODO: different logic in AR or map mode
-
+        self.stackView.axis = .horizontal
+        self.imageHeight.constant = 80.0
+        self.imageWidth.constant = 80.0
+        self.bottomView.layoutIfNeeded()
         self.mapView.alpha = 0.3
         self.sceneLocationView.alpha = 0.3
         self.mapView.isUserInteractionEnabled = false
         self.containerView.isUserInteractionEnabled = true
-    
+        
     }
     
     func didPanelAnchor(){
-        
+        self.stackView.axis = .vertical
+        self.imageHeight.constant = self.bottomView.frame.width/16*9
+        self.imageWidth.constant = self.bottomView.frame.width
+        self.view.layoutIfNeeded()
     }
     
     func didPanelMove(panelOffset: CGFloat){
