@@ -18,20 +18,44 @@ struct Story {
     let image: String
     let latitude: Double
     let longitude: Double
-    let altitude: Double = 50.0
+    let altitude: Double = 76.0
     let icon: Icon
+    let type: Type
+    let url: String?
 }
 
-enum Icon: String {
-    case General
+public enum Icon: String {
+    case Location
+    case Breaking
+    case AR
+    case Sports
     
     var image: UIImage {
         switch self {
-        case .General: return #imageLiteral(resourceName: "pin")
-            
-            
+        case .Location: return #imageLiteral(resourceName: "i_location_BW")
+        case .Breaking: return #imageLiteral(resourceName: "i_breaking_BW")
+        case .AR: return #imageLiteral(resourceName: "i_360_BW")
+        case .Sports: return #imageLiteral(resourceName: "i_location_BW")
         }
     }
     
+    var ARimage: UIImage {
+        switch self {
+        case .Location: return #imageLiteral(resourceName: "i_location")
+        case .Breaking: return #imageLiteral(resourceName: "i_breaking")
+        case .AR: return #imageLiteral(resourceName: "i_360")
+        case .Sports: return #imageLiteral(resourceName: "i_location")
+        }
+    }
 }
+
+public enum Type: String {
+    case Location
+    case Breaking
+    case Sports
+    case ARVideo
+    case ARPhoto
+    
+}
+
 

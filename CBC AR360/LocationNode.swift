@@ -52,32 +52,39 @@ open class LocationNode: SCNNode {
 }
 
 open class LocationAnnotationNode: LocationNode {
-    ///An image to use for the annotation
-    ///When viewed from a distance, the annotation will be seen at the size provided
-    ///e.g. if the size is 100x100px, the annotation will take up approx 100x100 points on screen.
+    
+    public let title: String
+    public let deck: String
+    public let date: String
+    public let body: String
     public let image: UIImage
-    
-    ///Subnodes and adjustments should be applied to this subnode
-    ///Required to allow scaling at the same time as having a 2D 'billboard' appearance
+    public let icon: Icon
+    public let type: Type
+    public let url: String?
+
+
+    public var scaleRelativeToDistance = true
     public let annotationNode: SCNNode
-    
-    ///Whether the node should be scaled relative to its distance from the camera
-    ///Default value (false) scales it to visually appear at the same size no matter the distance
-    ///Setting to true causes annotation nodes to scale like a regular node
-    ///Scaling relative to distance may be useful with local navigation-based uses
-    ///For landmarks in the distance, the default is correct
-    public var scaleRelativeToDistance = false
-    
-    public init(location: CLLocation?, image: UIImage) {
+
+    public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: UIImage, icon: Icon, type: Type, url: String?) {
+        self.title = title
+        self.deck = deck
+        self.date = date
+        self.body = body
         self.image = image
-        
-        let plane = SCNPlane(width: image.size.width / 500, height: image.size.height / 500)
-        plane.firstMaterial!.diffuse.contents = image
+        self.icon = icon
+        self.type = type
+        self.url = url
+
+
+        annotationNode = SCNNode()
+        let plane = SCNPlane(width: icon.ARimage.size.width, height: icon.ARimage.size.height)
+        plane.firstMaterial!.diffuse.contents = icon.ARimage
         plane.firstMaterial!.lightingModel = .constant
         
-        annotationNode = SCNNode()
         annotationNode.geometry = plane
-        
+
+
         super.init(location: location)
         
         let billboardConstraint = SCNBillboardConstraint()
@@ -98,14 +105,12 @@ class StoryAnnotationNode: LocationNode {
     public let deck: String
     public let date: String
     public let body: String
-    public let image: String
+    public let image: UIImage
 
-    
-    
-    public var scaleRelativeToDistance = false
+    public var scaleRelativeToDistance = true
     public let annotationNode: SCNNode
     
-    public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: String) {
+    public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: UIImage) {
         self.title = title
         self.deck = deck
         self.date = date

@@ -11,7 +11,7 @@ import UIKit
 class BottomView: UIView {
     
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var deck: UILabel!
+    @IBOutlet weak var date: UILabel!
     @IBOutlet weak var body: UILabel!
     @IBOutlet weak var image: UIImageView!
 }
