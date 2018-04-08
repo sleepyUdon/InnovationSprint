@@ -32,6 +32,7 @@ depends-top-level:
 - !private "/"
 - !private "=="
 - !private "ARMediaNode"
+- !private "ARViewController"
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
@@ -87,9 +88,11 @@ depends-top-level:
 - "Void"
 - !private "_ColorLiteralType"
 - !private "print"
+- !private "||"
 depends-member:
 - !private ["9CBC_AR36011ARMediaNodeC", "deinit"]
 - !private ["9CBC_AR36011ARMediaNodeC", "init"]
+- !private ["9CBC_AR36011ARMediaNodeC", "url"]
 - !private ["So9ARSCNViewC", "addLocationNodeWithConfirmedLocation"]
 - !private ["So9ARSCNViewC", "alpha"]
 - !private ["So9ARSCNViewC", "bestLocationEstimate"]
@@ -123,6 +126,7 @@ depends-member:
 - !private ["So17ARSessionObserverP", "pause"]
 - !private ["So17ARSessionObserverP", "pointOfView"]
 - !private ["So17ARSessionObserverP", "run"]
+- !private ["9CBC_AR36016ARViewControllerC", "url"]
 - !private ["Sa", "append"]
 - !private ["s23BidirectionalCollectionP", "append"]
 - ["s23BidirectionalCollectionP", "init"]
@@ -387,6 +391,7 @@ depends-member:
 - !private ["s7CVarArgP", "type"]
 - !private ["s7CVarArgP", "updateUserLocation"]
 - !private ["s7CVarArgP", "updateUserLocationTimer"]
+- !private ["s7CVarArgP", "url"]
 - !private ["s7CVarArgP", "userAnnotation"]
 - !private ["s7CVarArgP", "userLocation"]
 - !private ["s7CVarArgP", "view"]
@@ -528,6 +533,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "type"]
 - !private ["s28CustomDebugStringConvertibleP", "updateUserLocation"]
 - !private ["s28CustomDebugStringConvertibleP", "updateUserLocationTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
 - !private ["s28CustomDebugStringConvertibleP", "userAnnotation"]
 - !private ["s28CustomDebugStringConvertibleP", "userLocation"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
@@ -674,6 +680,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "type"]
 - !private ["s23CustomStringConvertibleP", "updateUserLocation"]
 - !private ["s23CustomStringConvertibleP", "updateUserLocationTimer"]
+- !private ["s23CustomStringConvertibleP", "url"]
 - !private ["s23CustomStringConvertibleP", "userAnnotation"]
 - !private ["s23CustomStringConvertibleP", "userLocation"]
 - !private ["s23CustomStringConvertibleP", "view"]
@@ -851,6 +858,7 @@ depends-member:
 - !private ["s9EquatableP", "type"]
 - !private ["s9EquatableP", "updateUserLocation"]
 - !private ["s9EquatableP", "updateUserLocationTimer"]
+- !private ["s9EquatableP", "url"]
 - !private ["s9EquatableP", "userAnnotation"]
 - !private ["s9EquatableP", "userLocation"]
 - !private ["s9EquatableP", "vertical"]
@@ -1009,6 +1017,7 @@ depends-member:
 - !private ["s8HashableP", "type"]
 - !private ["s8HashableP", "updateUserLocation"]
 - !private ["s8HashableP", "updateUserLocationTimer"]
+- !private ["s8HashableP", "url"]
 - !private ["s8HashableP", "userAnnotation"]
 - !private ["s8HashableP", "userLocation"]
 - !private ["s8HashableP", "vertical"]
@@ -1030,6 +1039,8 @@ depends-member:
 - !private ["9CBC_AR36022LocationAnnotationNodeC", "deinit"]
 - !private ["9CBC_AR36022LocationAnnotationNodeC", "image"]
 - !private ["9CBC_AR36022LocationAnnotationNodeC", "init"]
+- !private ["9CBC_AR36022LocationAnnotationNodeC", "type"]
+- !private ["9CBC_AR36022LocationAnnotationNodeC", "url"]
 - !private ["9CBC_AR36023LocationManagerDelegateP", "addLocationNodeWithConfirmedLocation"]
 - !private ["9CBC_AR36023LocationManagerDelegateP", "alpha"]
 - !private ["9CBC_AR36023LocationManagerDelegateP", "bestLocationEstimate"]
@@ -1045,6 +1056,8 @@ depends-member:
 - !private ["9CBC_AR36012LocationNodeC", "date"]
 - !private ["9CBC_AR36012LocationNodeC", "deck"]
 - !private ["9CBC_AR36012LocationNodeC", "image"]
+- !private ["9CBC_AR36012LocationNodeC", "type"]
+- !private ["9CBC_AR36012LocationNodeC", "url"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - !private ["So12MKAnnotationP", "body"]
@@ -1054,6 +1067,7 @@ depends-member:
 - !private ["So12MKAnnotationP", "image"]
 - !private ["So12MKAnnotationP", "init"]
 - !private ["So12MKAnnotationP", "type"]
+- !private ["So12MKAnnotationP", "url"]
 - !private ["So16MKAnnotationViewC", "annotation"]
 - !private ["So16MKAnnotationViewC", "displayPriority"]
 - !private ["So16MKAnnotationViewC", "glyphImage"]
@@ -1256,8 +1270,10 @@ depends-member:
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "touchesBegan"]
+- !private ["So8NSCodingP", "type"]
 - !private ["So8NSCodingP", "updateUserLocation"]
 - !private ["So8NSCodingP", "updateUserLocationTimer"]
+- !private ["So8NSCodingP", "url"]
 - !private ["So8NSCodingP", "userAnnotation"]
 - !private ["So8NSCodingP", "userLocation"]
 - !private ["So8NSCodingP", "view"]
@@ -1277,6 +1293,8 @@ depends-member:
 - ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "parent"]
 - !private ["So9NSCopyingP", "position"]
+- !private ["So9NSCopyingP", "type"]
+- !private ["So9NSCopyingP", "url"]
 - !private ["So26NSExtensionRequestHandlingP", "ARButton"]
 - !private ["So26NSExtensionRequestHandlingP", "ARMediaNode"]
 - !private ["So26NSExtensionRequestHandlingP", "CGPoint"]
@@ -1342,6 +1360,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "touchesBegan"]
 - !private ["So26NSExtensionRequestHandlingP", "updateUserLocation"]
 - !private ["So26NSExtensionRequestHandlingP", "updateUserLocationTimer"]
+- !private ["So26NSExtensionRequestHandlingP", "url"]
 - !private ["So26NSExtensionRequestHandlingP", "userAnnotation"]
 - !private ["So26NSExtensionRequestHandlingP", "userLocation"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
@@ -1362,6 +1381,7 @@ depends-member:
 - ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "ARButton"]
 - !private ["So8NSObjectC", "ARMediaNode"]
+- !private ["So8NSObjectC", "ARViewController"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "BottomView"]
 - ["So8NSObjectC", "CGFloat"]
@@ -1509,6 +1529,7 @@ depends-member:
 - !private ["So8NSObjectC", "type"]
 - ["So8NSObjectC", "updateUserLocation"]
 - ["So8NSObjectC", "updateUserLocationTimer"]
+- !private ["So8NSObjectC", "url"]
 - ["So8NSObjectC", "userAnnotation"]
 - ["So8NSObjectC", "userLocation"]
 - !private ["So8NSObjectC", "view"]
@@ -1642,6 +1663,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "type"]
 - !private ["So16NSObjectProtocolP", "updateUserLocation"]
 - !private ["So16NSObjectProtocolP", "updateUserLocationTimer"]
+- !private ["So16NSObjectProtocolP", "url"]
 - !private ["So16NSObjectProtocolP", "userAnnotation"]
 - !private ["So16NSObjectProtocolP", "userLocation"]
 - !private ["So16NSObjectProtocolP", "view"]
@@ -1666,6 +1688,8 @@ depends-member:
 - !private ["So14NSSecureCodingP", "shadowOffset"]
 - !private ["So14NSSecureCodingP", "shadowOpacity"]
 - !private ["So14NSSecureCodingP", "shadowRadius"]
+- !private ["So14NSSecureCodingP", "type"]
+- !private ["So14NSSecureCodingP", "url"]
 - ["So8NSStringC", "init"]
 - !private ["s7NumericP", "init"]
 - !private ["So9OS_objectC", "DispatchTime"]
@@ -1699,6 +1723,8 @@ depends-member:
 - !private ["So13SCNActionableP", "init"]
 - !private ["So13SCNActionableP", "parent"]
 - !private ["So13SCNActionableP", "position"]
+- !private ["So13SCNActionableP", "type"]
+- !private ["So13SCNActionableP", "url"]
 - !private ["So13SCNAnimatableP", "body"]
 - !private ["So13SCNAnimatableP", "date"]
 - !private ["So13SCNAnimatableP", "deck"]
@@ -1706,6 +1732,8 @@ depends-member:
 - !private ["So13SCNAnimatableP", "init"]
 - !private ["So13SCNAnimatableP", "parent"]
 - !private ["So13SCNAnimatableP", "position"]
+- !private ["So13SCNAnimatableP", "type"]
+- !private ["So13SCNAnimatableP", "url"]
 - !private ["So17SCNBoundingVolumeP", "body"]
 - !private ["So17SCNBoundingVolumeP", "date"]
 - !private ["So17SCNBoundingVolumeP", "deck"]
@@ -1713,6 +1741,8 @@ depends-member:
 - !private ["So17SCNBoundingVolumeP", "init"]
 - !private ["So17SCNBoundingVolumeP", "parent"]
 - !private ["So17SCNBoundingVolumeP", "position"]
+- !private ["So17SCNBoundingVolumeP", "type"]
+- !private ["So17SCNBoundingVolumeP", "url"]
 - !private ["So16SCNHitTestResultC", "node"]
 - !private ["So7SCNNodeC", "body"]
 - !private ["So7SCNNodeC", "date"]
@@ -1720,6 +1750,8 @@ depends-member:
 - !private ["So7SCNNodeC", "image"]
 - !private ["So7SCNNodeC", "parent"]
 - !private ["So7SCNNodeC", "position"]
+- !private ["So7SCNNodeC", "type"]
+- !private ["So7SCNNodeC", "url"]
 - !private ["So16SCNSceneRendererP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So16SCNSceneRendererP", "alpha"]
 - !private ["So16SCNSceneRendererP", "bestLocationEstimate"]
@@ -1882,6 +1914,7 @@ depends-member:
 - ["9CBC_AR3604TypeO", "Breaking"]
 - ["9CBC_AR3604TypeO", "Location"]
 - ["9CBC_AR3604TypeO", "Sports"]
+- !private ["9CBC_AR3604TypeO", "deinit"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
@@ -2051,6 +2084,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "touchesBegan"]
 - !private ["So21UIAppearanceContainerP", "updateUserLocation"]
 - !private ["So21UIAppearanceContainerP", "updateUserLocationTimer"]
+- !private ["So21UIAppearanceContainerP", "url"]
 - !private ["So21UIAppearanceContainerP", "userAnnotation"]
 - !private ["So21UIAppearanceContainerP", "userLocation"]
 - !private ["So21UIAppearanceContainerP", "view"]
@@ -2129,6 +2163,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "touchesBegan"]
 - !private ["So18UIContentContainerP", "updateUserLocation"]
 - !private ["So18UIContentContainerP", "updateUserLocationTimer"]
+- !private ["So18UIContentContainerP", "url"]
 - !private ["So18UIContentContainerP", "userAnnotation"]
 - !private ["So18UIContentContainerP", "userLocation"]
 - !private ["So18UIContentContainerP", "view"]
@@ -2307,8 +2342,10 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "title"]
 - !private ["So18UIFocusEnvironmentP", "touchesBegan"]
+- !private ["So18UIFocusEnvironmentP", "type"]
 - !private ["So18UIFocusEnvironmentP", "updateUserLocation"]
 - !private ["So18UIFocusEnvironmentP", "updateUserLocationTimer"]
+- !private ["So18UIFocusEnvironmentP", "url"]
 - !private ["So18UIFocusEnvironmentP", "userAnnotation"]
 - !private ["So18UIFocusEnvironmentP", "userLocation"]
 - !private ["So18UIFocusEnvironmentP", "view"]
@@ -2354,6 +2391,8 @@ depends-member:
 - !private ["So11UIFocusItemP", "subviews"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "title"]
+- !private ["So11UIFocusItemP", "type"]
+- !private ["So11UIFocusItemP", "url"]
 - !private ["So27UIGestureRecognizerDelegateP", "delegate"]
 - !private ["So27UIGestureRecognizerDelegateP", "expandPanel"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
@@ -2463,6 +2502,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "touchesBegan"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateUserLocation"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateUserLocationTimer"]
+- !private ["So30UIPasteConfigurationSupportingP", "url"]
 - !private ["So30UIPasteConfigurationSupportingP", "userAnnotation"]
 - !private ["So30UIPasteConfigurationSupportingP", "userLocation"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
@@ -2473,6 +2513,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "ARButton"]
 - !private ["So11UIResponderC", "ARMediaNode"]
+- !private ["So11UIResponderC", "ARViewController"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "BottomView"]
 - ["So11UIResponderC", "CGFloat"]
@@ -2590,6 +2631,7 @@ depends-member:
 - ["So11UIResponderC", "touchesBegan"]
 - ["So11UIResponderC", "updateUserLocation"]
 - ["So11UIResponderC", "updateUserLocationTimer"]
+- !private ["So11UIResponderC", "url"]
 - ["So11UIResponderC", "userAnnotation"]
 - ["So11UIResponderC", "userLocation"]
 - !private ["So11UIResponderC", "view"]
@@ -2695,6 +2737,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "touchesBegan"]
 - !private ["So30UIResponderStandardEditActionsP", "updateUserLocation"]
 - !private ["So30UIResponderStandardEditActionsP", "updateUserLocationTimer"]
+- !private ["So30UIResponderStandardEditActionsP", "url"]
 - !private ["So30UIResponderStandardEditActionsP", "userAnnotation"]
 - !private ["So30UIResponderStandardEditActionsP", "userLocation"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
@@ -2771,6 +2814,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "touchesBegan"]
 - !private ["So16UIStateRestoringP", "updateUserLocation"]
 - !private ["So16UIStateRestoringP", "updateUserLocationTimer"]
+- !private ["So16UIStateRestoringP", "url"]
 - !private ["So16UIStateRestoringP", "userAnnotation"]
 - !private ["So16UIStateRestoringP", "userLocation"]
 - !private ["So16UIStateRestoringP", "view"]
@@ -2880,6 +2924,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "touchesBegan"]
 - !private ["So18UITraitEnvironmentP", "updateUserLocation"]
 - !private ["So18UITraitEnvironmentP", "updateUserLocationTimer"]
+- !private ["So18UITraitEnvironmentP", "url"]
 - !private ["So18UITraitEnvironmentP", "userAnnotation"]
 - !private ["So18UITraitEnvironmentP", "userLocation"]
 - !private ["So18UITraitEnvironmentP", "view"]
@@ -2926,6 +2971,7 @@ depends-member:
 - !private ["SC22UIViewAnimationOptionsV", "allowUserInteraction"]
 - ["So16UIViewControllerC", "ARButton"]
 - !private ["So16UIViewControllerC", "ARMediaNode"]
+- !private ["So16UIViewControllerC", "ARViewController"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "BottomView"]
 - ["So16UIViewControllerC", "CGFloat"]
@@ -3010,6 +3056,7 @@ depends-member:
 - ["So16UIViewControllerC", "touchesBegan"]
 - ["So16UIViewControllerC", "updateUserLocation"]
 - ["So16UIViewControllerC", "updateUserLocationTimer"]
+- !private ["So16UIViewControllerC", "url"]
 - ["So16UIViewControllerC", "userAnnotation"]
 - ["So16UIViewControllerC", "userLocation"]
 - !private ["So16UIViewControllerC", "view"]
@@ -3020,6 +3067,7 @@ depends-member:
 - ["So16UIViewControllerC", ""]
 - ["9CBC_AR36014ViewControllerC", "ARButton"]
 - !private ["9CBC_AR36014ViewControllerC", "ARMediaNode"]
+- !private ["9CBC_AR36014ViewControllerC", "ARViewController"]
 - ["9CBC_AR36014ViewControllerC", "Bool"]
 - ["9CBC_AR36014ViewControllerC", "BottomView"]
 - ["9CBC_AR36014ViewControllerC", "CGFloat"]
@@ -3298,6 +3346,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateUserLocation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateUserLocationTimer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userAnnotation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userLocation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
@@ -3324,6 +3373,7 @@ depends-nominal:
 - !private "So9ARSCNViewC"
 - !private "So17ARSCNViewDelegateP"
 - !private "So17ARSessionObserverP"
+- !private "9CBC_AR36016ARViewControllerC"
 - !private "Sa"
 - "s23BidirectionalCollectionP"
 - !private "s19BinaryFloatingPointP"
@@ -3516,4 +3566,12 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 interface-hash: "661c57fc873891ec0d5df16c441c0b38"

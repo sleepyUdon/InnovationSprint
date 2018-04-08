@@ -59,17 +59,23 @@ open class LocationAnnotationNode: LocationNode {
     public let body: String
     public let image: UIImage
     public let icon: Icon
+    public let type: Type
+    public let url: String?
+
 
     public var scaleRelativeToDistance = true
     public let annotationNode: SCNNode
 
-    public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: UIImage, icon: Icon) {
+    public init(location: CLLocation?,title: String, deck: String, date: String, body: String, image: UIImage, icon: Icon, type: Type, url: String?) {
         self.title = title
         self.deck = deck
         self.date = date
         self.body = body
         self.image = image
         self.icon = icon
+        self.type = type
+        self.url = url
+
 
         annotationNode = SCNNode()
         let plane = SCNPlane(width: icon.ARimage.size.width, height: icon.ARimage.size.height)

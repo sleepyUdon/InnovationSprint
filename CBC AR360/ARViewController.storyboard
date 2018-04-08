@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,19 +12,16 @@
         <!--View Controller-->
         <scene sceneID="X9V-dm-LHM">
             <objects>
-                <viewController storyboardIdentifier="ARViewController" id="8Hd-8f-UUY" customClass="ARViewController" customModule="CBC_AR360" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARViewController" wantsFullScreenLayout="YES" id="8Hd-8f-UUY" customClass="ARViewController" customModule="CBC_AR360" customModuleProvider="target" sceneMemberID="viewController">
                     <wkWebView key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FV7-FS-8Sa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <wkWebViewConfiguration key="configuration">
                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                             <wkPreferences key="preferences"/>
                         </wkWebViewConfiguration>
                     </wkWebView>
-                    <navigationItem key="navigationItem" id="eQg-zE-N30">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yx6-qz-giv"/>
-                    </navigationItem>
                     <connections>
                         <outlet property="webview" destination="FV7-FS-8Sa" id="mQM-YB-uY9"/>
                     </connections>

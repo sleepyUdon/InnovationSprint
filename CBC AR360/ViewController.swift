@@ -95,19 +95,23 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let story4 = Story(title: "#KingStPilot", deck: "Video of drivers ignoring King Street pilot has critic questioning police enforcement", body: "A taxi, then a black sedan, park in a TTC streetcar stop at King Street West and Peter Street.\n\nA growling Maserati leads a stream of cars going straight through that intersection, while at least two more vehicles make illegal left turns.\n\nNearly every motorist in the one-minute-and-nine-second video is breaking the rules of the King Street pilot project, the city's high-profile attempt to improve streetcar service in the downtown core.\n\nNot one driver, not even the driver filmed breaking the law right in front of a police cruiser, appears to get a ticket.", date: "April 2, 2018", image: "KingPilot", latitude: 43.6460226, longitude: -79.4010278, icon: Icon.Location, type: Type.Location, url: nil)
         stories.append(story4)
         
-        let story5 = Story(title: "#HomeOpener", deck: "Yankees beat Blue Jays 6-1 in Toronto's home opener", body: "The New York Yankees beat the Blue Jays 6-1 in the Toronto team's home opener at the Rogers Centre on Thursday.\n\nThe team honoured late pitcher Roy Halladay during a pre-game tribute at the Roger's Centre. Halladay's wife, Brandy, and sons, Braden and Ryan, stood on the infield as the his number, 32, was hoisted into the rafters. Halladay is the second Blue Jay in franchise history to have his number retired, alongside Roberto Alomar. There were two very noticeable absentees at the game this afternoon, one on the field and the other up in the broadcast booth.\n\nFor the first time since 2009, the Blue Jays will open a season without Jose Bautista as a member of the team.", date: "March 29, 2018", image: "HomeOpener", latitude: 43.6429557, longitude: -79.3905708, icon: Icon.Sports, type: Type.Sports, url: "http://1.151.236.12/ar360/")
+        let story5 = Story(title: "#HomeOpener", deck: "Yankees beat Blue Jays 6-1 in Toronto's home opener", body: "The New York Yankees beat the Blue Jays 6-1 in the Toronto team's home opener at the Rogers Centre on Thursday.\n\nThe team honoured late pitcher Roy Halladay during a pre-game tribute at the Roger's Centre. Halladay's wife, Brandy, and sons, Braden and Ryan, stood on the infield as the his number, 32, was hoisted into the rafters. Halladay is the second Blue Jay in franchise history to have his number retired, alongside Roberto Alomar. There were two very noticeable absentees at the game this afternoon, one on the field and the other up in the broadcast booth.\n\nFor the first time since 2009, the Blue Jays will open a season without Jose Bautista as a member of the team.", date: "March 29, 2018", image: "HomeOpener", latitude: 43.6429557, longitude: -79.3905708, icon: Icon.Sports, type: Type.Sports, url: nil)
         stories.append(story5)
         
-        let story6 = Story(title: "#Concert", deck: "The Crooked - Live at the Steam Whistle Brewing", body: "story", date: "February 15, 2018", image: "LeesPalace", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Sports, type: Type.ARVideo, url: "http://1.151.236.12/ar360/")
+        let story6 = Story(title: "#Concert", deck: "The Crooked - Live at the Steam Whistle Brewing", body: "story", date: "February 15, 2018", image: "LeesPalace", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.AR, type: Type.ARVideo, url: "http://1.151.236.12/ar360/")
         stories.append(story6)
         
-        let story7 = Story(title: "#RipleyProtest", deck: "Aquatic animals don't belong in a 'bathtub' say Ripley's Aquarium protestors", body: "Protestors wrapped in fishing nets lay prostrate in front of Ripley's Aquarium on Saturday afternoon, while others carried signs reading messages like \"abolish fishing\" and \"animals are not ours to use.\"\n\nAround two dozen activists took part in the demonstration to protest both hunting marine animals, and having them in captivity at aquariums.\n\n\"Hundreds of billions of marine animals are murdered every year when we don't need to consume a single fish, or lobster, or any animal,\" said protestor Len Goldberg.", date: "March 15, 2018", image: "InnovationSprint", latitude: 43.6427545, longitude: -79.3883146, icon: Icon.Location, type: Type.Location, url: nil)
+        let story7 = Story(title: "#RipleyProtest", deck: "Aquatic animals don't belong in a 'bathtub' say Ripley's Aquarium protestors", body: "Protestors wrapped in fishing nets lay prostrate in front of Ripley's Aquarium on Saturday afternoon, while others carried signs reading messages like \"abolish fishing\" and \"animals are not ours to use.\"\n\nAround two dozen activists took part in the demonstration to protest both hunting marine animals, and having them in captivity at aquariums.\n\n\"Hundreds of billions of marine animals are murdered every year when we don't need to consume a single fish, or lobster, or any animal,\" said protestor Len Goldberg.", date: "March 15, 2018", image: "RipleyProtest", latitude: 43.6427545, longitude: -79.3883146, icon: Icon.Location, type: Type.Location, url: nil)
         stories.append(story7)
         
-        let story8 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.Location, type: Type.ARPhoto, url: nil)
+        //TODO: Replace link to CBC 360 Photo
+        let story8 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6417188, longitude: -79.3854774, icon: Icon.AR, type: Type.ARPhoto, url: "https://theta360.com/s/c2e2tNIJaYp6wBxqHlBPMVk9I")
         stories.append(story8)
         
-        let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.Location, type: Type.ARPhoto, url: nil)
+        
+        // Fake for testing at home
+        //TODO: Replace link to CBC 360 Photo
+        let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.AR, type: Type.ARPhoto, url: "https://theta360.com/s/c2e2tNIJaYp6wBxqHlBPMVk9I")
         stories.append(story9)
 
         
@@ -143,7 +147,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func createLocationNodesForARView(){
         for story in stories {
             let ARCLLocation = CLLocation(coordinate: CLLocationCoordinate2D(latitude: story.latitude, longitude: story.longitude), altitude: story.altitude)
-            let pinMapLocationNode = LocationAnnotationNode(location: ARCLLocation, title: story.title!, deck: story.deck, date: story.date, body: story.body, image: UIImage(named:story.image)!, icon: story.icon)
+            let pinMapLocationNode = LocationAnnotationNode(location: ARCLLocation, title: story.title!, deck: story.deck, date: story.date, body: story.body, image: UIImage(named:story.image)!, icon: story.icon, type: story.type, url: story.url)
             sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinMapLocationNode)
         }
     }
@@ -261,8 +265,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
             self.bottomController?.expandPanel()
         } else if let annotationNode = view.annotation as? ARMediaNode {
             let storyboard = UIStoryboard(name: "ARViewController", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "ARViewController")
-            self.present(controller, animated: true, completion: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "ARViewController") as! ARViewController
+            if let url = annotationNode.url {
+                controller.url = url
+                self.present(controller, animated: true, completion: nil)
+            } else {
+                print("Error with url")
+            }
         }
     }
     
@@ -319,17 +328,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
             print("something touched")
             
             if let parentNode = result.node.parent as? LocationAnnotationNode {
-                self.mapView.isHidden = true
-                self.bottomView.image.image = parentNode.image
-                self.bottomView.title.text = parentNode.deck
-                self.bottomView.date.text = parentNode.date
-                self.bottomView.body.text = parentNode.body
-                self.bottomController?.expandPanel()
+                if parentNode.type == Type.Breaking || parentNode.type == Type.Location || parentNode.type == Type.Sports {
+                    self.mapView.isHidden = true
+                    self.bottomView.image.image = parentNode.image
+                    self.bottomView.title.text = parentNode.deck
+                    self.bottomView.date.text = parentNode.date
+                    self.bottomView.body.text = parentNode.body
+                    self.bottomController?.expandPanel()
+                } else {
+                    if let url = parentNode.url {
+                        let storyboard = UIStoryboard(name: "ARViewController", bundle: nil)
+                        let controller = storyboard.instantiateViewController(withIdentifier: "ARViewController") as! ARViewController
+                        controller.url = url
+                        self.present(controller, animated: true, completion: nil)
+                    }
+                }
             }
         }
     }
-
-    }
+}
 
 
 

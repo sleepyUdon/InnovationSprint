@@ -13,12 +13,12 @@ class ARViewController: UIViewController {
     
     @IBOutlet var webview: WKWebView!
     var closeButton = UIButton()
+    var url = String()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL (string: "https://theta360.com/s/c2e2tNIJaYp6wBxqHlBPMVk9I")
-        let requestObj = URLRequest(url: url!)
+        let requestObj = URLRequest(url: NSURL(string: url)! as URL)
         webview.load(requestObj)
     }
     
