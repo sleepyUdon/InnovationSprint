@@ -6,11 +6,11 @@
 	<dict>
 		<key>ARViewController.storyboardc/8Hd-8f-UUY-view-FV7-FS-8Sa.nib</key>
 		<data>
-		H2DV5bdvA1hE/VS2r/IcXR359Gs=
+		XAff3TPRAvA5kDbfdmbVjTQheWc=
 		</data>
 		<key>ARViewController.storyboardc/ARViewController.nib</key>
 		<data>
-		X1l3cR6MN/djfOg3OOuEqubpc+Y=
+		7qqOWCPXQY21f8wrGRChvXHVYk4=
 		</data>
 		<key>ARViewController.storyboardc/Info.plist</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/CTSlidingUpPanel</key>
 		<data>
-		ZGf9ONGcAtNm4XzBj9a/e3RM8E4=
+		GZM11dM+okWNrGp6dnlAakL2lHQ=
 		</data>
 		<key>Frameworks/CTSlidingUpPanel.framework/Info.plist</key>
 		<data>
@@ -156,6 +156,22 @@
 		<data>
 		f2BkXTWDIYEUq7kdqOt6itgx1Ro=
 		</data>
+		<key>Frameworks/youtube_ios_player_helper.framework/Assets.bundle/Assets/YTPlayerView-iframe-player.html</key>
+		<data>
+		su3hI0ilW0tv+DNDcvQKIhq+uSs=
+		</data>
+		<key>Frameworks/youtube_ios_player_helper.framework/Info.plist</key>
+		<data>
+		ngI6In4gi+itoP7AbpNDn8Vp5rA=
+		</data>
+		<key>Frameworks/youtube_ios_player_helper.framework/_CodeSignature/CodeResources</key>
+		<data>
+		TTiqOP0MEnevvq7c5Ny4SZo1nRk=
+		</data>
+		<key>Frameworks/youtube_ios_player_helper.framework/youtube_ios_player_helper</key>
+		<data>
+		rSBaD089PFZOQvmgsYoVh6De8QA=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		QpASOmcCUUAo6CIdgzvz9rQTw+E=
@@ -172,6 +188,18 @@
 		<data>
 		LbjfEzdCiRuXgMxigC1d/4fi4Ts=
 		</data>
+		<key>YTViewController.storyboardc/Info.plist</key>
+		<data>
+		wExI0pgrqESmo2wHJNO6ZaeNIE0=
+		</data>
+		<key>YTViewController.storyboardc/YTViewController.nib</key>
+		<data>
+		o9BMJEjlFgcb/Loh+Kg4MHHPOzQ=
+		</data>
+		<key>YTViewController.storyboardc/z4d-0Y-Fdp-view-aNG-E5-F0d.nib</key>
+		<data>
+		B+CKD8zRAuuRnPHzehymLEl4Kbc=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		R7Xni4Bpr1BeoqEovPfCLTz83Q4=
@@ -187,22 +215,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H2DV5bdvA1hE/VS2r/IcXR359Gs=
+			XAff3TPRAvA5kDbfdmbVjTQheWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tqgph4d1f4jWFC2bjgRAG/hjgCnfc2k+QKZ0iBdNQ9M=
+			NBDaeze39E8IsOfqjJEYTi8zvd13GWLOGe1nSLozdAw=
 			</data>
 		</dict>
 		<key>ARViewController.storyboardc/ARViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X1l3cR6MN/djfOg3OOuEqubpc+Y=
+			7qqOWCPXQY21f8wrGRChvXHVYk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ym5o6RQPv9C4DLzhS7tIedZ7jsF6daDTubPxHc0Bhxs=
+			aj7Qd0DO+DPYXq6ypvlTAe6fbXSxAECUjgIlxRK2MLo=
 			</data>
 		</dict>
 		<key>ARViewController.storyboardc/Info.plist</key>
@@ -308,11 +336,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZGf9ONGcAtNm4XzBj9a/e3RM8E4=
+			GZM11dM+okWNrGp6dnlAakL2lHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+NNBLmr+jepVbhfk1DacgqY6aL23/0WyBXjKdeMSY8=
+			rLN0mV4EBW9e8yNusy4p+puujUYkfRYX6TkgV7HeS3k=
 			</data>
 		</dict>
 		<key>Frameworks/CTSlidingUpPanel.framework/Info.plist</key>
@@ -601,6 +629,50 @@
 			FTNbYvc83Vc25MTMygMcjQR7jqxdNFOtCArm6mkG2r0=
 			</data>
 		</dict>
+		<key>Frameworks/youtube_ios_player_helper.framework/Assets.bundle/Assets/YTPlayerView-iframe-player.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			su3hI0ilW0tv+DNDcvQKIhq+uSs=
+			</data>
+			<key>hash2</key>
+			<data>
+			LlTkzI+56lWK6wS/FUgVcg1sk5cEOlR5IOPbnTQt4B0=
+			</data>
+		</dict>
+		<key>Frameworks/youtube_ios_player_helper.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ngI6In4gi+itoP7AbpNDn8Vp5rA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ni8/9NdqOIT8uG5zxn2luLp1PpQxFsjQHtO3Im9SzQQ=
+			</data>
+		</dict>
+		<key>Frameworks/youtube_ios_player_helper.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TTiqOP0MEnevvq7c5Ny4SZo1nRk=
+			</data>
+			<key>hash2</key>
+			<data>
+			aZ4Q7IH6wQvWJAUJcBJxaF/OWqX0w3WDAi9Ssl/1pVw=
+			</data>
+		</dict>
+		<key>Frameworks/youtube_ios_player_helper.framework/youtube_ios_player_helper</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rSBaD089PFZOQvmgsYoVh6De8QA=
+			</data>
+			<key>hash2</key>
+			<data>
+			W6+DwNQANfVyC8bDq1UAk4KmbvF2Wy/irFASNHfU3DA=
+			</data>
+		</dict>
 		<key>StagApp-Bold.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -621,6 +693,39 @@
 			<key>hash2</key>
 			<data>
 			vryvVaIp63Nz8OiCeiGj5zAlHrDbmhmA+IzmDFSrAH4=
+			</data>
+		</dict>
+		<key>YTViewController.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wExI0pgrqESmo2wHJNO6ZaeNIE0=
+			</data>
+			<key>hash2</key>
+			<data>
+			9nX/8oLMkFMI/httnbPLMcUIMGRxnsPs4oX0MoTyeq0=
+			</data>
+		</dict>
+		<key>YTViewController.storyboardc/YTViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o9BMJEjlFgcb/Loh+Kg4MHHPOzQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			/WieRr33lNuANOhJOC6IhQadswpAGSCNJNMs0GNrk9g=
+			</data>
+		</dict>
+		<key>YTViewController.storyboardc/z4d-0Y-Fdp-view-aNG-E5-F0d.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			B+CKD8zRAuuRnPHzehymLEl4Kbc=
+			</data>
+			<key>hash2</key>
+			<data>
+			CfdecBBYMDhbEn/LiFXMdXD5v1pd07YL9fwYskF1D+w=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

@@ -1,0 +1,11 @@
+framework module CTSlidingUpPanel {
+  umbrella header "CTSlidingUpPanel-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CTSlidingUpPanel.Swift {
+    header "CTSlidingUpPanel-Swift.h"
+    requires objc
+}
