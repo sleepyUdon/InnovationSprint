@@ -18,6 +18,8 @@ class ARViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let configuration = WKWebViewConfiguration()
+        
         let requestObj = URLRequest(url: NSURL(string: url)! as URL)
         webview.load(requestObj)
     }

@@ -1,56 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M1c-mf-naW"/>
+                        <viewControllerLayoutGuide type="bottom" id="rGL-n2-59S"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KaF-D3-DcH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaF-D3-DcH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo_cbcnews" translatesAutoresizingMaskIntoConstraints="NO" id="GRh-0H-0uj">
-                                        <rect key="frame" x="70" y="286" width="179" height="95"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneX_splash-bg" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-aC-tiZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneX_splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="rYn-Kq-Ny4">
+                                        <rect key="frame" x="127.5" y="273.5" width="120" height="120"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="179" id="E11-ht-2oA"/>
-                                            <constraint firstAttribute="height" constant="95" id="UFb-Ou-CB8"/>
+                                            <constraint firstAttribute="width" constant="120" id="5To-sP-l5M"/>
+                                            <constraint firstAttribute="height" constant="120" id="GF9-ky-f3W"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxr-sN-mfJ">
-                                        <rect key="frame" x="264" y="318" width="36" height="31.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Gxr-sN-mfJ" firstAttribute="centerY" secondItem="GRh-0H-0uj" secondAttribute="centerY" id="GSp-xU-ndK"/>
-                                    <constraint firstItem="GRh-0H-0uj" firstAttribute="centerY" secondItem="KaF-D3-DcH" secondAttribute="centerY" id="O4a-dF-Jur"/>
-                                    <constraint firstItem="GRh-0H-0uj" firstAttribute="centerX" secondItem="KaF-D3-DcH" secondAttribute="centerX" constant="-28" id="YS0-X1-WAI"/>
-                                    <constraint firstItem="Gxr-sN-mfJ" firstAttribute="leading" secondItem="GRh-0H-0uj" secondAttribute="trailing" constant="15" id="xtw-MJ-KXK"/>
+                                    <constraint firstItem="hPN-aC-tiZ" firstAttribute="leading" secondItem="KaF-D3-DcH" secondAttribute="leading" id="7o9-2b-wYc"/>
+                                    <constraint firstItem="hPN-aC-tiZ" firstAttribute="top" secondItem="KaF-D3-DcH" secondAttribute="top" id="Kz5-dI-eGA"/>
+                                    <constraint firstItem="rYn-Kq-Ny4" firstAttribute="centerY" secondItem="hPN-aC-tiZ" secondAttribute="centerY" id="SAG-0Z-NNY"/>
+                                    <constraint firstAttribute="trailing" secondItem="hPN-aC-tiZ" secondAttribute="trailing" id="U8e-wp-dmY"/>
+                                    <constraint firstAttribute="bottom" secondItem="hPN-aC-tiZ" secondAttribute="bottom" id="kPn-zV-5JG"/>
+                                    <constraint firstItem="rYn-Kq-Ny4" firstAttribute="centerX" secondItem="hPN-aC-tiZ" secondAttribute="centerX" id="otH-Rc-6zm"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KaF-D3-DcH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="133-Sb-Fam"/>
+                            <constraint firstItem="KaF-D3-DcH" firstAttribute="bottom" secondItem="rGL-n2-59S" secondAttribute="top" id="KuB-4g-FrL"/>
+                            <constraint firstItem="KaF-D3-DcH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="oPR-xJ-VUx"/>
+                            <constraint firstAttribute="trailing" secondItem="KaF-D3-DcH" secondAttribute="trailing" id="pGz-gr-Kit"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,6 +61,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_cbcnews" width="300" height="107"/>
+        <image name="iPhoneX_splash-bg" width="375" height="812"/>
+        <image name="iPhoneX_splash-logo" width="199" height="304"/>
     </resources>
 </document>

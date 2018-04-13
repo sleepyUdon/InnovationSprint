@@ -21,6 +21,8 @@ provides-dynamic-lookup:
 - "mapView"
 - "sceneLocationView"
 - "stackView"
+- "touchesBegan"
+- "updateUserLocation"
 - "viewDidLoad"
 - "viewWillAppear"
 - "viewWillDisappear"
@@ -65,7 +67,7 @@ depends-top-level:
 - "SCNVector3"
 - "SceneLocationView"
 - "SceneLocationViewDelegate"
-- !private "Set"
+- "Set"
 - "Story"
 - !private "StoryNode"
 - "StringLiteralType"
@@ -74,24 +76,22 @@ depends-top-level:
 - !private "Type"
 - "UIButton"
 - !private "UIColor"
-- !private "UIEvent"
+- "UIEvent"
 - !private "UIImage"
 - "UIStackView"
 - !private "UIStoryboard"
-- !private "UITouch"
+- "UITouch"
 - "UIView"
 - !private "UIViewAnimationOptions"
 - "UIViewController"
 - "ViewController"
 - "Void"
-- !private "YTViewController"
 - !private "_ColorLiteralType"
 - !private "print"
 - !private "||"
 depends-member:
 - !private ["9CBC_AR36011ARMediaNodeC", "deinit"]
 - !private ["9CBC_AR36011ARMediaNodeC", "init"]
-- !private ["9CBC_AR36011ARMediaNodeC", "type"]
 - !private ["9CBC_AR36011ARMediaNodeC", "url"]
 - !private ["So9ARSCNViewC", "addLocationNodeWithConfirmedLocation"]
 - !private ["So9ARSCNViewC", "alpha"]
@@ -1410,7 +1410,7 @@ depends-member:
 - ["So8NSObjectC", "SCNNode"]
 - ["So8NSObjectC", "SCNVector3"]
 - ["So8NSObjectC", "SceneLocationView"]
-- !private ["So8NSObjectC", "Set"]
+- ["So8NSObjectC", "Set"]
 - ["So8NSObjectC", "Story"]
 - !private ["So8NSObjectC", "StoryNode"]
 - ["So8NSObjectC", "TimeInterval"]
@@ -1418,16 +1418,15 @@ depends-member:
 - !private ["So8NSObjectC", "Type"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIColor"]
-- !private ["So8NSObjectC", "UIEvent"]
+- ["So8NSObjectC", "UIEvent"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIStackView"]
 - !private ["So8NSObjectC", "UIStoryboard"]
-- !private ["So8NSObjectC", "UITouch"]
+- ["So8NSObjectC", "UITouch"]
 - ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "UIViewAnimationOptions"]
 - !private ["So8NSObjectC", "ViewController"]
 - ["So8NSObjectC", "Void"]
-- !private ["So8NSObjectC", "YTViewController"]
 - !private ["So8NSObjectC", "addAnnotation"]
 - !private ["So8NSObjectC", "addLocationNodeWithConfirmedLocation"]
 - ["So8NSObjectC", "adjustNorthByTappingSidesOfScreen"]
@@ -1526,9 +1525,9 @@ depends-member:
 - !private ["So8NSObjectC", "subviews"]
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "title"]
-- !private ["So8NSObjectC", "touchesBegan"]
+- ["So8NSObjectC", "touchesBegan"]
 - !private ["So8NSObjectC", "type"]
-- !private ["So8NSObjectC", "updateUserLocation"]
+- ["So8NSObjectC", "updateUserLocation"]
 - ["So8NSObjectC", "updateUserLocationTimer"]
 - !private ["So8NSObjectC", "url"]
 - ["So8NSObjectC", "userAnnotation"]
@@ -2539,22 +2538,21 @@ depends-member:
 - ["So11UIResponderC", "SCNNode"]
 - ["So11UIResponderC", "SCNVector3"]
 - ["So11UIResponderC", "SceneLocationView"]
-- !private ["So11UIResponderC", "Set"]
+- ["So11UIResponderC", "Set"]
 - ["So11UIResponderC", "Story"]
 - !private ["So11UIResponderC", "StoryNode"]
 - ["So11UIResponderC", "Timer"]
 - !private ["So11UIResponderC", "Type"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIColor"]
-- !private ["So11UIResponderC", "UIEvent"]
+- ["So11UIResponderC", "UIEvent"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIStackView"]
 - !private ["So11UIResponderC", "UIStoryboard"]
-- !private ["So11UIResponderC", "UITouch"]
+- ["So11UIResponderC", "UITouch"]
 - ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "UIViewAnimationOptions"]
 - !private ["So11UIResponderC", "ViewController"]
-- !private ["So11UIResponderC", "YTViewController"]
 - !private ["So11UIResponderC", "addAnnotation"]
 - !private ["So11UIResponderC", "addLocationNodeWithConfirmedLocation"]
 - ["So11UIResponderC", "adjustNorthByTappingSidesOfScreen"]
@@ -2630,8 +2628,8 @@ depends-member:
 - !private ["So11UIResponderC", "subviews"]
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "title"]
-- !private ["So11UIResponderC", "touchesBegan"]
-- !private ["So11UIResponderC", "updateUserLocation"]
+- ["So11UIResponderC", "touchesBegan"]
+- ["So11UIResponderC", "updateUserLocation"]
 - ["So11UIResponderC", "updateUserLocationTimer"]
 - !private ["So11UIResponderC", "url"]
 - ["So11UIResponderC", "userAnnotation"]
@@ -2998,22 +2996,21 @@ depends-member:
 - ["So16UIViewControllerC", "SCNNode"]
 - ["So16UIViewControllerC", "SCNVector3"]
 - ["So16UIViewControllerC", "SceneLocationView"]
-- !private ["So16UIViewControllerC", "Set"]
+- ["So16UIViewControllerC", "Set"]
 - ["So16UIViewControllerC", "Story"]
 - !private ["So16UIViewControllerC", "StoryNode"]
 - ["So16UIViewControllerC", "Timer"]
 - !private ["So16UIViewControllerC", "Type"]
 - ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIColor"]
-- !private ["So16UIViewControllerC", "UIEvent"]
+- ["So16UIViewControllerC", "UIEvent"]
 - !private ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UIStackView"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
-- !private ["So16UIViewControllerC", "UITouch"]
+- ["So16UIViewControllerC", "UITouch"]
 - ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "UIViewAnimationOptions"]
 - !private ["So16UIViewControllerC", "ViewController"]
-- !private ["So16UIViewControllerC", "YTViewController"]
 - ["So16UIViewControllerC", "adjustNorthByTappingSidesOfScreen"]
 - ["So16UIViewControllerC", "bottomController"]
 - ["So16UIViewControllerC", "bottomView"]
@@ -3056,8 +3053,8 @@ depends-member:
 - ["So16UIViewControllerC", "showViewControllers"]
 - ["So16UIViewControllerC", "stackView"]
 - ["So16UIViewControllerC", "stories"]
-- !private ["So16UIViewControllerC", "touchesBegan"]
-- !private ["So16UIViewControllerC", "updateUserLocation"]
+- ["So16UIViewControllerC", "touchesBegan"]
+- ["So16UIViewControllerC", "updateUserLocation"]
 - ["So16UIViewControllerC", "updateUserLocationTimer"]
 - !private ["So16UIViewControllerC", "url"]
 - ["So16UIViewControllerC", "userAnnotation"]
@@ -3095,22 +3092,21 @@ depends-member:
 - ["9CBC_AR36014ViewControllerC", "SCNNode"]
 - ["9CBC_AR36014ViewControllerC", "SCNVector3"]
 - ["9CBC_AR36014ViewControllerC", "SceneLocationView"]
-- !private ["9CBC_AR36014ViewControllerC", "Set"]
+- ["9CBC_AR36014ViewControllerC", "Set"]
 - ["9CBC_AR36014ViewControllerC", "Story"]
 - !private ["9CBC_AR36014ViewControllerC", "StoryNode"]
 - ["9CBC_AR36014ViewControllerC", "Timer"]
 - !private ["9CBC_AR36014ViewControllerC", "Type"]
 - ["9CBC_AR36014ViewControllerC", "UIButton"]
 - !private ["9CBC_AR36014ViewControllerC", "UIColor"]
-- !private ["9CBC_AR36014ViewControllerC", "UIEvent"]
+- ["9CBC_AR36014ViewControllerC", "UIEvent"]
 - !private ["9CBC_AR36014ViewControllerC", "UIImage"]
 - ["9CBC_AR36014ViewControllerC", "UIStackView"]
 - !private ["9CBC_AR36014ViewControllerC", "UIStoryboard"]
-- !private ["9CBC_AR36014ViewControllerC", "UITouch"]
+- ["9CBC_AR36014ViewControllerC", "UITouch"]
 - ["9CBC_AR36014ViewControllerC", "UIView"]
 - !private ["9CBC_AR36014ViewControllerC", "UIViewAnimationOptions"]
 - !private ["9CBC_AR36014ViewControllerC", "ViewController"]
-- !private ["9CBC_AR36014ViewControllerC", "YTViewController"]
 - ["9CBC_AR36014ViewControllerC", "adjustNorthByTappingSidesOfScreen"]
 - ["9CBC_AR36014ViewControllerC", "bottomController"]
 - ["9CBC_AR36014ViewControllerC", "bottomView"]
@@ -3154,7 +3150,8 @@ depends-member:
 - ["9CBC_AR36014ViewControllerC", "showViewControllers"]
 - ["9CBC_AR36014ViewControllerC", "stackView"]
 - ["9CBC_AR36014ViewControllerC", "stories"]
-- !private ["9CBC_AR36014ViewControllerC", "updateUserLocation"]
+- ["9CBC_AR36014ViewControllerC", "touchesBegan"]
+- ["9CBC_AR36014ViewControllerC", "updateUserLocation"]
 - ["9CBC_AR36014ViewControllerC", "updateUserLocationTimer"]
 - ["9CBC_AR36014ViewControllerC", "userAnnotation"]
 - ["9CBC_AR36014ViewControllerC", "userLocation"]
@@ -3163,7 +3160,6 @@ depends-member:
 - ["9CBC_AR36014ViewControllerC", "viewMode"]
 - ["9CBC_AR36014ViewControllerC", "viewWillAppear"]
 - ["9CBC_AR36014ViewControllerC", "viewWillDisappear"]
-- !private ["9CBC_AR36016YTViewControllerC", "url"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s23_BidirectionalIndexableP", "append"]
 - ["s23_BidirectionalIndexableP", "init"]
@@ -3512,7 +3508,6 @@ depends-nominal:
 - !private "SC22UIViewAnimationOptionsV"
 - "So16UIViewControllerC"
 - "9CBC_AR36014ViewControllerC"
-- !private "9CBC_AR36016YTViewControllerC"
 - !private "s14_ArrayProtocolP"
 - "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
@@ -3571,4 +3566,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "20e0f2b0b52b63e5260e23e07a6bdca2"
+interface-hash: "661c57fc873891ec0d5df16c441c0b38"

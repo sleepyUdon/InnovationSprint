@@ -24,20 +24,20 @@ depends-member:
 - ["9CBC_AR36010BottomViewC", "image"]
 - ["9CBC_AR36010BottomViewC", "init"]
 - ["9CBC_AR36010BottomViewC", "title"]
-- !private ["So15CALayerDelegateP", "init"]
 - ["So15CALayerDelegateP", ""]
-- !private ["s7CVarArgP", "init"]
+- !private ["So15CALayerDelegateP", "init"]
 - ["s7CVarArgP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s7CVarArgP", "init"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s9EquatableP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - ["s9EquatableP", ""]
-- !private ["s8HashableP", "init"]
+- !private ["s9EquatableP", "init"]
 - ["s8HashableP", ""]
-- !private ["So8NSCodingP", "init"]
+- !private ["s8HashableP", "init"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "body"]
@@ -45,24 +45,24 @@ depends-member:
 - ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "title"]
-- !private ["So16NSObjectProtocolP", "init"]
 - ["So16NSObjectProtocolP", ""]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
 - ["So29UIAccessibilityIdentificationP", ""]
-- !private ["So12UIAppearanceP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
 - ["So12UIAppearanceP", ""]
-- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So12UIAppearanceP", "init"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - ["So17UICoordinateSpaceP", ""]
-- !private ["So13UIDynamicItemP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
 - ["So13UIDynamicItemP", ""]
-- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So11UIFocusItemP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - ["So11UIFocusItemP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So11UIFocusItemP", "init"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "body"]
@@ -70,22 +70,22 @@ depends-member:
 - ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "title"]
-- !private ["So30UIResponderStandardEditActionsP", "init"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", ""]
 - ["So6UIViewC", "body"]
 - ["So6UIViewC", "date"]
 - ["So6UIViewC", "image"]
 - ["So6UIViewC", "init"]
 - ["So6UIViewC", "title"]
-- ["So6UIViewC", ""]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 depends-nominal:
 - "9CBC_AR36010BottomViewC"
 - "So15CALayerDelegateP"
@@ -141,12 +141,23 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "a641cca79f6f9904e5e2f436e73e3d58"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "44b76756aa90ac6cdc7906279044b510"
