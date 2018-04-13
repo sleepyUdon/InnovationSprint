@@ -33,6 +33,7 @@ depends-top-level:
 - !private "URLRequest"
 - !private "Void"
 - "WKWebView"
+- !private "WKWebViewConfiguration"
 - !private "_ImageLiteralType"
 depends-member:
 - ["9CBC_AR36016ARViewControllerC", "Bool"]
@@ -50,6 +51,7 @@ depends-member:
 - !private ["9CBC_AR36016ARViewControllerC", "URLRequest"]
 - !private ["9CBC_AR36016ARViewControllerC", "Void"]
 - ["9CBC_AR36016ARViewControllerC", "WKWebView"]
+- !private ["9CBC_AR36016ARViewControllerC", "WKWebViewConfiguration"]
 - ["9CBC_AR36016ARViewControllerC", "closeButton"]
 - ["9CBC_AR36016ARViewControllerC", "deinit"]
 - !private ["9CBC_AR36016ARViewControllerC", "dismiss"]
@@ -101,6 +103,8 @@ depends-member:
 - ["s7CVarArgP", "UIButton"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "URLRequest"]
+- !private ["s7CVarArgP", "WKWebViewConfiguration"]
+- ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "addTarget"]
 - !private ["s7CVarArgP", "backgroundColor"]
@@ -131,7 +135,6 @@ depends-member:
 - !private ["s7CVarArgP", "viewWillTransition"]
 - !private ["s7CVarArgP", "webview"]
 - !private ["s7CVarArgP", "white"]
-- ["s7CVarArgP", ""]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
@@ -144,6 +147,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "URLRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "WKWebViewConfiguration"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
@@ -177,7 +182,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "webview"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
@@ -197,6 +201,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", "UIButton"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "URLRequest"]
+- !private ["s23CustomStringConvertibleP", "WKWebViewConfiguration"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - !private ["s23CustomStringConvertibleP", "addTarget"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
@@ -227,7 +233,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewWillTransition"]
 - !private ["s23CustomStringConvertibleP", "webview"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "height"]
 - ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "size"]
@@ -248,6 +253,8 @@ depends-member:
 - ["s9EquatableP", "UIButton"]
 - !private ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "URLRequest"]
+- !private ["s9EquatableP", "WKWebViewConfiguration"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "addSubview"]
 - !private ["s9EquatableP", "addTarget"]
 - !private ["s9EquatableP", "backgroundColor"]
@@ -287,7 +294,6 @@ depends-member:
 - !private ["s9EquatableP", "webview"]
 - !private ["s9EquatableP", "white"]
 - !private ["s9EquatableP", "width"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -308,6 +314,8 @@ depends-member:
 - ["s8HashableP", "UIButton"]
 - !private ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "URLRequest"]
+- !private ["s8HashableP", "WKWebViewConfiguration"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "addSubview"]
 - !private ["s8HashableP", "addTarget"]
 - !private ["s8HashableP", "backgroundColor"]
@@ -344,7 +352,6 @@ depends-member:
 - !private ["s8HashableP", "webview"]
 - !private ["s8HashableP", "white"]
 - !private ["s8HashableP", "width"]
-- ["s8HashableP", ""]
 - !private ["SQ", "darkGray"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
@@ -358,6 +365,8 @@ depends-member:
 - ["So8NSCodingP", "UIButton"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "URLRequest"]
+- !private ["So8NSCodingP", "WKWebViewConfiguration"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "addTarget"]
 - !private ["So8NSCodingP", "backgroundColor"]
@@ -387,7 +396,6 @@ depends-member:
 - !private ["So8NSCodingP", "viewWillTransition"]
 - !private ["So8NSCodingP", "webview"]
 - !private ["So8NSCodingP", "white"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "cgColor"]
 - !private ["So9NSCopyingP", "darkGray"]
 - !private ["So9NSCopyingP", "gray"]
@@ -403,6 +411,8 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "URLRequest"]
+- !private ["So26NSExtensionRequestHandlingP", "WKWebViewConfiguration"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "closeButton"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "handleCloseButton"]
@@ -413,7 +423,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillTransition"]
 - !private ["So26NSExtensionRequestHandlingP", "webview"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
 - !private ["So21NSItemProviderReadingP", "darkGray"]
 - !private ["So21NSItemProviderReadingP", "gray"]
@@ -432,7 +441,6 @@ depends-member:
 - !private ["So18NSLayoutConstraintC", "init"]
 - !private ["So18NSLayoutConstraintC", "isActive"]
 - !private ["SC16NSLayoutRelationO", "equal"]
-- !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGRect"]
@@ -448,6 +456,7 @@ depends-member:
 - !private ["So8NSObjectC", "URLRequest"]
 - !private ["So8NSObjectC", "Void"]
 - ["So8NSObjectC", "WKWebView"]
+- !private ["So8NSObjectC", "WKWebViewConfiguration"]
 - !private ["So8NSObjectC", "addSubview"]
 - !private ["So8NSObjectC", "addTarget"]
 - !private ["So8NSObjectC", "backgroundColor"]
@@ -488,6 +497,8 @@ depends-member:
 - ["So16NSObjectProtocolP", "UIButton"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "URLRequest"]
+- !private ["So16NSObjectProtocolP", "WKWebViewConfiguration"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addSubview"]
 - !private ["So16NSObjectProtocolP", "addTarget"]
 - !private ["So16NSObjectProtocolP", "animate"]
@@ -519,7 +530,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "viewWillTransition"]
 - !private ["So16NSObjectProtocolP", "webview"]
 - !private ["So16NSObjectProtocolP", "white"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
 - !private ["So14NSSecureCodingP", "darkGray"]
@@ -531,7 +541,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "shadowOpacity"]
 - !private ["So14NSSecureCodingP", "shadowRadius"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["So8NSStringC", "init"]
 - !private ["So5NSURLC", "init"]
 - !private ["s7NumericP", "init"]
 - !private ["s9OptionSetP", "normal"]
@@ -593,6 +602,8 @@ depends-member:
 - ["So21UIAppearanceContainerP", "UIButton"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "URLRequest"]
+- !private ["So21UIAppearanceContainerP", "WKWebViewConfiguration"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
@@ -612,7 +623,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So21UIAppearanceContainerP", "viewWillTransition"]
 - !private ["So21UIAppearanceContainerP", "webview"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "addTarget"]
 - !private ["So8UIButtonC", "backgroundColor"]
 - ["So8UIButtonC", "init"]
@@ -634,6 +644,8 @@ depends-member:
 - ["So18UIContentContainerP", "UIButton"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "URLRequest"]
+- !private ["So18UIContentContainerP", "WKWebViewConfiguration"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "closeButton"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "handleCloseButton"]
@@ -644,7 +656,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewWillAppear"]
 - !private ["So18UIContentContainerP", "viewWillTransition"]
 - !private ["So18UIContentContainerP", "webview"]
-- ["So18UIContentContainerP", ""]
 - !private ["So9UIControlC", "addTarget"]
 - !private ["So9UIControlC", "backgroundColor"]
 - ["So9UIControlC", "init"]
@@ -684,6 +695,8 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "URLRequest"]
+- !private ["So18UIFocusEnvironmentP", "WKWebViewConfiguration"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
@@ -703,7 +716,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - !private ["So18UIFocusEnvironmentP", "viewWillTransition"]
 - !private ["So18UIFocusEnvironmentP", "webview"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
@@ -724,6 +736,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "URLRequest"]
+- !private ["So30UIPasteConfigurationSupportingP", "WKWebViewConfiguration"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
@@ -743,7 +757,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillTransition"]
 - !private ["So30UIPasteConfigurationSupportingP", "webview"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "CGRect"]
@@ -759,6 +772,7 @@ depends-member:
 - !private ["So11UIResponderC", "URLRequest"]
 - !private ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", "WKWebView"]
+- !private ["So11UIResponderC", "WKWebViewConfiguration"]
 - !private ["So11UIResponderC", "addSubview"]
 - !private ["So11UIResponderC", "addTarget"]
 - !private ["So11UIResponderC", "backgroundColor"]
@@ -788,6 +802,8 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "URLRequest"]
+- !private ["So30UIResponderStandardEditActionsP", "WKWebViewConfiguration"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
@@ -807,7 +823,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillTransition"]
 - !private ["So30UIResponderStandardEditActionsP", "webview"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
 - ["So35UISpringLoadedInteractionSupportingP", "init"]
@@ -825,6 +840,8 @@ depends-member:
 - ["So16UIStateRestoringP", "UIButton"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "URLRequest"]
+- !private ["So16UIStateRestoringP", "WKWebViewConfiguration"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "closeButton"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "handleCloseButton"]
@@ -835,7 +852,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
 - !private ["So16UIStateRestoringP", "viewWillTransition"]
 - !private ["So16UIStateRestoringP", "webview"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So18UITraitEnvironmentP", "CGFloat"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
@@ -846,6 +862,8 @@ depends-member:
 - ["So18UITraitEnvironmentP", "UIButton"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "URLRequest"]
+- !private ["So18UITraitEnvironmentP", "WKWebViewConfiguration"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
@@ -865,7 +883,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So18UITraitEnvironmentP", "viewWillTransition"]
 - !private ["So18UITraitEnvironmentP", "webview"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "addTarget"]
 - !private ["So6UIViewC", "backgroundColor"]
@@ -891,6 +908,8 @@ depends-member:
 - !private ["So16UIViewControllerC", "URLRequest"]
 - !private ["So16UIViewControllerC", "Void"]
 - ["So16UIViewControllerC", "WKWebView"]
+- !private ["So16UIViewControllerC", "WKWebViewConfiguration"]
+- ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "closeButton"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "handleCloseButton"]
@@ -901,14 +920,13 @@ depends-member:
 - ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", "viewWillTransition"]
 - ["So16UIViewControllerC", "webview"]
-- ["So16UIViewControllerC", ""]
 - !private ["So37UIViewControllerTransitionCoordinatorP", "animate"]
 - !private ["So44UIViewControllerTransitionCoordinatorContextP", "animate"]
 - !private ["10Foundation10URLRequestV", "init"]
 - !private ["So9WKWebViewC", "addSubview"]
 - !private ["So9WKWebViewC", "frame"]
 - !private ["So9WKWebViewC", "load"]
-- ["s23_BidirectionalIndexableP", "init"]
+- !private ["So22WKWebViewConfigurationC", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
@@ -931,8 +949,6 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
@@ -943,6 +959,8 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URLRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "WKWebViewConfiguration"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
@@ -973,15 +991,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillTransition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "webview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "darkGray"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "9CBC_AR36016ARViewControllerC"
@@ -1023,11 +1038,9 @@ depends-nominal:
 - !private "SC17NSLayoutAttributeO"
 - !private "So18NSLayoutConstraintC"
 - !private "SC16NSLayoutRelationO"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "So5NSURLC"
 - !private "s7NumericP"
 - !private "s9OptionSetP"
@@ -1069,7 +1082,7 @@ depends-nominal:
 - !private "So44UIViewControllerTransitionCoordinatorContextP"
 - !private "10Foundation10URLRequestV"
 - !private "So9WKWebViewC"
-- "s23_BidirectionalIndexableP"
+- !private "So22WKWebViewConfigurationC"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -1080,12 +1093,8 @@ depends-nominal:
 - !private "s26_ExpressibleByColorLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1117,12 +1126,23 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphoneos/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "4180b50332b5c8918c3931d0d11fa112"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "80a4cf0585127d51623e3e58a9ac0e3b"

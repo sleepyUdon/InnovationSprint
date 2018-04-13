@@ -1,0 +1,153 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ARMediaNode"
+provides-nominal:
+- "9CBC_AR36011ARMediaNodeC"
+provides-member:
+- ["9CBC_AR36011ARMediaNodeC", ""]
+provides-dynamic-lookup:
+- "coordinate"
+- "title"
+depends-top-level:
+- "ARMediaNode"
+- "AssignmentPrecedence"
+- "CLLocationCoordinate2D"
+- "MKAnnotation"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+- "Type"
+depends-member:
+- ["9CBC_AR36011ARMediaNodeC", "CLLocationCoordinate2D"]
+- ["9CBC_AR36011ARMediaNodeC", "String"]
+- ["9CBC_AR36011ARMediaNodeC", "Type"]
+- ["9CBC_AR36011ARMediaNodeC", "coordinate"]
+- ["9CBC_AR36011ARMediaNodeC", "deinit"]
+- ["9CBC_AR36011ARMediaNodeC", "init"]
+- ["9CBC_AR36011ARMediaNodeC", "subtitle"]
+- ["9CBC_AR36011ARMediaNodeC", "title"]
+- ["9CBC_AR36011ARMediaNodeC", "type"]
+- ["9CBC_AR36011ARMediaNodeC", "url"]
+- ["s7CVarArgP", "coordinate"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "subtitle"]
+- ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "type"]
+- !private ["s7CVarArgP", "url"]
+- ["s7CVarArgP", ""]
+- ["s28CustomDebugStringConvertibleP", "coordinate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "subtitle"]
+- ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "coordinate"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "subtitle"]
+- ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "type"]
+- !private ["s23CustomStringConvertibleP", "url"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s9EquatableP", "coordinate"]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "subtitle"]
+- ["s9EquatableP", "title"]
+- !private ["s9EquatableP", "type"]
+- !private ["s9EquatableP", "url"]
+- ["s9EquatableP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "coordinate"]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", "subtitle"]
+- ["s8HashableP", "title"]
+- !private ["s8HashableP", "type"]
+- !private ["s8HashableP", "url"]
+- ["s8HashableP", ""]
+- ["So12MKAnnotationP", "coordinate"]
+- ["So12MKAnnotationP", "subtitle"]
+- ["So12MKAnnotationP", "title"]
+- !private ["So12MKAnnotationP", "type"]
+- !private ["So12MKAnnotationP", "url"]
+- ["So12MKAnnotationP", ""]
+- ["So8NSObjectC", "CLLocationCoordinate2D"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "Type"]
+- ["So8NSObjectC", "coordinate"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "subtitle"]
+- ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "type"]
+- ["So8NSObjectC", "url"]
+- ["So8NSObjectC", ""]
+- ["So16NSObjectProtocolP", "coordinate"]
+- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "subtitle"]
+- ["So16NSObjectProtocolP", "title"]
+- !private ["So16NSObjectProtocolP", "type"]
+- !private ["So16NSObjectProtocolP", "url"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["s12StaticStringV", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "coordinate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "subtitle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "9CBC_AR36011ARMediaNodeC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "So12MKAnnotationP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s12StaticStringV"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/CTSlidingUpPanel.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ARKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
+interface-hash: "c207646718e0971d74b3d2b08be9286b"
