@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CTSlidingUpPanel-Swift.h</key>
 		<data>
-		8m0ItvllZZ2t1FbdnE3im2bAm7g=
+		VHfoX1smOcBesRieFkYWWpxTuls=
 		</data>
 		<key>Headers/CTSlidingUpPanel-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dAjCsGjhOE4RciqTMhcg4+IHw/s=
+		OakH6nzLTATjljxP1cPbawUAX7w=
 		</data>
 		<key>Modules/CTSlidingUpPanel.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		fooyYlbAqVSDppvSvvNIqOOZi2E=
+		w/51/N2bz1Hp3603vOVNhBt+i68=
 		</data>
 		<key>Modules/CTSlidingUpPanel.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		naHXnHGBi43urbRMSuiPAb/oGDo=
+		Bw/A2mb0ps2WphtJELe4KDFOA4Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8m0ItvllZZ2t1FbdnE3im2bAm7g=
+			VHfoX1smOcBesRieFkYWWpxTuls=
 			</data>
 			<key>hash2</key>
 			<data>
-			iEHlLubuZuL8246tANYK7+EiMxBt/PG2/G853S7+ihw=
+			wkFDjIPnuwOtny+5ul4949dDOPT6DDGUxoo2UEb3qeM=
 			</data>
 		</dict>
 		<key>Headers/CTSlidingUpPanel-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fooyYlbAqVSDppvSvvNIqOOZi2E=
+			w/51/N2bz1Hp3603vOVNhBt+i68=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pyt636d9ao7e0rQETnEoTnEDbB1JvaTbtiwkEwNHOrg=
+			fzoAo9vFNQhQET9zERjn1qA0iNMVXD+9FLBjEqXqDnE=
 			</data>
 		</dict>
 		<key>Modules/CTSlidingUpPanel.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			naHXnHGBi43urbRMSuiPAb/oGDo=
+			Bw/A2mb0ps2WphtJELe4KDFOA4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			uA60wCUh+47v22OQRxXoZZBSH1LmGWKZV+ujlDkQSBM=
+			t9dXN0cHDwe9oWwZ79+Kc6hZRzgeOZyUITVVYFj/jy4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

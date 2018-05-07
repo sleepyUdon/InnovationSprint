@@ -18,6 +18,7 @@ depends-top-level:
 - !private "StringLiteralType"
 - "Type"
 depends-member:
+- ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "body"]
 - ["s7CVarArgP", "coordinate"]
 - !private ["s7CVarArgP", "date"]
@@ -27,7 +28,7 @@ depends-member:
 - ["s7CVarArgP", "subtitle"]
 - ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "type"]
-- ["s7CVarArgP", ""]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "body"]
 - ["s28CustomDebugStringConvertibleP", "coordinate"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
@@ -37,8 +38,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "subtitle"]
 - ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "type"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "body"]
 - ["s23CustomStringConvertibleP", "coordinate"]
 - !private ["s23CustomStringConvertibleP", "date"]
@@ -48,7 +49,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "subtitle"]
 - ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "type"]
-- ["s23CustomStringConvertibleP", ""]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "body"]
 - ["s9EquatableP", "coordinate"]
 - !private ["s9EquatableP", "date"]
@@ -58,10 +59,10 @@ depends-member:
 - ["s9EquatableP", "subtitle"]
 - ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "type"]
-- ["s9EquatableP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "body"]
 - ["s8HashableP", "coordinate"]
 - !private ["s8HashableP", "date"]
@@ -71,7 +72,7 @@ depends-member:
 - ["s8HashableP", "subtitle"]
 - ["s8HashableP", "title"]
 - !private ["s8HashableP", "type"]
-- ["s8HashableP", ""]
+- ["So12MKAnnotationP", ""]
 - !private ["So12MKAnnotationP", "body"]
 - ["So12MKAnnotationP", "coordinate"]
 - !private ["So12MKAnnotationP", "date"]
@@ -80,10 +81,10 @@ depends-member:
 - ["So12MKAnnotationP", "subtitle"]
 - ["So12MKAnnotationP", "title"]
 - !private ["So12MKAnnotationP", "type"]
-- ["So12MKAnnotationP", ""]
 - ["So8NSObjectC", "CLLocationCoordinate2D"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "Type"]
+- ["So8NSObjectC", ""]
 - ["So8NSObjectC", "body"]
 - ["So8NSObjectC", "coordinate"]
 - ["So8NSObjectC", "date"]
@@ -93,7 +94,7 @@ depends-member:
 - ["So8NSObjectC", "subtitle"]
 - ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "type"]
-- ["So8NSObjectC", ""]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "body"]
 - ["So16NSObjectProtocolP", "coordinate"]
 - !private ["So16NSObjectProtocolP", "date"]
@@ -103,7 +104,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "subtitle"]
 - ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "type"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["s12StaticStringV", "init"]
 - ["9CBC_AR3609StoryNodeC", "CLLocationCoordinate2D"]
 - ["9CBC_AR3609StoryNodeC", "String"]
@@ -121,6 +121,7 @@ depends-member:
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "body"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "coordinate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
@@ -130,7 +131,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "subtitle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "type"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
@@ -180,4 +180,23 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "62089d5aa00cc2367f15bcc5e7615537"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "2d82352506838095b51916946cca825d"

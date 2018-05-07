@@ -1,6 +1,6 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "705dfd167a0984678e4c946c28856637"
-build_time: [1523285226, 135826000]
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "ff662438d0605f9e904960f413065021"
+build_time: [1525651843, 245936000]
 inputs:
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/Pods/CTSlidingUpPanel/CTSlidingUpPanel/Classes/CTBottomSlideController.swift": [1522864259, 0]
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/Pods/CTSlidingUpPanel/CTSlidingUpPanel/Classes/CTBottomSlideTableDelegate.swift": [1522864259, 0]

@@ -54,6 +54,7 @@ depends-member:
 - !private ["So17CLLocationManagerC", "startUpdatingLocation"]
 - !private ["So25CLLocationManagerDelegateP", "CLAuthorizationStatus"]
 - !private ["So25CLLocationManagerDelegateP", "CLLocationManager"]
+- ["So25CLLocationManagerDelegateP", ""]
 - !private ["So25CLLocationManagerDelegateP", "currentLocation"]
 - !private ["So25CLLocationManagerDelegateP", "delegate"]
 - !private ["So25CLLocationManagerDelegateP", "heading"]
@@ -65,9 +66,10 @@ depends-member:
 - ["So25CLLocationManagerDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So25CLLocationManagerDelegateP", "locationManagerDidResumeLocationUpdates"]
 - ["So25CLLocationManagerDelegateP", "locationManagerShouldDisplayHeadingCalibration"]
-- ["So25CLLocationManagerDelegateP", ""]
 - !private ["s7CVarArgP", "CLAuthorizationStatus"]
 - !private ["s7CVarArgP", "CLLocationManager"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "authorizationStatus"]
 - !private ["s7CVarArgP", "currentLocation"]
 - !private ["s7CVarArgP", "delegate"]
@@ -91,9 +93,9 @@ depends-member:
 - !private ["s7CVarArgP", "startUpdatingHeading"]
 - !private ["s7CVarArgP", "startUpdatingLocation"]
 - !private ["s7CVarArgP", "trueHeading"]
-- ["s7CVarArgP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "CLAuthorizationStatus"]
 - !private ["s28CustomDebugStringConvertibleP", "CLLocationManager"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "authorizationStatus"]
 - !private ["s28CustomDebugStringConvertibleP", "currentLocation"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -117,11 +119,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "startUpdatingHeading"]
 - !private ["s28CustomDebugStringConvertibleP", "startUpdatingLocation"]
 - !private ["s28CustomDebugStringConvertibleP", "trueHeading"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "CLAuthorizationStatus"]
 - !private ["s23CustomStringConvertibleP", "CLLocationManager"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "authorizationStatus"]
 - !private ["s23CustomStringConvertibleP", "currentLocation"]
@@ -146,11 +148,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "startUpdatingHeading"]
 - !private ["s23CustomStringConvertibleP", "startUpdatingLocation"]
 - !private ["s23CustomStringConvertibleP", "trueHeading"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "CLAuthorizationStatus"]
 - !private ["s9EquatableP", "CLLocationManager"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "authorizationStatus"]
 - !private ["s9EquatableP", "authorizedAlways"]
@@ -179,10 +181,10 @@ depends-member:
 - !private ["s9EquatableP", "startUpdatingHeading"]
 - !private ["s9EquatableP", "startUpdatingLocation"]
 - !private ["s9EquatableP", "trueHeading"]
-- ["s9EquatableP", ""]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "CLAuthorizationStatus"]
 - !private ["s8HashableP", "CLLocationManager"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "authorizationStatus"]
 - !private ["s8HashableP", "authorizedAlways"]
@@ -211,7 +213,6 @@ depends-member:
 - !private ["s8HashableP", "startUpdatingHeading"]
 - !private ["s8HashableP", "startUpdatingLocation"]
 - !private ["s8HashableP", "trueHeading"]
-- ["s8HashableP", ""]
 - ["9CBC_AR36015LocationManagerC", "Bool"]
 - ["9CBC_AR36015LocationManagerC", "CLAuthorizationStatus"]
 - ["9CBC_AR36015LocationManagerC", "CLHeading"]
@@ -254,6 +255,7 @@ depends-member:
 - ["So8NSObjectC", "CLLocationDirection"]
 - ["So8NSObjectC", "CLLocationManager"]
 - ["So8NSObjectC", "LocationManagerDelegate"]
+- ["So8NSObjectC", ""]
 - !private ["So8NSObjectC", "authorizationStatus"]
 - ["So8NSObjectC", "currentLocation"]
 - ["So8NSObjectC", "delegate"]
@@ -278,9 +280,9 @@ depends-member:
 - !private ["So8NSObjectC", "startUpdatingHeading"]
 - !private ["So8NSObjectC", "startUpdatingLocation"]
 - !private ["So8NSObjectC", "trueHeading"]
-- ["So8NSObjectC", ""]
 - !private ["So16NSObjectProtocolP", "CLAuthorizationStatus"]
 - !private ["So16NSObjectProtocolP", "CLLocationManager"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "authorizationStatus"]
 - !private ["So16NSObjectProtocolP", "currentLocation"]
 - !private ["So16NSObjectProtocolP", "delegate"]
@@ -304,7 +306,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "startUpdatingHeading"]
 - !private ["So16NSObjectProtocolP", "startUpdatingLocation"]
 - !private ["So16NSObjectProtocolP", "trueHeading"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "headingAccuracy"]
 - !private ["So14NSSecureCodingP", "magneticHeading"]
 - !private ["So14NSSecureCodingP", "trueHeading"]
@@ -315,6 +316,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CLAuthorizationStatus"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CLLocationManager"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "authorizationStatus"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentLocation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
@@ -338,7 +340,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startUpdatingHeading"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startUpdatingLocation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "trueHeading"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
 - !private "Sb"
@@ -398,4 +399,23 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "ca2e998d20cb4f921d475cc511664a23"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "8f26744c307492b0bd9fd7858ddb58c5"

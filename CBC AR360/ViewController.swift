@@ -111,11 +111,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         // Fake for testing at home
         //TODO: Replace link to CBC 360 Photo
-        let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.AR, type: Type.ARVideo, url: "https://theta360.com/s/d8TMA4QDeZkOpwaKxftrcIGeW")
-        stories.append(story9)
+//        let story9 = Story(title: "#InnovationSprint", deck: "27 pitches in 2 weeks: This is how we innovate", body: "For the next two weeks, CBC Digital Products have cleared our calendars and freed up our teams to explore innovative ideas that can help accelerate the CBC’s digital transformation. Our end goal: push the best and biggest ideas as far as we can take them.\n\nYesterday, people pitched a total of 27 projects, ranging from augmented reality to rethinking how we understand our audience. Individuals have since self-organized into teams and the hard work has begun.\n\nOn April 16, we’ll host a demo of the products we’ve built in the CBC Toronto atrium starting at 9 a.m. And if you can’t make it, we’ll be posting highlights here again shortly. We hope you’ll join us!", date: "February 15, 2018", image: "InnovationSprint", latitude: 43.6526768, longitude: -79.4141526, icon: Icon.AR, type: Type.ARVideo, url: "https://theta360.com/s/d8TMA4QDeZkOpwaKxftrcIGeW")
+//        stories.append(story9)
 
-        
-        
     }
     
     // Create all the nodes for the map view
@@ -158,7 +156,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
         bottomController = CTBottomSlideController(parent: view, bottomView: bottomView, tabController: nil, navController: nil, visibleHeight: 0)
         bottomController?.delegate = self
         bottomController?.setAnchorPoint(anchor: 1.0)
-        bottomController?.setExpandedTopMargin(pixels: 620)
         bottomView.layer.shadowColor = UIColor.gray.cgColor
         bottomView.layer.shadowOffset = CGSize(width: 0, height: -3)
         bottomView.layer.shadowOpacity = 0.2

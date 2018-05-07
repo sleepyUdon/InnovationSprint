@@ -194,7 +194,6 @@ depends-member:
 - !private ["16CTSlidingUpPanel23CTBottomSlideControllerC", "expandPanel"]
 - !private ["16CTSlidingUpPanel23CTBottomSlideControllerC", "init"]
 - !private ["16CTSlidingUpPanel23CTBottomSlideControllerC", "setAnchorPoint"]
-- !private ["16CTSlidingUpPanel23CTBottomSlideControllerC", "setExpandedTopMargin"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "ARButton"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "ARMediaNode"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "CGPoint"]
@@ -219,6 +218,7 @@ depends-member:
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "UIView"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "UIViewAnimationOptions"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "ViewController"]
+- ["16CTSlidingUpPanel21CTBottomSlideDelegateP", ""]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "bottomController"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "bottomView"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "centerMapOnUserLocation"]
@@ -262,7 +262,6 @@ depends-member:
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "userLocation"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "view"]
 - !private ["16CTSlidingUpPanel21CTBottomSlideDelegateP", "viewMode"]
-- ["16CTSlidingUpPanel21CTBottomSlideDelegateP", ""]
 - !private ["s7CVarArgP", "ARButton"]
 - !private ["s7CVarArgP", "ARMediaNode"]
 - !private ["s7CVarArgP", "CGPoint"]
@@ -291,6 +290,8 @@ depends-member:
 - !private ["s7CVarArgP", "UIView"]
 - !private ["s7CVarArgP", "UIViewAnimationOptions"]
 - !private ["s7CVarArgP", "ViewController"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addAnnotation"]
 - !private ["s7CVarArgP", "addLocationNodeWithConfirmedLocation"]
 - !private ["s7CVarArgP", "alpha"]
@@ -370,7 +371,6 @@ depends-member:
 - !private ["s7CVarArgP", "scheduledTimer"]
 - !private ["s7CVarArgP", "setAnchorPoint"]
 - !private ["s7CVarArgP", "setCenter"]
-- !private ["s7CVarArgP", "setExpandedTopMargin"]
 - !private ["s7CVarArgP", "setupARView"]
 - !private ["s7CVarArgP", "setupBottomView"]
 - !private ["s7CVarArgP", "setupButton"]
@@ -399,7 +399,6 @@ depends-member:
 - !private ["s7CVarArgP", "viewMode"]
 - !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "first"]
 - ["s10CollectionP", "init"]
@@ -433,6 +432,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - !private ["s28CustomDebugStringConvertibleP", "UIViewAnimationOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "ViewController"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addAnnotation"]
 - !private ["s28CustomDebugStringConvertibleP", "addLocationNodeWithConfirmedLocation"]
 - !private ["s28CustomDebugStringConvertibleP", "alpha"]
@@ -512,7 +512,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
 - !private ["s28CustomDebugStringConvertibleP", "setAnchorPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "setCenter"]
-- !private ["s28CustomDebugStringConvertibleP", "setExpandedTopMargin"]
 - !private ["s28CustomDebugStringConvertibleP", "setupARView"]
 - !private ["s28CustomDebugStringConvertibleP", "setupBottomView"]
 - !private ["s28CustomDebugStringConvertibleP", "setupButton"]
@@ -542,7 +541,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
@@ -579,6 +577,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - !private ["s23CustomStringConvertibleP", "UIViewAnimationOptions"]
 - !private ["s23CustomStringConvertibleP", "ViewController"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addAnnotation"]
 - !private ["s23CustomStringConvertibleP", "addLocationNodeWithConfirmedLocation"]
@@ -659,7 +658,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "scheduledTimer"]
 - !private ["s23CustomStringConvertibleP", "setAnchorPoint"]
 - !private ["s23CustomStringConvertibleP", "setCenter"]
-- !private ["s23CustomStringConvertibleP", "setExpandedTopMargin"]
 - !private ["s23CustomStringConvertibleP", "setupARView"]
 - !private ["s23CustomStringConvertibleP", "setupBottomView"]
 - !private ["s23CustomStringConvertibleP", "setupButton"]
@@ -688,7 +686,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewMode"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "first"]
@@ -754,6 +751,7 @@ depends-member:
 - !private ["s9EquatableP", "UIView"]
 - !private ["s9EquatableP", "UIViewAnimationOptions"]
 - !private ["s9EquatableP", "ViewController"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addAnnotation"]
 - !private ["s9EquatableP", "addLocationNodeWithConfirmedLocation"]
@@ -761,6 +759,7 @@ depends-member:
 - !private ["s9EquatableP", "alpha"]
 - !private ["s9EquatableP", "animate"]
 - !private ["s9EquatableP", "annotation"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "async"]
 - !private ["s9EquatableP", "asyncAfter"]
 - !private ["s9EquatableP", "axis"]
@@ -837,7 +836,6 @@ depends-member:
 - !private ["s9EquatableP", "scheduledTimer"]
 - !private ["s9EquatableP", "setAnchorPoint"]
 - !private ["s9EquatableP", "setCenter"]
-- !private ["s9EquatableP", "setExpandedTopMargin"]
 - !private ["s9EquatableP", "setupARView"]
 - !private ["s9EquatableP", "setupBottomView"]
 - !private ["s9EquatableP", "setupButton"]
@@ -868,7 +866,6 @@ depends-member:
 - !private ["s9EquatableP", "viewWillAppear"]
 - !private ["s9EquatableP", "viewWillDisappear"]
 - !private ["s9EquatableP", "width"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "allowUserInteraction"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
@@ -915,6 +912,7 @@ depends-member:
 - !private ["s8HashableP", "UIView"]
 - !private ["s8HashableP", "UIViewAnimationOptions"]
 - !private ["s8HashableP", "ViewController"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addAnnotation"]
 - !private ["s8HashableP", "addLocationNodeWithConfirmedLocation"]
@@ -996,7 +994,6 @@ depends-member:
 - !private ["s8HashableP", "scheduledTimer"]
 - !private ["s8HashableP", "setAnchorPoint"]
 - !private ["s8HashableP", "setCenter"]
-- !private ["s8HashableP", "setExpandedTopMargin"]
 - !private ["s8HashableP", "setupARView"]
 - !private ["s8HashableP", "setupBottomView"]
 - !private ["s8HashableP", "setupButton"]
@@ -1026,7 +1023,6 @@ depends-member:
 - !private ["s8HashableP", "viewMode"]
 - !private ["s8HashableP", "viewWillAppear"]
 - !private ["s8HashableP", "viewWillDisappear"]
-- ["s8HashableP", ""]
 - !private ["9CBC_AR3604IconO", "AR"]
 - !private ["9CBC_AR3604IconO", "Breaking"]
 - !private ["9CBC_AR3604IconO", "Location"]
@@ -1108,6 +1104,7 @@ depends-member:
 - !private ["So17MKMapViewDelegateP", "UIView"]
 - !private ["So17MKMapViewDelegateP", "UIViewAnimationOptions"]
 - !private ["So17MKMapViewDelegateP", "ViewController"]
+- ["So17MKMapViewDelegateP", ""]
 - !private ["So17MKMapViewDelegateP", "bottomController"]
 - !private ["So17MKMapViewDelegateP", "bottomView"]
 - !private ["So17MKMapViewDelegateP", "centerMapOnUserLocation"]
@@ -1151,7 +1148,6 @@ depends-member:
 - !private ["So17MKMapViewDelegateP", "userLocation"]
 - !private ["So17MKMapViewDelegateP", "view"]
 - !private ["So17MKMapViewDelegateP", "viewMode"]
-- ["So17MKMapViewDelegateP", ""]
 - !private ["So22MKMarkerAnnotationViewC", "displayPriority"]
 - !private ["So22MKMarkerAnnotationViewC", "glyphImage"]
 - !private ["So22MKMarkerAnnotationViewC", "init"]
@@ -1186,6 +1182,7 @@ depends-member:
 - !private ["So8NSCodingP", "UIView"]
 - !private ["So8NSCodingP", "UIViewAnimationOptions"]
 - !private ["So8NSCodingP", "ViewController"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addAnnotation"]
 - !private ["So8NSCodingP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So8NSCodingP", "alpha"]
@@ -1220,7 +1217,7 @@ depends-member:
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageHeight"]
 - !private ["So8NSCodingP", "imageWidth"]
-- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isHidden"]
 - !private ["So8NSCodingP", "isUserInteractionEnabled"]
 - !private ["So8NSCodingP", "layer"]
@@ -1281,7 +1278,6 @@ depends-member:
 - !private ["So8NSCodingP", "viewMode"]
 - !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So8NSCodingP", "viewWillDisappear"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "body"]
 - !private ["So9NSCopyingP", "cgColor"]
 - !private ["So9NSCopyingP", "coordinate"]
@@ -1290,7 +1286,7 @@ depends-member:
 - !private ["So9NSCopyingP", "deck"]
 - !private ["So9NSCopyingP", "gray"]
 - !private ["So9NSCopyingP", "image"]
-- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "parent"]
 - !private ["So9NSCopyingP", "position"]
 - !private ["So9NSCopyingP", "type"]
@@ -1319,6 +1315,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIView"]
 - !private ["So26NSExtensionRequestHandlingP", "UIViewAnimationOptions"]
 - !private ["So26NSExtensionRequestHandlingP", "ViewController"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "bottomController"]
 - !private ["So26NSExtensionRequestHandlingP", "bottomView"]
 - !private ["So26NSExtensionRequestHandlingP", "centerMapOnUserLocation"]
@@ -1368,17 +1365,15 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewMode"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
 - !private ["So21NSItemProviderReadingP", "darkGray"]
 - !private ["So21NSItemProviderReadingP", "gray"]
-- ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
 - !private ["So21NSItemProviderWritingP", "darkGray"]
 - !private ["So21NSItemProviderWritingP", "gray"]
-- ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So18NSLayoutConstraintC", "constant"]
-- ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "ARButton"]
 - !private ["So8NSObjectC", "ARMediaNode"]
 - !private ["So8NSObjectC", "ARViewController"]
@@ -1508,7 +1503,6 @@ depends-member:
 - !private ["So8NSObjectC", "scheduledTimer"]
 - !private ["So8NSObjectC", "setAnchorPoint"]
 - !private ["So8NSObjectC", "setCenter"]
-- !private ["So8NSObjectC", "setExpandedTopMargin"]
 - ["So8NSObjectC", "setupARView"]
 - ["So8NSObjectC", "setupBottomView"]
 - ["So8NSObjectC", "setupButton"]
@@ -1565,6 +1559,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIView"]
 - !private ["So16NSObjectProtocolP", "UIViewAnimationOptions"]
 - !private ["So16NSObjectProtocolP", "ViewController"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addAnnotation"]
 - !private ["So16NSObjectProtocolP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So16NSObjectProtocolP", "alpha"]
@@ -1603,7 +1598,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "image"]
 - !private ["So16NSObjectProtocolP", "imageHeight"]
 - !private ["So16NSObjectProtocolP", "imageWidth"]
-- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
 - !private ["So16NSObjectProtocolP", "isHidden"]
 - !private ["So16NSObjectProtocolP", "isUserInteractionEnabled"]
@@ -1642,7 +1637,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "scheduledTimer"]
 - !private ["So16NSObjectProtocolP", "setAnchorPoint"]
 - !private ["So16NSObjectProtocolP", "setCenter"]
-- !private ["So16NSObjectProtocolP", "setExpandedTopMargin"]
 - !private ["So16NSObjectProtocolP", "setupARView"]
 - !private ["So16NSObjectProtocolP", "setupBottomView"]
 - !private ["So16NSObjectProtocolP", "setupButton"]
@@ -1671,7 +1665,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "viewMode"]
 - !private ["So16NSObjectProtocolP", "viewWillAppear"]
 - !private ["So16NSObjectProtocolP", "viewWillDisappear"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "body"]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "coordinate"]
@@ -1680,7 +1673,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "deck"]
 - !private ["So14NSSecureCodingP", "gray"]
 - !private ["So14NSSecureCodingP", "image"]
-- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "masksToBounds"]
 - !private ["So14NSSecureCodingP", "parent"]
 - !private ["So14NSSecureCodingP", "position"]
@@ -1690,7 +1683,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "shadowRadius"]
 - !private ["So14NSSecureCodingP", "type"]
 - !private ["So14NSSecureCodingP", "url"]
-- ["So8NSStringC", "init"]
 - !private ["s7NumericP", "init"]
 - !private ["So9OS_objectC", "DispatchTime"]
 - !private ["So9OS_objectC", "Double"]
@@ -1832,6 +1824,7 @@ depends-member:
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "UIView"]
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "UIViewAnimationOptions"]
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "ViewController"]
+- ["9CBC_AR36025SceneLocationViewDelegateP", ""]
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "bottomController"]
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "bottomView"]
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "centerMapOnUserLocation"]
@@ -1875,7 +1868,6 @@ depends-member:
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "userLocation"]
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "view"]
 - !private ["9CBC_AR36025SceneLocationViewDelegateP", "viewMode"]
-- ["9CBC_AR36025SceneLocationViewDelegateP", ""]
 - !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "first"]
 - ["s8SequenceP", "init"]
@@ -2010,6 +2002,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIView"]
 - !private ["So21UIAppearanceContainerP", "UIViewAnimationOptions"]
 - !private ["So21UIAppearanceContainerP", "ViewController"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addAnnotation"]
 - !private ["So21UIAppearanceContainerP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So21UIAppearanceContainerP", "alpha"]
@@ -2092,7 +2085,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewMode"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "isHidden"]
 - !private ["So8UIButtonC", "layer"]
 - !private ["So7UIColorC", "cgColor"]
@@ -2122,6 +2114,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIView"]
 - !private ["So18UIContentContainerP", "UIViewAnimationOptions"]
 - !private ["So18UIContentContainerP", "ViewController"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "bottomController"]
 - !private ["So18UIContentContainerP", "bottomView"]
 - !private ["So18UIContentContainerP", "centerMapOnUserLocation"]
@@ -2171,7 +2164,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewMode"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
 - !private ["So18UIContentContainerP", "viewWillDisappear"]
-- ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "isHidden"]
 - !private ["So9UIControlC", "layer"]
@@ -2267,6 +2259,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIView"]
 - !private ["So18UIFocusEnvironmentP", "UIViewAnimationOptions"]
 - !private ["So18UIFocusEnvironmentP", "ViewController"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addAnnotation"]
 - !private ["So18UIFocusEnvironmentP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So18UIFocusEnvironmentP", "alpha"]
@@ -2353,7 +2346,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewMode"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "addAnnotation"]
 - !private ["So11UIFocusItemP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So11UIFocusItemP", "alpha"]
@@ -2397,7 +2389,6 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "expandPanel"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "setAnchorPoint"]
-- !private ["So27UIGestureRecognizerDelegateP", "setExpandedTopMargin"]
 - !private ["So7UIImageC", "init"]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
@@ -2428,6 +2419,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIViewAnimationOptions"]
 - !private ["So30UIPasteConfigurationSupportingP", "ViewController"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addAnnotation"]
 - !private ["So30UIPasteConfigurationSupportingP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So30UIPasteConfigurationSupportingP", "alpha"]
@@ -2510,7 +2502,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "ARButton"]
 - !private ["So11UIResponderC", "ARMediaNode"]
 - !private ["So11UIResponderC", "ARViewController"]
@@ -2663,6 +2654,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIView"]
 - !private ["So30UIResponderStandardEditActionsP", "UIViewAnimationOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "ViewController"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addAnnotation"]
 - !private ["So30UIResponderStandardEditActionsP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So30UIResponderStandardEditActionsP", "alpha"]
@@ -2745,7 +2737,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewMode"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So11UIStackViewC", "axis"]
@@ -2773,6 +2764,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIView"]
 - !private ["So16UIStateRestoringP", "UIViewAnimationOptions"]
 - !private ["So16UIStateRestoringP", "ViewController"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "bottomController"]
 - !private ["So16UIStateRestoringP", "bottomView"]
 - !private ["So16UIStateRestoringP", "centerMapOnUserLocation"]
@@ -2822,7 +2814,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewMode"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
 - !private ["So16UIStateRestoringP", "viewWillDisappear"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So7UITouchC", "location"]
@@ -2850,6 +2841,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIView"]
 - !private ["So18UITraitEnvironmentP", "UIViewAnimationOptions"]
 - !private ["So18UITraitEnvironmentP", "ViewController"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addAnnotation"]
 - !private ["So18UITraitEnvironmentP", "addLocationNodeWithConfirmedLocation"]
 - !private ["So18UITraitEnvironmentP", "alpha"]
@@ -2932,7 +2924,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewMode"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
-- ["So18UITraitEnvironmentP", ""]
 - ["So6UIViewC", "UIView"]
 - !private ["So6UIViewC", "addAnnotation"]
 - !private ["So6UIViewC", "addLocationNodeWithConfirmedLocation"]
@@ -3011,6 +3002,7 @@ depends-member:
 - ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "UIViewAnimationOptions"]
 - !private ["So16UIViewControllerC", "ViewController"]
+- ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "adjustNorthByTappingSidesOfScreen"]
 - ["So16UIViewControllerC", "bottomController"]
 - ["So16UIViewControllerC", "bottomView"]
@@ -3064,7 +3056,6 @@ depends-member:
 - ["So16UIViewControllerC", "viewMode"]
 - ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", "viewWillDisappear"]
-- ["So16UIViewControllerC", ""]
 - ["9CBC_AR36014ViewControllerC", "ARButton"]
 - !private ["9CBC_AR36014ViewControllerC", "ARMediaNode"]
 - !private ["9CBC_AR36014ViewControllerC", "ARViewController"]
@@ -3161,8 +3152,6 @@ depends-member:
 - ["9CBC_AR36014ViewControllerC", "viewWillAppear"]
 - ["9CBC_AR36014ViewControllerC", "viewWillDisappear"]
 - !private ["s14_ArrayProtocolP", "append"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
@@ -3213,13 +3202,6 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "gray"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "first"]
-- ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "first"]
-- ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ARButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ARMediaNode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
@@ -3248,6 +3230,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIViewAnimationOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ViewController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAnnotation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addLocationNodeWithConfirmedLocation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "alpha"]
@@ -3286,7 +3269,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageHeight"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageWidth"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
@@ -3325,7 +3308,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setAnchorPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setCenter"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setExpandedTopMargin"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupARView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupBottomView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupButton"]
@@ -3354,18 +3336,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "required"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "init"]
 - !private ["s20_SwiftNewtypeWrapperP", "required"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -3435,16 +3411,14 @@ depends-nominal:
 - "s10MirrorPathP"
 - !private "s17MutableCollectionP"
 - "So8NSCodingP"
-- "So9NSCopyingP"
+- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - !private "So18NSLayoutConstraintC"
-- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
+- !private "So14NSSecureCodingP"
 - !private "s7NumericP"
 - "So9OS_objectC"
 - !private "s9OptionSetP"
@@ -3509,7 +3483,6 @@ depends-nominal:
 - "So16UIViewControllerC"
 - "9CBC_AR36014ViewControllerC"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -3525,15 +3498,8 @@ depends-nominal:
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s20_SwiftNewtypeWrapperP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
@@ -3566,4 +3532,23 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Headers/CTSlidingUpPanel-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Products/Debug-iphonesimulator/CTSlidingUpPanel/CTSlidingUpPanel.framework/Modules/module.modulemap"
-interface-hash: "661c57fc873891ec0d5df16c441c0b38"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "e7b2404d5fd9998e347ba0af49171b8e"

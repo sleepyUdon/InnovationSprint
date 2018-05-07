@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,8 +19,8 @@
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="CBC_AR360" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sBg-Oc-jnA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Nxk-XX-or5"/>
+                        <viewControllerLayoutGuide type="top" id="thW-Q7-ugx"/>
+                        <viewControllerLayoutGuide type="bottom" id="tcd-vI-1fc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UKd-e1-rn0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -30,8 +30,8 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-Pd-RE1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="478"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9AZ-Pd-RE1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <outlet property="delegate" destination="BV1-FR-VrT" id="Seq-KZ-Ed1"/>
                                 </connections>
@@ -119,7 +119,7 @@
                                         <rect key="frame" x="42" y="333" width="309" height="232"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-7M-Ibw">
-                                                <rect key="frame" x="19" y="72" width="1041.5" height="80"/>
+                                                <rect key="frame" x="19" y="72" width="1289.5" height="80"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yonge-and-elm-streets-shooting-bar" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-2S-lqo">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -135,16 +135,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-Bx-Pfs">
-                                                        <rect key="frame" x="96" y="0.0" width="1041.5" height="44"/>
+                                                        <rect key="frame" x="96" y="0.0" width="1193.5" height="41"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 injured after overnight shooting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-Xl-Usm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="1041.5" height="19"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="1193.5" height="16"/>
                                                                 <fontDescription key="fontDescription" name="StagApp-Bold" family="Stag App" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday, February 2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ms-VxT">
-                                                                <rect key="frame" x="0.0" y="27" width="1041.5" height="17"/>
+                                                                <rect key="frame" x="0.0" y="24" width="1193.5" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" red="0.49019607840000001" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -215,18 +215,18 @@ Investigators are appealing for any witnesses.
                         </subviews>
                         <constraints>
                             <constraint firstItem="3IN-M3-qvP" firstAttribute="leading" secondItem="UKd-e1-rn0" secondAttribute="leading" id="0pm-rd-QW9"/>
-                            <constraint firstItem="YGF-5J-bYV" firstAttribute="top" secondItem="sBg-Oc-jnA" secondAttribute="bottom" id="28i-A1-180"/>
+                            <constraint firstItem="YGF-5J-bYV" firstAttribute="top" secondItem="thW-Q7-ugx" secondAttribute="bottom" id="28i-A1-180"/>
                             <constraint firstItem="XgJ-Vw-3wN" firstAttribute="centerX" secondItem="fMb-gc-owr" secondAttribute="centerX" id="6f3-Zo-dC3"/>
                             <constraint firstAttribute="bottom" secondItem="9AZ-Pd-RE1" secondAttribute="bottom" id="AgW-58-y7r"/>
                             <constraint firstAttribute="trailing" secondItem="9AZ-Pd-RE1" secondAttribute="trailing" id="DHy-Th-VnM"/>
-                            <constraint firstItem="3IN-M3-qvP" firstAttribute="top" secondItem="sBg-Oc-jnA" secondAttribute="bottom" id="Oe9-cv-V8x"/>
+                            <constraint firstItem="3IN-M3-qvP" firstAttribute="top" secondItem="thW-Q7-ugx" secondAttribute="bottom" id="Oe9-cv-V8x"/>
                             <constraint firstItem="YGF-5J-bYV" firstAttribute="leading" secondItem="UKd-e1-rn0" secondAttribute="leading" id="PYu-fi-HWP"/>
-                            <constraint firstItem="9AZ-Pd-RE1" firstAttribute="top" secondItem="sBg-Oc-jnA" secondAttribute="bottom" id="Pkc-Th-enj"/>
+                            <constraint firstItem="9AZ-Pd-RE1" firstAttribute="top" secondItem="thW-Q7-ugx" secondAttribute="bottom" id="Pkc-Th-enj"/>
                             <constraint firstAttribute="trailing" secondItem="3IN-M3-qvP" secondAttribute="trailing" id="QcC-65-BYq"/>
                             <constraint firstItem="9AZ-Pd-RE1" firstAttribute="leading" secondItem="UKd-e1-rn0" secondAttribute="leading" id="Qzu-Ek-wlZ"/>
                             <constraint firstAttribute="bottom" secondItem="YGF-5J-bYV" secondAttribute="bottom" id="Zdv-c2-wbr"/>
                             <constraint firstAttribute="trailing" secondItem="YGF-5J-bYV" secondAttribute="trailing" id="ifD-4U-sCg"/>
-                            <constraint firstItem="fMb-gc-owr" firstAttribute="top" secondItem="sBg-Oc-jnA" secondAttribute="bottom" constant="30" id="k3D-3I-chk"/>
+                            <constraint firstItem="fMb-gc-owr" firstAttribute="top" secondItem="thW-Q7-ugx" secondAttribute="bottom" constant="30" id="k3D-3I-chk"/>
                             <constraint firstItem="XgJ-Vw-3wN" firstAttribute="centerY" secondItem="fMb-gc-owr" secondAttribute="centerY" id="l1T-wi-k8h"/>
                             <constraint firstAttribute="bottom" secondItem="3IN-M3-qvP" secondAttribute="bottom" id="lFZ-Ke-00z"/>
                             <constraint firstAttribute="trailing" secondItem="fMb-gc-owr" secondAttribute="trailing" constant="25" id="u1S-8w-vup"/>
