@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "d713b7ac944cf423ccf0e3b58bf498a5"
+build_time: [1526066734, 359067000]
+inputs:
+  "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/Pods/CTSlidingUpPanel/CTSlidingUpPanel/Classes/CTBottomSlideController.swift": [1522864259, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/Pods/CTSlidingUpPanel/CTSlidingUpPanel/Classes/CTBottomSlideTableDelegate.swift": [1522864259, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/Pods/CTSlidingUpPanel/CTSlidingUpPanel/Classes/CTPanGestureRecognizerExtension.swift": [1522864259, 0]

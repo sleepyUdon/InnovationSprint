@@ -121,7 +121,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-7M-Ibw">
                                                 <rect key="frame" x="19" y="72" width="1289.5" height="80"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yonge-and-elm-streets-shooting-bar" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-2S-lqo">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSR-2S-lqo">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <color key="backgroundColor" white="0.64064911270000002" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -249,7 +249,4 @@ Investigators are appealing for any witnesses.
             <point key="canvasLocation" x="116" y="118.29085457271366"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="yonge-and-elm-streets-shooting-bar" width="590" height="332"/>
-    </resources>
 </document>

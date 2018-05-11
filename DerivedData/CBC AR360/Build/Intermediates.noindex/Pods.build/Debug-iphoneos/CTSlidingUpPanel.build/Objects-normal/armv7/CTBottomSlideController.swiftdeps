@@ -57,13 +57,12 @@ depends-top-level:
 - "UITouch"
 - "UIView"
 - "UnsafeMutableRawPointer"
-- !private "Void"
+- "Void"
 - !private "print"
 - !private "||"
 - !private "~="
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "addConstraints"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
@@ -107,7 +106,7 @@ depends-member:
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC", "UITouch"]
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC", "UIView"]
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC", "UnsafeMutableRawPointer"]
-- !private ["16CTSlidingUpPanel23CTBottomSlideControllerC", "Void"]
+- ["16CTSlidingUpPanel23CTBottomSlideControllerC", "Void"]
 - !private ["16CTSlidingUpPanel23CTBottomSlideControllerC", "addConstraintChangeKVO"]
 - !private ["16CTSlidingUpPanel23CTBottomSlideControllerC", "addKVO"]
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC", "anchorPanel"]
@@ -170,6 +169,8 @@ depends-member:
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIPanGestureRecognizer"]
 - !private ["s7CVarArgP", "UIView"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addConstraintChangeKVO"]
 - !private ["s7CVarArgP", "addConstraints"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
@@ -192,7 +193,6 @@ depends-member:
 - !private ["s7CVarArgP", "frame"]
 - ["s7CVarArgP", "gestureRecognizer"]
 - ["s7CVarArgP", "gestureRecognizerShouldBegin"]
-- !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "heightConstraint"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "initBottomPanel"]
@@ -235,10 +235,8 @@ depends-member:
 - !private ["s7CVarArgP", "updateConstraint"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "visibleHeight"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "first"]
 - !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "hashValue"]
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "ConstraintConstantKVO"]
 - !private ["s28CustomDebugStringConvertibleP", "ContentOffsetKVO"]
@@ -249,26 +247,24 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIPanGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addConstraintChangeKVO"]
 - !private ["s28CustomDebugStringConvertibleP", "addConstraints"]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addKVO"]
 - !private ["s28CustomDebugStringConvertibleP", "addObserver"]
 - !private ["s28CustomDebugStringConvertibleP", "anchorPoint"]
-- !private ["s28CustomDebugStringConvertibleP", "anchored"]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
 - !private ["s28CustomDebugStringConvertibleP", "bottomView"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
 - !private ["s28CustomDebugStringConvertibleP", "checkOffset"]
 - !private ["s28CustomDebugStringConvertibleP", "closePanel"]
-- !private ["s28CustomDebugStringConvertibleP", "collapsed"]
 - !private ["s28CustomDebugStringConvertibleP", "constant"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "contentOffset"]
 - !private ["s28CustomDebugStringConvertibleP", "currentState"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "expandPanel"]
-- !private ["s28CustomDebugStringConvertibleP", "expanded"]
 - !private ["s28CustomDebugStringConvertibleP", "expectedHeight"]
 - !private ["s28CustomDebugStringConvertibleP", "firePanelMoved"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
@@ -277,7 +273,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "gestureRecognizerShouldBegin"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "heightConstraint"]
-- !private ["s28CustomDebugStringConvertibleP", "hidden"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "initBottomPanel"]
 - !private ["s28CustomDebugStringConvertibleP", "initalLocation"]
@@ -322,23 +317,16 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "visibleHeight"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "contains"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
 - !private ["s29CustomPlaygroundQuickLookableP", "y"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "anchored"]
-- !private ["s17CustomReflectableP", "collapsed"]
 - !private ["s17CustomReflectableP", "contains"]
-- !private ["s17CustomReflectableP", "expanded"]
 - !private ["s17CustomReflectableP", "first"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - !private ["s17CustomReflectableP", "height"]
-- !private ["s17CustomReflectableP", "hidden"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "size"]
 - ["s17CustomReflectableP", "some"]
@@ -352,6 +340,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIPanGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addConstraintChangeKVO"]
 - !private ["s23CustomStringConvertibleP", "addConstraints"]
@@ -375,7 +364,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "frame"]
 - ["s23CustomStringConvertibleP", "gestureRecognizer"]
 - ["s23CustomStringConvertibleP", "gestureRecognizerShouldBegin"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "heightConstraint"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "initBottomPanel"]
@@ -418,29 +406,18 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "updateConstraint"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "visibleHeight"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "anchored"]
-- !private ["s9DecodableP", "collapsed"]
 - !private ["s9DecodableP", "contains"]
-- !private ["s9DecodableP", "expanded"]
 - !private ["s9DecodableP", "first"]
-- !private ["s9DecodableP", "hashValue"]
 - !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "hidden"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "size"]
 - ["s9DecodableP", "some"]
 - !private ["s9DecodableP", "y"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "anchored"]
-- !private ["s9EncodableP", "collapsed"]
 - !private ["s9EncodableP", "contains"]
-- !private ["s9EncodableP", "expanded"]
 - !private ["s9EncodableP", "first"]
-- !private ["s9EncodableP", "hashValue"]
 - !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "hidden"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "size"]
 - ["s9EncodableP", "some"]
@@ -454,6 +431,7 @@ depends-member:
 - !private ["s9EquatableP", "UIApplication"]
 - !private ["s9EquatableP", "UIPanGestureRecognizer"]
 - !private ["s9EquatableP", "UIView"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addConstraintChangeKVO"]
 - !private ["s9EquatableP", "addConstraints"]
@@ -525,6 +503,7 @@ depends-member:
 - !private ["s9EquatableP", "setPrimaryConstraints"]
 - !private ["s9EquatableP", "shared"]
 - !private ["s9EquatableP", "size"]
+- ["s9EquatableP", "some"]
 - !private ["s9EquatableP", "state"]
 - !private ["s9EquatableP", "statusBarFrame"]
 - !private ["s9EquatableP", "tabBar"]
@@ -537,21 +516,14 @@ depends-member:
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "visibleHeight"]
 - !private ["s9EquatableP", "y"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "initial"]
 - !private ["s25ExpressibleByArrayLiteralP", "new"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
-- !private ["s23ExpressibleByNilLiteralP", "anchored"]
-- !private ["s23ExpressibleByNilLiteralP", "collapsed"]
-- !private ["s23ExpressibleByNilLiteralP", "expanded"]
-- !private ["s23ExpressibleByNilLiteralP", "hidden"]
 - ["s23ExpressibleByNilLiteralP", "some"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["s8HashableP", "ConstraintConstantKVO"]
 - !private ["s8HashableP", "ContentOffsetKVO"]
 - !private ["s8HashableP", "NSLayoutAttribute"]
@@ -561,6 +533,7 @@ depends-member:
 - !private ["s8HashableP", "UIApplication"]
 - !private ["s8HashableP", "UIPanGestureRecognizer"]
 - !private ["s8HashableP", "UIView"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addConstraintChangeKVO"]
 - !private ["s8HashableP", "addConstraints"]
@@ -639,12 +612,8 @@ depends-member:
 - !private ["s8HashableP", "updateConstraint"]
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "visibleHeight"]
-- ["s8HashableP", ""]
-- !private ["Si", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "hashValue"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "addConstraints"]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
@@ -653,7 +622,6 @@ depends-member:
 - !private ["So8NSCodingP", "bounds"]
 - !private ["So8NSCodingP", "contentOffset"]
 - !private ["So8NSCodingP", "frame"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isEditing"]
 - !private ["So8NSCodingP", "layoutIfNeeded"]
 - !private ["So8NSCodingP", "navigationBar"]
@@ -662,11 +630,8 @@ depends-member:
 - !private ["So8NSCodingP", "setNeedsLayout"]
 - !private ["So8NSCodingP", "tabBar"]
 - !private ["So8NSCodingP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
 - !private ["So26NSExtensionRequestHandlingP", "tabBar"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["SC26NSKeyValueObservingOptionsV", "initial"]
 - !private ["SC26NSKeyValueObservingOptionsV", "new"]
 - !private ["SC17NSLayoutAttributeO", "bottom"]
@@ -679,7 +644,6 @@ depends-member:
 - !private ["So18NSLayoutConstraintC", "init"]
 - !private ["So18NSLayoutConstraintC", "removeObserver"]
 - !private ["SC16NSLayoutRelationO", "equal"]
-- !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGPoint"]
@@ -704,7 +668,8 @@ depends-member:
 - ["So8NSObjectC", "UITouch"]
 - ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "UnsafeMutableRawPointer"]
-- !private ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", ""]
 - ["So8NSObjectC", "addConstraintChangeKVO"]
 - !private ["So8NSObjectC", "addConstraints"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
@@ -775,7 +740,6 @@ depends-member:
 - ["So8NSObjectC", "updateConstraint"]
 - ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "visibleHeight"]
-- ["So8NSObjectC", ""]
 - !private ["So16NSObjectProtocolP", "ConstraintConstantKVO"]
 - !private ["So16NSObjectProtocolP", "ContentOffsetKVO"]
 - !private ["So16NSObjectProtocolP", "NSLayoutAttribute"]
@@ -785,6 +749,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIApplication"]
 - !private ["So16NSObjectProtocolP", "UIPanGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "UIView"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addConstraintChangeKVO"]
 - !private ["So16NSObjectProtocolP", "addConstraints"]
 - !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
@@ -848,16 +813,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "updateConstraint"]
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "visibleHeight"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
-- !private ["s7NumericP", "hashValue"]
 - !private ["s9OptionSetP", "initial"]
 - !private ["s9OptionSetP", "new"]
-- !private ["Sq", "anchored"]
-- !private ["Sq", "collapsed"]
-- !private ["Sq", "expanded"]
-- !private ["Sq", "hidden"]
 - ["Sq", "some"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "bottom"]
@@ -876,8 +833,6 @@ depends-member:
 - !private ["s10SetAlgebraP", "first"]
 - !private ["s10SetAlgebraP", "initial"]
 - !private ["s10SetAlgebraP", "new"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC0E5StateO", "__derived_enum_equals"]
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC0E5StateO", "anchored"]
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC0E5StateO", "collapsed"]
@@ -886,7 +841,6 @@ depends-member:
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC0E5StateO", "hashValue"]
 - ["16CTSlidingUpPanel23CTBottomSlideControllerC0E5StateO", "hidden"]
 - !private ["s12StaticStringV", "init"]
-- !private ["s10StrideableP", "hashValue"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
@@ -1008,6 +962,7 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "UIApplication"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIPanGestureRecognizer"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIView"]
+- ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "addConstraintChangeKVO"]
 - !private ["So27UIGestureRecognizerDelegateP", "addKVO"]
 - !private ["So27UIGestureRecognizerDelegateP", "anchorPoint"]
@@ -1047,7 +1002,6 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "updateConstraint"]
 - !private ["So27UIGestureRecognizerDelegateP", "view"]
 - !private ["So27UIGestureRecognizerDelegateP", "visibleHeight"]
-- ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["SC24UIGestureRecognizerStateO", "changed"]
 - !private ["SC24UIGestureRecognizerStateO", "ended"]
 - !private ["So15UINavigationBarC", "frame"]
@@ -1154,8 +1108,6 @@ depends-member:
 - !private ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So16UIViewControllerC", "navigationBar"]
 - !private ["So16UIViewControllerC", "tabBar"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addConstraints"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addObserver"]
@@ -1171,16 +1123,10 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ConstraintConstantKVO"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ContentOffsetKVO"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSLayoutAttribute"]
@@ -1190,6 +1136,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIPanGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addConstraintChangeKVO"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addConstraints"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
@@ -1253,30 +1200,17 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateConstraint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "visibleHeight"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "anchored"]
-- !private ["s21_ObjectiveCBridgeableP", "collapsed"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
-- !private ["s21_ObjectiveCBridgeableP", "expanded"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
-- !private ["s21_ObjectiveCBridgeableP", "hidden"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
-- !private ["s26_OptionalNilComparisonTypeV", "anchored"]
-- !private ["s26_OptionalNilComparisonTypeV", "collapsed"]
-- !private ["s26_OptionalNilComparisonTypeV", "expanded"]
-- !private ["s26_OptionalNilComparisonTypeV", "hidden"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "hashValue"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - !private "SC7CGPointV"
@@ -1297,30 +1231,20 @@ depends-nominal:
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
-- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
-- !private "So9NSCopyingP"
 - !private "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - !private "SC26NSKeyValueObservingOptionsV"
 - !private "SC17NSLayoutAttributeO"
 - !private "So18NSLayoutConstraintC"
 - !private "SC16NSLayoutRelationO"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
-- !private "s7NumericP"
 - !private "s9OptionSetP"
 - "Sq"
 - !private "s26RangeReplaceableCollectionP"
@@ -1328,11 +1252,8 @@ depends-nominal:
 - !private "s8SequenceP"
 - !private "s3SetV"
 - !private "s10SetAlgebraP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
 - "16CTSlidingUpPanel23CTBottomSlideControllerC0E5StateO"
 - !private "s12StaticStringV"
-- !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
@@ -1368,24 +1289,15 @@ depends-nominal:
 - !private "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
-- !private "s23_BidirectionalIndexableP"
-- !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s26_OptionalNilComparisonTypeV"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1404,4 +1316,14 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/Pods/Target Support Files/CTSlidingUpPanel/CTSlidingUpPanel-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/DerivedData/CBC AR360/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/CTSlidingUpPanel.build/unextended-module.modulemap"
-interface-hash: "afe3b864e270244f956843969c296476"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "f747130ecd21e8628283a262c33da9b7"

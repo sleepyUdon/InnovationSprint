@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>3BTT3846RD.CBC.CBC-AR360</string>
+	<string>GT4MNDER6X.ca.interfaced.CBC-AR-360</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>3BTT3846RD.CBC.CBC-AR360</string>
+		<string>GT4MNDER6X.ca.interfaced.CBC-AR-360</string>
 	</array>
 </dict>
 </plist>

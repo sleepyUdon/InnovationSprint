@@ -1,12 +1,12 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "b0730ee3310674902f15e6b6a5db233e"
-build_time: [1525659591, 111237000]
+build_time: [1525897649, 35533000]
 inputs:
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/LocationNode.swift": [1523211477, 0]
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/StoryNode.swift": [1523070583, 0]
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/CLLocation+Extensions.swift": [1522888396, 0]
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/SceneLocationView.swift": [1523634852, 0]
-  "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/ViewController.swift": [1525659590, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/ViewController.swift": [1525692725, 0]
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/CGPoint+Extensions.swift": [1522888456, 0]
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/FloatingPoint+Radians.swift": [1522888439, 0]
   "/Users/vivianechan/Documents/1.0 Projects/15.0 CBCNews AR/5.0 Innovation Sprint/2.0 CBC AR360 - iOS/CBC AR360/CBC AR360/ARMediaNode.swift": [1522978078, 0]
